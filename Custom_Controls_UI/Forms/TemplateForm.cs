@@ -6,13 +6,55 @@ namespace Custom_Controls_UI.Forms
 {
     public partial class TemplateForm : Form
     {
-     
-    
+
+
         public TemplateForm()
         {
             InitializeComponent();
             SetStyle(ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             base.FormBorderStyle = FormBorderStyle.None;
+            LB_TitleForm.Text = this.Text;
+            PB_Icon.Image = this.Icon.ToBitmap();
+        }
+
+        public override string Text
+        {
+            get => base.Text;
+            set
+            {
+                base.Text = value;
+                LB_TitleForm.Text = value;
+                Invalidate();
+            }
+        }
+
+        public virtual Icon Icon
+        {
+            get => base.Icon;
+            set
+            {
+                base.Icon = value;
+                PB_Icon.Image = value.ToBitmap();
+                Invalidate();
+            }
+        }
+
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            base.OnSizeChanged(e);
+            if (Created)
+            {
+                // Nếu Size của Form có chiều cao nhỏ hơn Panel TiTle và Width nhỏ hơn 100 thì không cho resize
+                if (this.Size.Height < PN_Title.Height || this.Size.Width < 100)
+                {
+                    this.Size = new Size(100, PN_Title.Height);
+                }
+            }
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
             LB_TitleForm.Text = this.Text;
             PB_Icon.Image = this.Icon.ToBitmap();
         }

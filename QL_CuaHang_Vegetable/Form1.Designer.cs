@@ -51,7 +51,7 @@
             this.navigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navigationPanel.Location = new System.Drawing.Point(1, 37);
             this.navigationPanel.Name = "navigationPanel";
-            this.navigationPanel.Size = new System.Drawing.Size(186, 529);
+            this.navigationPanel.Size = new System.Drawing.Size(186, 514);
             this.navigationPanel.TabIndex = 3;
             // 
             // btn_Nav4
@@ -71,7 +71,7 @@
             this.btn_Nav4.ImageOffsetY = 0;
             this.btn_Nav4.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav4.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav4.Location = new System.Drawing.Point(3, 294);
+            this.btn_Nav4.Location = new System.Drawing.Point(3, 330);
             this.btn_Nav4.Name = "btn_Nav4";
             this.btn_Nav4.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav4.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -106,7 +106,7 @@
             this.btn_Nav3.ImageOffsetY = 0;
             this.btn_Nav3.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav3.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav3.Location = new System.Drawing.Point(3, 240);
+            this.btn_Nav3.Location = new System.Drawing.Point(3, 276);
             this.btn_Nav3.Name = "btn_Nav3";
             this.btn_Nav3.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav3.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -141,7 +141,7 @@
             this.btn_Nav2.ImageOffsetY = 0;
             this.btn_Nav2.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav2.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav2.Location = new System.Drawing.Point(3, 186);
+            this.btn_Nav2.Location = new System.Drawing.Point(3, 222);
             this.btn_Nav2.Name = "btn_Nav2";
             this.btn_Nav2.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav2.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -176,7 +176,7 @@
             this.btn_Nav1.ImageOffsetY = 0;
             this.btn_Nav1.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav1.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav1.Location = new System.Drawing.Point(3, 132);
+            this.btn_Nav1.Location = new System.Drawing.Point(3, 168);
             this.btn_Nav1.Name = "btn_Nav1";
             this.btn_Nav1.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav1.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -211,7 +211,7 @@
             this.btn_Nav0.ImageOffsetY = 0;
             this.btn_Nav0.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav0.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav0.Location = new System.Drawing.Point(3, 78);
+            this.btn_Nav0.Location = new System.Drawing.Point(3, 114);
             this.btn_Nav0.Name = "btn_Nav0";
             this.btn_Nav0.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav0.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -276,12 +276,14 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(940, 567);
+            this.ClientSize = new System.Drawing.Size(918, 552);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dkButton2);
             this.Controls.Add(this.navigationPanel);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(1);
+            this.Text = "Quản lý - Quản trị";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Controls.SetChildIndex(this.navigationPanel, 0);
             this.Controls.SetChildIndex(this.dkButton2, 0);
             this.Controls.SetChildIndex(this.button1, 0);

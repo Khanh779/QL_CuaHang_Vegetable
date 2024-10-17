@@ -94,7 +94,7 @@
             // 
             this.dkControlBoxForm1.ControlBoxStyle = Custom_Controls_UI.Enums.ControlBoxStyle.Close;
             this.dkControlBoxForm1.Form = this;
-            this.dkControlBoxForm1.IconHoverColor = System.Drawing.Color.Red;
+            this.dkControlBoxForm1.IconHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.dkControlBoxForm1.IconNormalColor = System.Drawing.Color.Black;
             this.dkControlBoxForm1.IconSize = 10;
             this.dkControlBoxForm1.Location = new System.Drawing.Point(73, 7);
@@ -107,7 +107,7 @@
             // 
             this.dkControlBoxForm2.ControlBoxStyle = Custom_Controls_UI.Enums.ControlBoxStyle.Maximize_Restore;
             this.dkControlBoxForm2.Form = this;
-            this.dkControlBoxForm2.IconHoverColor = System.Drawing.Color.Red;
+            this.dkControlBoxForm2.IconHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.dkControlBoxForm2.IconNormalColor = System.Drawing.Color.Black;
             this.dkControlBoxForm2.IconSize = 10;
             this.dkControlBoxForm2.Location = new System.Drawing.Point(42, 7);
@@ -120,7 +120,7 @@
             // 
             this.dkControlBoxForm3.ControlBoxStyle = Custom_Controls_UI.Enums.ControlBoxStyle.Minimize;
             this.dkControlBoxForm3.Form = this;
-            this.dkControlBoxForm3.IconHoverColor = System.Drawing.Color.Red;
+            this.dkControlBoxForm3.IconHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.dkControlBoxForm3.IconNormalColor = System.Drawing.Color.Black;
             this.dkControlBoxForm3.IconSize = 10;
             this.dkControlBoxForm3.Location = new System.Drawing.Point(11, 7);

@@ -406,7 +406,7 @@ namespace Custom_Controls_UI.Buttons
                         {
                             double progress = animationManager.GetProgress(i);
                             Point source = animationManager.GetSource(i);
-                            int rippleSize = (int)(progress * Width * 2);
+                            float rippleSize = (float)(progress * Width * 2);
                             RectangleF rippleRect = new RectangleF(source.X - rippleSize / 2, source.Y - rippleSize / 2, rippleSize, rippleSize);
                             using (Brush rippleBrush = new SolidBrush(Color.FromArgb((int)(51 - progress * 50), ForeColor)))
                             {
