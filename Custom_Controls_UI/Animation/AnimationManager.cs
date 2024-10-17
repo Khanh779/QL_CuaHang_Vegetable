@@ -19,6 +19,8 @@ namespace Custom_Controls_UI.Animation
         public double Increment { get; set; } = 0.08;
         List<AnimationType> ATs = new List<AnimationType>();
 
+        public bool Singular { get { return sing; } set { sing = value; } }
+
         public AnimationManager(bool singular = true)
         {
             an = new List<double>();
@@ -30,61 +32,33 @@ namespace Custom_Controls_UI.Animation
 
         }
 
-        //private void UpdateProgress()
-        //{
-        //    for (int i = 0; i < an.Count; i++)
-        //    {
-        //        an[i] += (ATs[i] == AnimationType.In) ? Increment : -Increment;
-
-        //        if (ATs[i] == AnimationType.In && an[i] >= MAX_VALUE)
-        //        {
-        //            an[i] = MAX_VALUE;
-        //            RemoveAnimation(i);
-        //        }
-        //        else if (ATs[i] == AnimationType.Out && an[i] <= MIN_VALUE)
-        //        {
-        //            an[i] = MIN_VALUE;
-        //            RemoveAnimation(i);
-        //        }
-        //    }
-        //}
-
         private void UpdateProgress()
         {
-            for (int i = 0; i < an.Count -1; i++)
+            for (int i = 0; i < an.Count; i++)
             {
-                double change = (ATs[i] == AnimationType.In || ATs[i] == AnimationType.InOut || ATs[i] == AnimationType.OutIn || ATs[i] == AnimationType.InOutIn) ? Increment : -Increment;
+                an[i] += (ATs[i] == AnimationType.In) ? Increment : -Increment;
 
-                if (ATs[i] == AnimationType.In || ATs[i] == AnimationType.InOut || ATs[i] == AnimationType.OutIn || ATs[i] == AnimationType.InOutIn)
+                if (ATs[i] == AnimationType.In && an[i] >= MAX_VALUE)
                 {
-                    an[i] += change;
-
-                    if (an[i] >= MAX_VALUE)
-                    {
-                        an[i] = MAX_VALUE;
-                        RemoveAnimation(i);
-                    }
+                    an[i] = MAX_VALUE;
+                    RemoveAnimation(i);
                 }
-
-                if (ATs[i] == AnimationType.Out || ATs[i] == AnimationType.InOut || ATs[i] == AnimationType.OutIn || ATs[i] == AnimationType.OutInOut)
+                else if (ATs[i] == AnimationType.Out && an[i] <= MIN_VALUE)
                 {
-                    an[i] -= change;
-
-                    if (an[i] <= MIN_VALUE)
-                    {
-                        an[i] = MIN_VALUE;
-                        RemoveAnimation(i);
-                    }
+                    an[i] = MIN_VALUE;
+                    RemoveAnimation(i);
                 }
             }
         }
 
+
+
         private void RemoveAnimation(int index)
         {
-            if (!sing) // Kiểm tra biến sing có giá trị false hay không
+            if (!sing)
             {
-                an.RemoveAt(index); // Xóa phần tử ở vị trí index của danh sách An
-                animationSources.RemoveAt(index); // Không có câu lệnh hoàn thành trong phương thức này
+                an.RemoveAt(index);
+                animationSources.RemoveAt(index);
                 ATs.RemoveAt(index);
                 if (an.Count <= 0)
                 {
@@ -103,6 +77,8 @@ namespace Custom_Controls_UI.Animation
                 }
             }
         }
+
+
 
         private void _timer_Tick(object sender, EventArgs e)
         {
@@ -127,7 +103,7 @@ namespace Custom_Controls_UI.Animation
             return GetProgress(0);
         }
 
-      
+
 
         public int GetAnimationCount()
         {
@@ -160,62 +136,62 @@ namespace Custom_Controls_UI.Animation
             StartNewAnimation(animationType, new Point(0, 0));
         }
 
-        //public void StartNewAnimation(AnimationType animationType, Point point)
-        //{
-        //    _timer.Dispose();
-        //    var isFirstAnimation = !IsAnimating() && an.Count == 0;
-        //    if (isFirstAnimation || !sing)
-        //    {
-        //        ATs.Add(animationType);
-        //        an.Add(animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE);
-        //        animationSources.Add(point);
-        //        //if (isFirstAnimation)
-        //        //    ATs[0] = animationType;
-        //    }
-        //    else
-        //    {
-        //        ATs[0] = animationType;
-        //        an[0] = animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE;
-        //        animationSources[0] = point;
-        //    }
-        //    if (!IsAnimating())
-        //        _timer.Start();
-        //}
-
-
         public void StartNewAnimation(AnimationType animationType, Point point)
         {
-            if (animationType == AnimationType.InOut)
+            _timer.Dispose();
+            var isFirstAnimation = !IsAnimating() && an.Count == 0;
+            if (isFirstAnimation || !sing)
             {
-                ATs.Add(AnimationType.In);
-                an.Add(MIN_VALUE);
+                ATs.Add(animationType);
+                an.Add(animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE);
                 animationSources.Add(point);
-            }
-            else if (animationType == AnimationType.OutIn)
-            {
-                ATs.Add(AnimationType.Out);
-                an.Add(MAX_VALUE);
-                animationSources.Add(point);
+                //if (isFirstAnimation)
+                //    ATs[0] = animationType;
             }
             else
             {
-                
-                if (!IsAnimating() || !sing)
-                {
-                    ATs.Add(animationType);
-                    an.Add(animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE);
-                    animationSources.Add(point);
-                }
-                else
-                {
-                    ATs[0] = animationType;
-                    an[0] = animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE;
-                    animationSources[0] = point;
-                }
+                ATs[0] = animationType;
+                an[0] = animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE;
+                animationSources[0] = point;
             }
-
-            if (!IsAnimating()) _timer.Start();
+            if (!IsAnimating())
+                _timer.Start();
         }
+
+
+        //public void StartNewAnimation(AnimationType animationType, Point point)
+        //{
+        //    if (animationType == AnimationType.InOut)
+        //    {
+        //        ATs.Add(AnimationType.In);
+        //        an.Add(MIN_VALUE);
+        //        animationSources.Add(point);
+        //    }
+        //    else if (animationType == AnimationType.OutIn)
+        //    {
+        //        ATs.Add(AnimationType.Out);
+        //        an.Add(MAX_VALUE);
+        //        animationSources.Add(point);
+        //    }
+        //    else
+        //    {
+
+        //        if (!IsAnimating() || !sing)
+        //        {
+        //            ATs.Add(animationType);
+        //            an.Add(animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE);
+        //            animationSources.Add(point);
+        //        }
+        //        else
+        //        {
+        //            ATs[0] = animationType;
+        //            an[0] = animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE;
+        //            animationSources[0] = point;
+        //        }
+        //    }
+
+        //    if (!IsAnimating()) _timer.Start();
+        //}
 
     }
 }

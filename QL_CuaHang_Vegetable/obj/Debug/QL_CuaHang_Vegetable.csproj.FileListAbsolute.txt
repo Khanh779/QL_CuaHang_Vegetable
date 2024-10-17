@@ -20,3 +20,4 @@ D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\bin\Debug\
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\bin\Debug\Custom_Controls_UI.pdb
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHa.E5FB9C8B.Up2Date
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.Form1.resources
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.MauThietKe_KoSua.resources

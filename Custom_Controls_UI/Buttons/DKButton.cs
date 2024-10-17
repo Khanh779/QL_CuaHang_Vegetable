@@ -129,6 +129,14 @@ namespace Custom_Controls_UI.Buttons
             set
             {
                 animationMode = value;
+                if (animationMode == AnimationMode.ColorTransition)
+                {
+                    animationManager.Singular = true;
+                }
+                if (animationMode == AnimationMode.Ripple)
+                {
+                    animationManager.Singular = false;
+                }
                 Invalidate();
             }
         }
@@ -138,7 +146,7 @@ namespace Custom_Controls_UI.Buttons
         public DKButton()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor | ControlStyles.OptimizedDoubleBuffer, true);
-            animationManager = new AnimationManager (false)
+            animationManager = new AnimationManager(false)
             {
                 Increment = 0.07
             };
@@ -156,6 +164,10 @@ namespace Custom_Controls_UI.Buttons
         {
             base.OnMouseEnter(e);
             _isHovering = true;
+            if (animationMode == AnimationMode.ColorTransition)
+            {
+                animationManager.StartNewAnimation(AnimationType.In);
+            }
             Invalidate();
         }
 
@@ -163,6 +175,10 @@ namespace Custom_Controls_UI.Buttons
         {
             base.OnMouseLeave(e);
             _isHovering = false;
+            if (animationMode == AnimationMode.ColorTransition)
+            {
+                animationManager.StartNewAnimation(AnimationType.Out);
+            }
             Invalidate();
         }
 
@@ -170,6 +186,10 @@ namespace Custom_Controls_UI.Buttons
         {
             base.OnMouseDown(e);
             _isPressed = true;
+            if (animationMode == AnimationMode.ColorTransition)
+            {
+                animationManager.StartNewAnimation(AnimationType.In);
+            }
             Invalidate();
         }
 
@@ -189,12 +209,79 @@ namespace Custom_Controls_UI.Buttons
             }
         }
 
+        LinearGradientMode gradientMode = LinearGradientMode.BackwardDiagonal;
+        public LinearGradientMode GradientMode
+        {
+            get => gradientMode;
+            set
+            {
+                gradientMode = value;
+                Invalidate();
+            }
+        }
+
+        TextImageRelation imageRelation = TextImageRelation.ImageBeforeText;
+        public TextImageRelation ImageRelation
+        {
+            get => imageRelation;
+            set
+            {
+                imageRelation = value;
+                Invalidate();
+            }
+        }
+
+        Image image;
+        public Image Image
+        {
+            get => image;
+            set
+            {
+                image = value;
+                Invalidate();
+            }
+        }
+
+        Size _imageSize = new Size(20, 20);
+        public Size ImageSize
+        {
+            get => _imageSize;
+            set
+            {
+                _imageSize = value;
+                Invalidate();
+            }
+        }
+
+        int imageOffsetX = 0;
+        public int ImageOffsetX
+        {
+            get => imageOffsetX;
+            set
+            {
+                imageOffsetX = value;
+                Invalidate();
+            }
+        }
+
+        int imageOffsetY = 0;
+        public int ImageOffsetY
+        {
+            get => imageOffsetY;
+            set
+            {
+                imageOffsetY = value;
+                Invalidate();
+            }
+        }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
             e.Graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+            e.Graphics.TextRenderingHint = TextRenderingHint;
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
             using (Bitmap bmp = new Bitmap(Width, Height))
@@ -203,37 +290,84 @@ namespace Custom_Controls_UI.Buttons
 
                 using (Graphics g = Graphics.FromImage(bmp))
                 {
-                    g.SmoothingMode = SmoothingMode.AntiAlias;
+                    g.SmoothingMode = SmoothingMode.HighQuality;
                     g.PixelOffsetMode = PixelOffsetMode.HighQuality;
                     g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                    g.TextRenderingHint = TextRenderingHint.AntiAliasGridFit;
+                    g.TextRenderingHint = TextRenderingHint;
+                    g.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
-                    Color color1, color2;
-                    if (_isPressed)
-                    {
-                        color1 = _pressColor1;
-                        color2 = _pressColor2;
-                    }
-                    else if (_isHovering)
-                    {
-                        color1 = _hoverColor1;
-                        color2 = _hoverColor2;
-                    }
-                    else
-                    {
-                        color1 = _normalColor1;
-                        color2 = _normalColor2;
-                    }
+                    Color color1 =
+        animationMode == AnimationMode.ColorTransition
+            ? (_isPressed ? ColorHelper.BlendColor(_pressColor2, _pressColor1, animationManager.GetProgress() * 255)
+                : _isHovering ? ColorHelper.BlendColor(_hoverColor2, _hoverColor1, animationManager.GetProgress() * 255)
+                    : ColorHelper.BlendColor(_normalColor2, _normalColor1, animationManager.GetProgress() * 255))
+            : animationMode == AnimationMode.Ripple ? (_isHovering ? _hoverColor1 : _normalColor1)
+                : (_isPressed ? _pressColor1 : _isHovering ? _hoverColor1 : _normalColor1);
+
+                    Color color2 = animationMode == AnimationMode.ColorTransition
+                            ? (_isPressed ? ColorHelper.BlendColor(_pressColor1, _pressColor2, animationManager.GetProgress() * 255) :
+                             _isHovering ? ColorHelper.BlendColor(_hoverColor1, _hoverColor2, animationManager.GetProgress() * 255)
+                                    : ColorHelper.BlendColor(_normalColor1, _normalColor2, animationManager.GetProgress() * 255))
+                            : animationMode == AnimationMode.Ripple ? (_isHovering
+                                    ? _hoverColor2 : _normalColor2) : (_isPressed ? _pressColor2 : _isHovering ? _hoverColor2 : _normalColor2);
+
+
 
                     StringFormat sf = new StringFormat();
                     TextHelper.SetStringAlign(sf, contentAlignment);
 
-                    Rectangle textBound = new Rectangle(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
-                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right, Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
+                    // Kích thước và vị trí của văn bản
+                    RectangleF textBound = new RectangleF(BorderThickness + textPadding.Left,
+                        BorderThickness + textPadding.Top,
+                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
+                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
+
+                    // Kích thước và vị trí của hình ảnh
+                    RectangleF imageBound = new RectangleF(BorderThickness + textPadding.Left,
+                        BorderThickness + textPadding.Top, _imageSize.Width, _imageSize.Height);
+
+                    if (Image != null)
+                    {
+                        switch (ImageRelation)
+                        {
+                            case TextImageRelation.TextBeforeImage:
+                                // Văn bản ở trước hình ảnh
+                                textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
+                                    Width - BorderThickness * 2 - textPadding.Left - textPadding.Right - _imageSize.Width - imageOffsetX,
+                                    Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
+                                imageBound = new RectangleF(textBound.Right + imageOffsetX, Height / 2 - _imageSize.Height / 2, _imageSize.Width, _imageSize.Height);
+                                break;
+
+                            case TextImageRelation.ImageBeforeText:
+                                // Hình ảnh ở trước văn bản
+                                textBound = new RectangleF(BorderThickness + textPadding.Left + _imageSize.Width + imageOffsetX, BorderThickness + textPadding.Top,
+                                    Width - BorderThickness * 2 - textPadding.Left - textPadding.Right - _imageSize.Width - imageOffsetX,
+                                    Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
+                                imageBound = new RectangleF(BorderThickness + imageOffsetX, Height / 2 - _imageSize.Height / 2, _imageSize.Width, _imageSize.Height);
+                                break;
+
+                            case TextImageRelation.ImageAboveText:
+                                // Hình ảnh ở trên văn bản
+                                textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top + _imageSize.Height + imageOffsetY,
+                                    Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
+                                    Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2 - _imageSize.Height - imageOffsetY);
+                                imageBound = new RectangleF(Width / 2 - _imageSize.Width / 2, BorderThickness + imageOffsetY, _imageSize.Width, _imageSize.Height);
+                                break;
+
+                            case TextImageRelation.TextAboveImage:
+                                // Văn bản ở trên hình ảnh
+                                textBound = new Rectangle(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
+                                    Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
+                                    Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2 - _imageSize.Height - imageOffsetY);
+                                imageBound = new RectangleF(Width / 2 - _imageSize.Width / 2, textBound.Bottom + imageOffsetY, _imageSize.Width, _imageSize.Height);
+                                break;
+                        }
+                    }
+
 
                     using (var pen = new Pen(_borderColor, _borderThickness))
                     using (var textBru = new SolidBrush(_isPressed ? _textPressColor : _isHovering ? _textHoverColor : _textNormalColor))
-                    using (LinearGradientBrush brush = new LinearGradientBrush(ClientRectangle, color1, color2, 90F))
+                    using (LinearGradientBrush brush = new LinearGradientBrush(ClientRectangle, color1, color2, gradientMode))
                     {
                         switch (shapeType)
                         {
@@ -242,6 +376,12 @@ namespace Custom_Controls_UI.Buttons
                                 using (GraphicsPath borpath = GraphicsHelper.GetRoundPath(ClientRectangle, Radius, _borderThickness))
                                 {
                                     g.FillPath(brush, path);
+
+                                    if (Image != null)
+                                    {
+                                        g.DrawImage(Image, imageBound);
+                                    }
+
                                     g.DrawString(Text, Font, textBru, textBound, sf);
                                     if (BorderThickness != 0) g.DrawPath(pen, borpath);
                                 }
@@ -250,6 +390,10 @@ namespace Custom_Controls_UI.Buttons
                             case ShapeType.Ellipse:
                                 RectangleF rect = new RectangleF(0.5f, 0.5f, Width - 1, Height - 1);
                                 g.FillEllipse(brush, rect);
+                                if (Image != null)
+                                {
+                                    g.DrawImage(Image, imageBound);
+                                }
                                 g.DrawString(Text, Font, textBru, textBound, sf);
                                 if (BorderThickness != 0) g.DrawEllipse(pen, rect);
                                 break;
@@ -263,7 +407,7 @@ namespace Custom_Controls_UI.Buttons
                             double progress = animationManager.GetProgress(i);
                             Point source = animationManager.GetSource(i);
                             int rippleSize = (int)(progress * Width * 2);
-                            Rectangle rippleRect = new Rectangle(source.X - rippleSize / 2, source.Y - rippleSize / 2, rippleSize, rippleSize);
+                            RectangleF rippleRect = new RectangleF(source.X - rippleSize / 2, source.Y - rippleSize / 2, rippleSize, rippleSize);
                             using (Brush rippleBrush = new SolidBrush(Color.FromArgb((int)(51 - progress * 50), ForeColor)))
                             {
                                 g.FillEllipse(rippleBrush, rippleRect);
@@ -361,5 +505,17 @@ namespace Custom_Controls_UI.Buttons
                 Invalidate();
             }
         }
+        [Category("Misc")]
+        public override Font Font
+        {
+            get => base.Font;
+            set
+            {
+                base.Font = value;
+                Invalidate();
+            }
+        }
+
+
     }
 }

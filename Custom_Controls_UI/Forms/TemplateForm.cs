@@ -6,10 +6,8 @@ namespace Custom_Controls_UI.Forms
 {
     public partial class TemplateForm : Form
     {
-        private const int GripSize = 16; // Kích thước vùng kéo để thay đổi kích thước
-        private bool resizing = false; // Biến kiểm soát trạng thái kéo
-        private Point lastMousePosition; // Lưu vị trí chuột cuối cùng
-
+     
+    
         public TemplateForm()
         {
             InitializeComponent();
