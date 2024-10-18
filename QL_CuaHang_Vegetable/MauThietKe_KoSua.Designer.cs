@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dkButton2 = new Custom_Controls_UI.Buttons.DKButton();
-            this.btn_Home = new Custom_Controls_UI.Buttons.DKButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MauThietKe_KoSua));
+            this.dkButton2 = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.btn_Nav0 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.SuspendLayout();
             // 
             // dkButton2
             // 
-            this.dkButton2.AnimationMode = Custom_Controls_UI.Enums.AnimationMode.Ripple;
+            this.dkButton2.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
             this.dkButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
             this.dkButton2.BorderThickness = 0;
             this.dkButton2.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -42,6 +43,11 @@
             this.dkButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.dkButton2.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.dkButton2.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
+            this.dkButton2.Image = null;
+            this.dkButton2.ImageOffsetX = 0;
+            this.dkButton2.ImageOffsetY = 0;
+            this.dkButton2.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dkButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.dkButton2.Location = new System.Drawing.Point(12, 12);
             this.dkButton2.Name = "dkButton2";
             this.dkButton2.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
@@ -49,7 +55,7 @@
             this.dkButton2.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
             this.dkButton2.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
             this.dkButton2.Radius = 3;
-            this.dkButton2.ShapeType = Custom_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.dkButton2.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
             this.dkButton2.Size = new System.Drawing.Size(122, 72);
             this.dkButton2.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
             this.dkButton2.TabIndex = 6;
@@ -60,40 +66,47 @@
             this.dkButton2.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dkButton2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             // 
-            // btn_Home
+            // btn_Nav0
             // 
-            this.btn_Home.AnimationMode = Custom_Controls_UI.Enums.AnimationMode.None;
-            this.btn_Home.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
-            this.btn_Home.BorderThickness = 0;
-            this.btn_Home.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Home.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btn_Home.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.btn_Home.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.btn_Home.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.btn_Home.Location = new System.Drawing.Point(140, 12);
-            this.btn_Home.Name = "btn_Home";
-            this.btn_Home.NormalColor1 = System.Drawing.Color.Gainsboro;
-            this.btn_Home.NormalColor2 = System.Drawing.Color.WhiteSmoke;
-            this.btn_Home.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.btn_Home.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.btn_Home.Radius = 0;
-            this.btn_Home.ShapeType = Custom_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.btn_Home.Size = new System.Drawing.Size(180, 41);
-            this.btn_Home.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.btn_Home.TabIndex = 9;
-            this.btn_Home.Text = "Trang chủ";
-            this.btn_Home.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.btn_Home.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_Home.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btn_Home.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Home.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.btn_Nav0.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Nav0.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.ColorTransition;
+            this.btn_Nav0.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.btn_Nav0.BorderThickness = 0;
+            this.btn_Nav0.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Nav0.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_Nav0.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btn_Nav0.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
+            this.btn_Nav0.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
+            this.btn_Nav0.Image = ((System.Drawing.Image)(resources.GetObject("btn_Nav0.Image")));
+            this.btn_Nav0.ImageOffsetX = 2;
+            this.btn_Nav0.ImageOffsetY = 0;
+            this.btn_Nav0.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Nav0.ImageSize = new System.Drawing.Size(22, 22);
+            this.btn_Nav0.Location = new System.Drawing.Point(167, 12);
+            this.btn_Nav0.Name = "btn_Nav0";
+            this.btn_Nav0.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btn_Nav0.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_Nav0.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
+            this.btn_Nav0.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
+            this.btn_Nav0.Radius = 0;
+            this.btn_Nav0.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.btn_Nav0.Size = new System.Drawing.Size(180, 48);
+            this.btn_Nav0.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.btn_Nav0.TabIndex = 9;
+            this.btn_Nav0.Text = "Trang chủ";
+            this.btn_Nav0.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.btn_Nav0.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_Nav0.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btn_Nav0.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.btn_Nav0.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             // 
             // MauThietKe_KoSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_Home);
+            this.Controls.Add(this.btn_Nav0);
             this.Controls.Add(this.dkButton2);
             this.Name = "MauThietKe_KoSua";
             this.Text = "MauThietKe_KoSua";
@@ -103,7 +116,7 @@
 
         #endregion
 
-        private Custom_Controls_UI.Buttons.DKButton dkButton2;
-        private Custom_Controls_UI.Buttons.DKButton btn_Home;
+        private DinhKhanh_Controls_UI.Buttons.DKButton dkButton2;
+        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav0;
     }
 }

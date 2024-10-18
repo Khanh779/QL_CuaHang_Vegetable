@@ -1,0 +1,8 @@
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\Custom_Controls_UI\bin\Debug\DinhKhanh_Controls_UI.dll
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\Custom_Controls_UI\bin\Debug\DinhKhanh_Controls_UI.pdb
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\Custom_Controls_UI\obj\Debug\DinhKhanh_Controls_UI.csproj.AssemblyReference.cache
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\Custom_Controls_UI\obj\Debug\DinhKhanh_Controls_UI.Forms.TemplateForm.resources
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\Custom_Controls_UI\obj\Debug\DinhKhanh_Controls_UI.csproj.GenerateResource.cache
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\Custom_Controls_UI\obj\Debug\DinhKhanh_Controls_UI.csproj.CoreCompileInputs.cache
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\Custom_Controls_UI\obj\Debug\DinhKhanh_Controls_UI.dll
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\Custom_Controls_UI\obj\Debug\DinhKhanh_Controls_UI.pdb
