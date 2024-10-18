@@ -22,3 +22,7 @@ D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.TabPage.Tab_Home.resources
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\bin\Debug\DinhKhanh_Controls_UI.dll
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\bin\Debug\DinhKhanh_Controls_UI.pdb
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.TabPage.Tab_Order.resources
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.TabPage.Tab_Settings.resources
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.TabPage.Tab_Report.resources
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.TabPage.Tab_Food.resources

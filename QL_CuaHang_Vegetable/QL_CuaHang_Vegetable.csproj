@@ -65,6 +65,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabPage\Tab_Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\Tab_Order.Designer.cs">
+      <DependentUpon>Tab_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\Tab_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\Tab_Settings.Designer.cs">
+      <DependentUpon>Tab_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\Tab_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\Tab_Report.Designer.cs">
+      <DependentUpon>Tab_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage\Tab_Food.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPage\Tab_Food.Designer.cs">
+      <DependentUpon>Tab_Food.cs</DependentUpon>
+    </Compile>
     <Compile Include="TabPage\Tab_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -87,6 +111,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TabPage\Tab_Order.resx">
+      <DependentUpon>Tab_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\Tab_Settings.resx">
+      <DependentUpon>Tab_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\Tab_Report.resx">
+      <DependentUpon>Tab_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage\Tab_Food.resx">
+      <DependentUpon>Tab_Food.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TabPage\Tab_Home.resx">
       <DependentUpon>Tab_Home.cs</DependentUpon>
     </EmbeddedResource>

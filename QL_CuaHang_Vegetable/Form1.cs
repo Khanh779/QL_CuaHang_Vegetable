@@ -1,5 +1,8 @@
-﻿using DinhKhanh_Controls_UI.Buttons;
+﻿using DinhKhanh_Controls_UI.Animation;
+using DinhKhanh_Controls_UI.Buttons;
+using DinhKhanh_Controls_UI.Enums;
 using DinhKhanh_Controls_UI.Forms;
+using QL_CuaHang_Vegetable.TabPage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +17,24 @@ namespace QL_CuaHang_Vegetable
 {
     public partial class Form1 : TemplateForm
     {
+
+        static Form1 _obj;
+        public static Form1 Instance
+        {
+            get
+            {
+                if (_obj == null || _obj.IsDisposed)
+                {
+                    _obj = new Form1();
+                }
+                return _obj;
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
+            _obj = this;
 
             int x = btn_Nav0.Location.X;
             // Đặt vị trí các nút điều khiển btn_Nav<number> sát nhau (toạ độ Y) bằng cách btn_Nav1.Location = new Point(..., btn_Nav0.Y + btn_Nav0.Height);
@@ -26,10 +44,20 @@ namespace QL_CuaHang_Vegetable
             btn_Nav4.Location = new Point(x, btn_Nav3.Location.Y + btn_Nav3.Height + 1);
 
 
+            Tab_Home.Instance.TabIndex = 0;
+            Tab_Food.Instance.TabIndex = 1;
+            Tab_Order.Instance.TabIndex = 2;
+            Tab_Report.Instance.TabIndex = 3;
+            Tab_Settings.Instance.TabIndex = 4;
+
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
 
         }
 
@@ -49,5 +77,154 @@ namespace QL_CuaHang_Vegetable
             //}
 
         }
+
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            base.OnSizeChanged(e);
+            if (Created)
+            {
+                if (WindowState == FormWindowState.Maximized)
+                {
+                    PN_Nav.Width = 220;
+                }
+                else
+                {
+                    PN_Nav.Width = 169;
+                }
+            }
+        }
+
+        private void btn_Nav0_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                SwitchTab(QL_CuaHang_Vegetable.TabPage.Tab_Home.Instance);
+            }
+        }
+
+        private void btn_Nav1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                SwitchTab(QL_CuaHang_Vegetable.TabPage.Tab_Food.Instance);
+            }
+        }
+
+        private void btn_Nav2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                SwitchTab(QL_CuaHang_Vegetable.TabPage.Tab_Order.Instance);
+            }
+        }
+
+        private void btn_Nav3_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                SwitchTab(QL_CuaHang_Vegetable.TabPage.Tab_Report.Instance);
+            }
+        }
+
+        private void btn_Nav4_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                SwitchTab(QL_CuaHang_Vegetable.TabPage.Tab_Settings.Instance);
+            }
+        }
+
+        Control SelectedTab;
+
+        private void SwitchTab(Control newControl)
+        {
+            if (!PN_Tabs.Controls.Contains(newControl))
+            {
+                // Lấy control hiện tại
+                Control currentControl = SelectedTab;
+
+
+                // Nếu có control hiện tại, thực hiện hoạt ảnh trượt
+                if (currentControl != null)
+                {
+                    DoSlideAnimate(currentControl, newControl, currentControl.TabIndex < newControl.TabIndex ? false : true);
+                }
+
+                PN_Tabs.Controls.Clear();
+                PN_Tabs.Controls.Add(newControl);
+                newControl.Dock = DockStyle.Fill;
+
+                // Cập nhật control đã chọn
+                SelectedTab = newControl;
+            }
+        }
+
+        private void DoSlideAnimate(Control control1, Control control2, bool moveBack)
+        {
+
+            // Tạo graphics và bitmap cho hoạt ảnh
+            var _slideGraphics = Graphics.FromHwnd(control2.Handle);
+            var _slideBitmap = new Bitmap(control1.Width + control2.Width, control1.Height);
+            _slideBitmap.MakeTransparent();
+
+            // Vẽ các control vào bitmap dựa trên hướng
+            if (moveBack)
+            {
+                control2.DrawToBitmap(_slideBitmap, new Rectangle(0, 0, control2.Width, control2.Height));
+                control1.DrawToBitmap(_slideBitmap, new Rectangle(control2.Width, 0, control1.Width, control1.Height));
+            }
+            else
+            {
+                control1.DrawToBitmap(_slideBitmap, new Rectangle(0, 0, control1.Width, control1.Height));
+                control2.DrawToBitmap(_slideBitmap, new Rectangle(control1.Width, 0, control2.Width, control2.Height));
+            }
+
+            //foreach (Control c in control2.Controls)
+            //{
+            //    c.Hide();
+            //}
+
+
+            AnimationManager _slideAnimator = new AnimationManager(); // Tạo một AnimationManager mới
+            _slideAnimator.Increment = 0.08; // Đặt tốc độ hoạt ảnh
+
+            // Cập nhật hàm vẽ khi hoạt ảnh diễn ra
+            _slideAnimator.AnimationProgress += (alpha) =>
+            {
+                // Vẽ bitmap với độ alpha cho hiệu ứng mờ
+                _slideGraphics.DrawImage(_slideBitmap, new PointF(0, control2.Height - (float)_slideAnimator.GetProgress() * control2.Height));
+                control2.Invalidate();
+
+            };
+
+            // Hàm hoàn thành sau khi hoạt ảnh kết thúc
+            _slideAnimator.Complete += () =>
+            {
+                SelectedTab = control2; // Cập nhật tab đã chọn
+                //foreach (Control c in control2.Controls)
+                //{
+                //    c.Show(); // Hiện lại các control trong control2
+                //}
+                control2.Invalidate();
+
+            };
+
+            // Bắt đầu hoạt ảnh với các thông số đã định
+            // Khởi động hoạt ảnh với AnimationManager
+            //if (moveBack)
+            //{
+            //    _slideAnimator.StartNewAnimation(AnimationType.In, new Point(-control2.Width, 0));
+            //}
+            //else
+            //{
+            //    _slideAnimator.StartNewAnimation(AnimationType.Out, new Point(0, 0));
+            //}
+            if (moveBack)
+                _slideAnimator.StartNewAnimation(AnimationType.In);
+            else
+                _slideAnimator.StartNewAnimation(AnimationType.Out);
+
+        }
+
     }
 }

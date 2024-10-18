@@ -42,11 +42,13 @@ namespace DinhKhanh_Controls_UI.Animation
                 {
                     an[i] = MAX_VALUE;
                     RemoveAnimation(i);
+                    Complete?.Invoke();
                 }
                 else if (ATs[i] == AnimationType.Out && an[i] <= MIN_VALUE)
                 {
                     an[i] = MIN_VALUE;
                     RemoveAnimation(i);
+                    Complete?.Invoke();
                 }
             }
         }
@@ -111,6 +113,9 @@ namespace DinhKhanh_Controls_UI.Animation
         }
 
         public delegate void OnAnimateProgress(object obj);
+        public delegate void AnimationCompleted();
+
+        public event AnimationCompleted Complete;
 
         public event OnAnimateProgress AnimationProgress;
 

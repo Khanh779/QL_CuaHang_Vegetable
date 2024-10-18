@@ -10,23 +10,22 @@ using System.Windows.Forms;
 
 namespace QL_CuaHang_Vegetable.TabPage
 {
-    public partial class Tab_Home : UserControl
+    public partial class Tab_Food : UserControl
     {
-
-        static Tab_Home _obj;
-        public static Tab_Home Instance
+        static Tab_Food _obj;
+        public static Tab_Food Instance
         {
             get
             {
                 if (_obj == null || _obj.IsDisposed)
                 {
-                    _obj = new Tab_Home();
+                    _obj = new Tab_Food();
                 }
                 return _obj;
             }
         }
 
-        public Tab_Home()
+        public Tab_Food()
         {
             InitializeComponent();
             _obj = this;
