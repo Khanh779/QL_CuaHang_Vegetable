@@ -57,20 +57,25 @@ namespace DinhKhanh_Controls_UI.Helper
             //radius *= 2;
             var r2 = (radius / 2f); var w2 = (width / 2f);
             GraphicsPath GraphPath = new GraphicsPath();
-            if (radius != 0)
+            if (radius > 0)
             {
                 //Top-Left Arc
                 GraphPath.AddArc(Rect.X + w2, Rect.Y + w2, radius, radius, 180, 90);
+                GraphPath.AddLine(Rect.X + r2 + w2, Rect.Y + w2, Rect.X + Rect.Width - r2 - w2, Rect.Y + w2);
                 //Top-Right Arc
                 GraphPath.AddArc(Rect.X + Rect.Width - radius - w2, Rect.Y + w2, radius, radius, 270, 90);
+                GraphPath.AddLine(Rect.X + Rect.Width - w2, Rect.Y + r2 + w2, Rect.X + Rect.Width - w2, Rect.Y + Rect.Height - r2 - w2);
                 //Bottom-Right Arc
                 GraphPath.AddArc(Rect.X + Rect.Width - w2 - radius, Rect.Y + Rect.Height - w2 - radius, radius, radius, 0, 90);
+                GraphPath.AddLine(Rect.X + Rect.Width - r2 - w2, Rect.Y + Rect.Height - w2, Rect.X + r2 + w2, Rect.Y + Rect.Height - w2);
                 //Bottom-Left Arc
                 GraphPath.AddArc(Rect.X + w2, Rect.Y - w2 + Rect.Height - radius, radius, radius, 90, 90);
+
                 //Close line ( Left)           
                 GraphPath.AddLine(Rect.X + w2, Rect.Y + Rect.Height - r2 - w2, Rect.X + w2, Rect.Y + r2 + w2);
             }
-            if (radius == 0) GraphPath.AddRectangle(new RectangleF(Rect.X + w2, Rect.Y + w2, Rect.Width - w2, Rect.Height - w2));
+            else 
+                GraphPath.AddRectangle(new RectangleF(Rect.X + w2, Rect.Y + w2, Rect.Width - w2, Rect.Height - w2));
             return GraphPath;
         }
 

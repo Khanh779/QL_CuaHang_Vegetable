@@ -182,10 +182,18 @@ namespace DinhKhanh_Controls_UI.Other
                 }
             }
 
-            var contentRectangle = new RectangleF(shadowPadding.Left, shadowPadding.Top, Width - shadowPadding.Right, Height - shadowPadding.Bottom);
+            var contentRectangle = new RectangleF(
+                shadowPadding.Left,
+                shadowPadding.Top,
+                Width - shadowPadding.Horizontal - 1, // Tính cả padding trái và phải
+                Height - shadowPadding.Vertical - 1    // Tính cả padding trên và dưới
+            );
+
+            // Điều chỉnh kích thước Bitmap
             using (Bitmap bitmap = new Bitmap((int)contentRectangle.Width, (int)contentRectangle.Height))
             {
                 bitmap.MakeTransparent();
+
                 using (GraphicsPath contentPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad))
                 using (GraphicsPath borderPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad, borderThickness))
                 using (Graphics g = Graphics.FromImage(bitmap))
@@ -216,13 +224,13 @@ namespace DinhKhanh_Controls_UI.Other
                                 height = bitmap.Height;
                                 break;
                             case ContentLayoutAlign.Right:
-                                x = bitmap.Width - borderThickness - barThickness + 1;
+                                x = bitmap.Width - barThickness;
                                 y = contentRectangle.Top;
                                 width = barThickness;
                                 height = bitmap.Height;
                                 break;
                             case ContentLayoutAlign.Bottom:
-                                y = bitmap.Height - borderThickness - barThickness + 1;
+                                y = bitmap.Height - barThickness;
                                 x = contentRectangle.Left;
                                 width = bitmap.Width;
                                 height = barThickness;
@@ -247,7 +255,6 @@ namespace DinhKhanh_Controls_UI.Other
                         e.Graphics.FillPath(textureBrush, contentPath);
                     }
                 }
-
             }
         }
 
