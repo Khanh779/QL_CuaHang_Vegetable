@@ -23,7 +23,7 @@ namespace QL_CuaHang_Vegetable
         public MauThietKe_KoSua()
         {
             InitializeComponent();
-            SetStyle( ControlStyles.ResizeRedraw, true );   
+            SetStyle(ControlStyles.ResizeRedraw, true);
 
         }
 
@@ -36,20 +36,24 @@ namespace QL_CuaHang_Vegetable
         {
             base.OnPaint(e);
 
+            int bordert = 12;
+            int radius = 25;
+
             Color color = Color.Black;
-            var gp = GraphicsHelper. GetRoundPath(ClientRectangle, 20,12);
+            var gp = GraphicsHelper.GetRoundPath(ClientRectangle, bordert+ radius, bordert);
             using (PathGradientBrush pathGradientBrush = new PathGradientBrush(gp))
             using (Graphics g = e.Graphics)
             {
+                g.SmoothingMode = SmoothingMode.AntiAlias;
                 ColorBlend colorBlend = new ColorBlend();
-                colorBlend.Colors = new Color[] { Color.Transparent, color, color };
-                colorBlend.Positions = new float[] { 0, 0.1f, 1 };
+                colorBlend.Colors = new Color[] { Color.Transparent, color };
+                colorBlend.Positions = new float[] { 0, 1 };
                 pathGradientBrush.InterpolationColors = colorBlend;
 
                 //pathGradientBrush.CenterColor = color; // Màu nằm ở trung tâm
                 //pathGradientBrush.SurroundColors = new Color[] { Color.Transparent }; // Màu nằm ở ngoài
 
-                using (var pen = new Pen(pathGradientBrush, 12))
+                using (var pen = new Pen(pathGradientBrush, bordert))
                 {
                     g.DrawPath(pen, gp);
                 }

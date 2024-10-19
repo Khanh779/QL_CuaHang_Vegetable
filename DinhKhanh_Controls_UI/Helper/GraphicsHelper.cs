@@ -53,7 +53,7 @@ namespace DinhKhanh_Controls_UI.Helper
         public static GraphicsPath GetRoundPath(RectangleF Rect, float radius, float width = 0)
         {
             //Fix radius to rect size
-            radius = (int)Math.Max((Math.Min(radius, Math.Min(Rect.Width, Rect.Height)) - width), 1) * 2;
+            radius = (float)Math.Max((Math.Min(radius, Math.Min(Rect.Width, Rect.Height)) - width), 1) * 2;
             //radius *= 2;
             var r2 = (radius / 2f); var w2 = (width / 2f);
             GraphicsPath GraphPath = new GraphicsPath();
@@ -75,35 +75,27 @@ namespace DinhKhanh_Controls_UI.Helper
         }
 
 
-        public static Bitmap DrawBitmapShadow(RectangleF rectf, Color color, float radius, float size, bool fillShadow=false)
+        public static Bitmap DrawBitmapShadow(RectangleF rectf, Color color, float radius)
         {
             if (rectf == null) return null;
 
             Bitmap bmp = new Bitmap((int)rectf.Width, (int)rectf.Height);
             bmp.MakeTransparent();
 
-            var gp = GetRoundPath(rectf, radius, size);
+            var gp = GetRoundPath(rectf, radius);
 
             using (PathGradientBrush pathGradientBrush = new PathGradientBrush(gp))
             using (Graphics g = Graphics.FromImage(bmp))
             {
-                ColorBlend colorBlend = new ColorBlend();
-                colorBlend.Colors = new Color[] { Color.Transparent, color, color };
-                colorBlend.Positions = new float[] { 0, 0.5f, 1 };
-                pathGradientBrush.InterpolationColors = colorBlend;
+                //ColorBlend colorBlend = new ColorBlend();
+                //colorBlend.Colors = new Color[] { Color.Transparent, color };
+                //colorBlend.Positions = new float[] { 0, 1 };
+                //pathGradientBrush.InterpolationColors = colorBlend;
 
-                //pathGradientBrush.CenterColor = color; // Màu nằm ở trung tâm
-                //pathGradientBrush.SurroundColors = new Color[] { Color.Transparent }; // Màu nằm ở ngoài
+                pathGradientBrush.CenterColor = color; // Màu nằm ở trung tâm
+                pathGradientBrush.SurroundColors = new Color[] { Color.Transparent }; // Màu nằm ở ngoài
 
-                if (fillShadow)
-                    g.FillPath(pathGradientBrush, gp);
-                else
-                {
-                   using(var pen =new Pen(pathGradientBrush, size))
-                    {
-                        g.DrawPath(pen, gp);
-                    }
-                }   
+                g.FillPath(pathGradientBrush, gp);
             }
 
             return bmp;

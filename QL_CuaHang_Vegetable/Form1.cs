@@ -143,6 +143,11 @@ namespace QL_CuaHang_Vegetable
                 // Lấy control hiện tại
                 Control currentControl = SelectedTab;
 
+                PN_Tabs.Controls.Clear();
+                PN_Tabs.Controls.Add(newControl);
+                newControl.Dock = DockStyle.Fill;
+
+                AntiFlicker(newControl);
 
                 // Nếu có control hiện tại, thực hiện hoạt ảnh trượt
                 if (currentControl != null)
@@ -150,21 +155,26 @@ namespace QL_CuaHang_Vegetable
                     DoSlideAnimate(currentControl, newControl, currentControl.TabIndex < newControl.TabIndex ? false : true);
                 }
 
-                PN_Tabs.Controls.Clear();
-                PN_Tabs.Controls.Add(newControl);
-                newControl.Dock = DockStyle.Fill;
-
                 // Cập nhật control đã chọn
                 SelectedTab = newControl;
             }
         }
+
+        public void AntiFlicker(Control control)
+        {
+            control.GetType().GetProperty("DoubleBuffered",
+                System.Reflection.BindingFlags.Instance |
+                System.Reflection.BindingFlags.NonPublic)
+                .SetValue(control, true, null);
+        }
+
 
         private void DoSlideAnimate(Control control1, Control control2, bool moveBack)
         {
 
             // Tạo graphics và bitmap cho hoạt ảnh
             var _slideGraphics = Graphics.FromHwnd(control2.Handle);
-            var _slideBitmap = new Bitmap(control1.Width + control2.Width, control1.Height);
+            var _slideBitmap = new Bitmap(control1.Width, control1.Height + control2.Height);
             _slideBitmap.MakeTransparent();
 
             // Vẽ các control vào bitmap dựa trên hướng
@@ -184,9 +194,8 @@ namespace QL_CuaHang_Vegetable
                 c.Hide();
             }
 
-
             AnimationManager _slideAnimator = new AnimationManager(); // Tạo một AnimationManager mới
-            _slideAnimator.Increment = 0.05; // Đặt tốc độ hoạt ảnh
+            _slideAnimator.Increment = 0.08; // Đặt tốc độ hoạt ảnh
 
             // Cập nhật hàm vẽ khi hoạt ảnh diễn ra
             _slideAnimator.AnimationProgress += (alpha) =>
@@ -213,10 +222,10 @@ namespace QL_CuaHang_Vegetable
                 _slideGraphics = null;
 
                 _slideBitmap.Dispose();
-                _slideBitmap = null;    
+                _slideBitmap = null;
             };
 
-           
+
             if (moveBack)
                 _slideAnimator.StartNewAnimation(AnimationType.In);
             else

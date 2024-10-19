@@ -28,7 +28,7 @@ namespace DinhKhanh_Controls_UI.Forms
             }
         }
 
-        public virtual Icon Icon
+        public new virtual Icon Icon
         {
             get => base.Icon;
             set

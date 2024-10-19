@@ -16,10 +16,10 @@ namespace DinhKhanh_Controls_UI.Other
     {
 
         [Browsable(false)]
-        public Color BackColor { get; set; }
+        public new Color BackColor { get; set; }
 
         [Browsable(false)]
-        public Color ForeColor { get; set; }
+        public new Color ForeColor { get; set; }
 
 
         public DKCard()
@@ -174,33 +174,32 @@ namespace DinhKhanh_Controls_UI.Other
 
             using (GraphicsPath sgp = GraphicsHelper.GetRoundPath(ClientRectangle, Rad))
             {
-                var vb = GraphicsHelper.DrawBitmapShadow(ClientRectangle, Color.FromArgb(ShadowAlpha, shadowColor), Rad, 10,false);
-                using (var tbS = new TextureBrush(vb))
+                using (var shadowBitmap = GraphicsHelper.DrawBitmapShadow(ClientRectangle, Color.FromArgb(ShadowAlpha, shadowColor), Rad))
+                using (var shadowBrush = new TextureBrush(shadowBitmap))
                 {
-                    e.Graphics.FillPath(tbS, sgp);
+                    e.Graphics.FillPath(shadowBrush, sgp);
                 }
-                vb.Dispose();
             }
 
-            Bitmap bitmap = new Bitmap(Width, Height);
+            Bitmap bitmap = new Bitmap(Width - shadowPadding.Horizontal, Height - shadowPadding.Vertical);
             bitmap.MakeTransparent();
 
-
-            using (GraphicsPath gp = GraphicsHelper.GetRoundPath(new RectangleF(shadowPadding.Left, shadowPadding.Top, Width - shadowPadding.Horizontal,
-                Height - shadowPadding.Vertical), Rad))
-            using (GraphicsPath bgp = GraphicsHelper.GetRoundPath(new RectangleF(shadowPadding.Left, shadowPadding.Top, Width - shadowPadding.Horizontal,
-                Height - shadowPadding.Vertical), Rad, borderThickness))
+            var contentRectangle = new RectangleF(shadowPadding.Left, shadowPadding.Top, Width - shadowPadding.Horizontal, Height - shadowPadding.Vertical);
+            using (GraphicsPath contentPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad))
+            using (GraphicsPath borderPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad, borderThickness))
             using (Graphics g = Graphics.FromImage(bitmap))
             {
                 g.SmoothingMode = SmoothingMode.AntiAlias;
                 g.PixelOffsetMode = PixelOffsetMode.HighQuality;
 
-                using (var b = new LinearGradientBrush(ClientRectangle, cardColor1, cardColor2, angle))
+                // Fill card background with gradient
+                using (var backgroundBrush = new LinearGradientBrush(contentRectangle, cardColor1, cardColor2, angle))
                 {
-                    g.FillPath(b, gp);
+                    g.FillPath(backgroundBrush, contentPath);
                 }
 
-                using (var b = new LinearGradientBrush(ClientRectangle, BarColor1, BarColor2, angle))
+                // Fill the bar depending on the alignment
+                using (var barBrush = new LinearGradientBrush(ClientRectangle, BarColor1, BarColor2, angle))
                 {
                     int x = shadowPadding.Left;
                     int y = borderThickness + shadowPadding.Top;
@@ -210,39 +209,44 @@ namespace DinhKhanh_Controls_UI.Other
                     switch (contentAlignment)
                     {
                         case ContentLayoutAlign.Left:
-                            x = borderThickness + shadowPadding.Left; y = 0; width = barThickness; height = Height;
+                            x = borderThickness + shadowPadding.Left;
+                            y = 0;
+                            width = barThickness;
+                            height = Height;
                             break;
                         case ContentLayoutAlign.Right:
-                            x = Width - borderThickness - shadowPadding.Right - barThickness; y = 0; width = barThickness; height = Height;
-
+                            x = bitmap.Width - borderThickness - barThickness;
+                            y = 0;
+                            width = barThickness;
+                            height = Height;
                             break;
                         case ContentLayoutAlign.Bottom:
-                            y = Height - shadowPadding.Bottom - borderThickness - barThickness;
-                            x = 0; width = Width; height = barThickness;
+                            y = bitmap.Height - borderThickness - barThickness;
+                            x = 0;
+                            width = bitmap.Width;
+                            height = barThickness;
                             break;
                     }
 
-                    g.FillRectangle(b, x, y, width, height);
+                    g.FillRectangle(barBrush, x, y, width, height);
                 }
 
+                // Draw border if borderThickness > 0
                 if (borderThickness > 0)
                 {
-
-                    using (var pen = new Pen(new SolidBrush(borderColor)))
-                        g.DrawPath(pen, bgp);
+                    using (var borderPen = new Pen(borderColor, borderThickness))
+                    {
+                        g.DrawPath(borderPen, borderPath);
+                    }
                 }
-
-
-
-                using (TextureBrush tb = new TextureBrush(bitmap))
+                // Draw the main content using texture brush
+                using (var textureBrush = new TextureBrush(bitmap))
                 {
-                    e.Graphics.FillPath(tb, gp);
+                    e.Graphics.FillPath(textureBrush, contentPath);
                 }
             }
 
             bitmap.Dispose();
-
-
         }
 
     }

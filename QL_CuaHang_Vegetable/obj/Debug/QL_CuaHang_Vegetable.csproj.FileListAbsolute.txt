@@ -45,3 +45,4 @@ C:\Users\User\Downloads\QL_CuaHang_Vegetable-main\QL_CuaHang_Vegetable\obj\Debug
 C:\Users\User\Downloads\QL_CuaHang_Vegetable-main\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHa.E5FB9C8B.Up2Date
 C:\Users\User\Downloads\QL_CuaHang_Vegetable-main\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.exe
 C:\Users\User\Downloads\QL_CuaHang_Vegetable-main\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.pdb
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.ExContro.FoodCard.resources

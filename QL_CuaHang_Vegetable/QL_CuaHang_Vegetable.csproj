@@ -51,6 +51,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExContro\FoodCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExContro\FoodCard.Designer.cs">
+      <DependentUpon>FoodCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     <Compile Include="TabPage\Tab_Home.Designer.cs">
       <DependentUpon>Tab_Home.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ExContro\FoodCard.resx">
+      <DependentUpon>FoodCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +154,5 @@
       <Name>DinhKhanh_Controls_UI</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

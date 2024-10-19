@@ -32,6 +32,7 @@
             this.dkCard1 = new DinhKhanh_Controls_UI.Other.DKCard();
             this.btn_Nav0 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton2 = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.foodCard1 = new QL_CuaHang_Vegetable.ExContro.FoodCard();
             this.SuspendLayout();
             // 
             // dkCard1
@@ -51,13 +52,11 @@
             this.dkCard1.ShadowAlpha = 255;
             this.dkCard1.ShadowColor = System.Drawing.Color.Black;
             this.dkCard1.ShadowPadding = new System.Windows.Forms.Padding(10);
-            this.dkCard1.Size = new System.Drawing.Size(367, 297);
+            this.dkCard1.Size = new System.Drawing.Size(157, 130);
             this.dkCard1.TabIndex = 18;
             // 
             // btn_Nav0
             // 
-            this.btn_Nav0.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Nav0.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.ColorTransition;
             this.btn_Nav0.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
             this.btn_Nav0.BorderThickness = 0;
@@ -122,11 +121,22 @@
             this.dkButton2.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dkButton2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             // 
+            // foodCard1
+            // 
+            this.foodCard1.BackColor = System.Drawing.Color.Transparent;
+            this.foodCard1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodCard1.Location = new System.Drawing.Point(55, 135);
+            this.foodCard1.Name = "foodCard1";
+            this.foodCard1.Padding = new System.Windows.Forms.Padding(3);
+            this.foodCard1.Size = new System.Drawing.Size(199, 205);
+            this.foodCard1.TabIndex = 19;
+            // 
             // MauThietKe_KoSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.foodCard1);
             this.Controls.Add(this.dkCard1);
             this.Controls.Add(this.btn_Nav0);
             this.Controls.Add(this.dkButton2);
@@ -142,5 +152,6 @@
         private DinhKhanh_Controls_UI.Buttons.DKButton dkButton2;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav0;
         public DinhKhanh_Controls_UI.Other.DKCard dkCard1;
+        private ExContro.FoodCard foodCard1;
     }
 }
