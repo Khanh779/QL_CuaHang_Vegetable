@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animation\AnimationManager.cs" />
+    <Compile Include="Animation\SlideAnimation.cs" />
     <Compile Include="Buttons\DKControlBoxForm.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -59,6 +60,7 @@
     </Compile>
     <Compile Include="Enums\AnimationMode.cs" />
     <Compile Include="Enums\AnimationType.cs" />
+    <Compile Include="Enums\ContentLayoutAlign.cs" />
     <Compile Include="Enums\ControlBoxStyle.cs" />
     <Compile Include="Enums\ShapeType.cs" />
     <Compile Include="Forms\TemplateForm.cs">
@@ -70,6 +72,9 @@
     <Compile Include="Helper\ColorHelper.cs" />
     <Compile Include="Helper\GraphicsHelper.cs" />
     <Compile Include="Helper\TextHelper.cs" />
+    <Compile Include="Other\DKCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Panels\DKPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -79,6 +84,9 @@
     <EmbeddedResource Include="Forms\TemplateForm.resx">
       <DependentUpon>TemplateForm.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Effect\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

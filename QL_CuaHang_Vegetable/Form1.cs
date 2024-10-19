@@ -50,8 +50,8 @@ namespace QL_CuaHang_Vegetable
             Tab_Report.Instance.TabIndex = 3;
             Tab_Settings.Instance.TabIndex = 4;
 
-
-
+            SelectedTab = Tab_Home.Instance;
+            PN_Tabs.Controls.Add(Tab_Home.Instance);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -179,20 +179,22 @@ namespace QL_CuaHang_Vegetable
                 control2.DrawToBitmap(_slideBitmap, new Rectangle(control1.Width, 0, control2.Width, control2.Height));
             }
 
-            //foreach (Control c in control2.Controls)
-            //{
-            //    c.Hide();
-            //}
+            foreach (Control c in control2.Controls)
+            {
+                c.Hide();
+            }
 
 
             AnimationManager _slideAnimator = new AnimationManager(); // Tạo một AnimationManager mới
-            _slideAnimator.Increment = 0.08; // Đặt tốc độ hoạt ảnh
+            _slideAnimator.Increment = 0.05; // Đặt tốc độ hoạt ảnh
 
             // Cập nhật hàm vẽ khi hoạt ảnh diễn ra
             _slideAnimator.AnimationProgress += (alpha) =>
             {
+
                 // Vẽ bitmap với độ alpha cho hiệu ứng mờ
-                _slideGraphics.DrawImage(_slideBitmap, new PointF(0, control2.Height - (float)_slideAnimator.GetProgress() * control2.Height));
+                if (_slideGraphics != null && _slideBitmap != null)
+                    _slideGraphics.DrawImage(_slideBitmap, new PointF(0, control2.Height - (float)_slideAnimator.GetProgress() * control2.Height));
                 control2.Invalidate();
 
             };
@@ -201,24 +203,20 @@ namespace QL_CuaHang_Vegetable
             _slideAnimator.Complete += () =>
             {
                 SelectedTab = control2; // Cập nhật tab đã chọn
-                //foreach (Control c in control2.Controls)
-                //{
-                //    c.Show(); // Hiện lại các control trong control2
-                //}
+                foreach (Control c in control2.Controls)
+                {
+                    c.Show(); // Hiện lại các control trong control2
+                }
                 control2.Invalidate();
 
+                _slideGraphics.Dispose();
+                _slideGraphics = null;
+
+                _slideBitmap.Dispose();
+                _slideBitmap = null;    
             };
 
-            // Bắt đầu hoạt ảnh với các thông số đã định
-            // Khởi động hoạt ảnh với AnimationManager
-            //if (moveBack)
-            //{
-            //    _slideAnimator.StartNewAnimation(AnimationType.In, new Point(-control2.Width, 0));
-            //}
-            //else
-            //{
-            //    _slideAnimator.StartNewAnimation(AnimationType.Out, new Point(0, 0));
-            //}
+           
             if (moveBack)
                 _slideAnimator.StartNewAnimation(AnimationType.In);
             else

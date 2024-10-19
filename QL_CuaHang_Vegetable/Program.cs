@@ -16,7 +16,8 @@ namespace QL_CuaHang_Vegetable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(Form1.Instance);
+            //Application.Run(Form1.Instance);
+            Application.Run(new MauThietKe_KoSua());
         }
     }
 }

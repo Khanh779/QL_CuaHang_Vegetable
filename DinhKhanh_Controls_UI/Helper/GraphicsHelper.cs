@@ -75,7 +75,40 @@ namespace DinhKhanh_Controls_UI.Helper
         }
 
 
+        public static Bitmap DrawBitmapShadow(RectangleF rectf, Color color, float radius, float size, bool fillShadow=false)
+        {
+            if (rectf == null) return null;
 
+            Bitmap bmp = new Bitmap((int)rectf.Width, (int)rectf.Height);
+            bmp.MakeTransparent();
+
+            var gp = GetRoundPath(rectf, radius, size);
+
+            using (PathGradientBrush pathGradientBrush = new PathGradientBrush(gp))
+            using (Graphics g = Graphics.FromImage(bmp))
+            {
+                ColorBlend colorBlend = new ColorBlend();
+                colorBlend.Colors = new Color[] { Color.Transparent, color, color };
+                colorBlend.Positions = new float[] { 0, 0.5f, 1 };
+                pathGradientBrush.InterpolationColors = colorBlend;
+
+                //pathGradientBrush.CenterColor = color; // Màu nằm ở trung tâm
+                //pathGradientBrush.SurroundColors = new Color[] { Color.Transparent }; // Màu nằm ở ngoài
+
+                if (fillShadow)
+                    g.FillPath(pathGradientBrush, gp);
+                else
+                {
+                   using(var pen =new Pen(pathGradientBrush, size))
+                    {
+                        g.DrawPath(pen, gp);
+                    }
+                }   
+            }
+
+            return bmp;
+
+        }
 
 
 

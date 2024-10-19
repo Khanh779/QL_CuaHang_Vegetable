@@ -80,7 +80,7 @@ namespace DinhKhanh_Controls_UI.Forms
             set
             {
                 borderSize = value;
-                resize = new ReSize(borderSize);
+                resize = new ReSize(borderSize + 1);
                 Invalidate();
             }
         }

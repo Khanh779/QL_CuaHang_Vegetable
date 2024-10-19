@@ -1,34 +1,4 @@
-﻿namespace QL_CuaHang_Vegetable
-{
-    partial class Form1
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+﻿namespace QL_CuaHang_Vegetable {     partial class Form1     {         /// <summary>         /// Required designer variable.         /// </summary>         private System.ComponentModel.IContainer components = null;          /// <summary>         /// Clean up any resources being used.         /// </summary>         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>         protected override void Dispose(bool disposing)         {             if (disposing && (components != null))             {                 components.Dispose();             }             base.Dispose(disposing);         }          #region Windows Form Designer generated code          /// <summary>         /// Required method for Designer support - do not modify         /// the contents of this method with the code editor.         /// </summary>         private void InitializeComponent()         {             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_Nav4 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Nav3 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Nav2 = new DinhKhanh_Controls_UI.Buttons.DKButton();
@@ -56,7 +26,7 @@
             this.btn_Nav4.ImageOffsetY = 0;
             this.btn_Nav4.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav4.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav4.Location = new System.Drawing.Point(1, 344);
+            this.btn_Nav4.Location = new System.Drawing.Point(1, 369);
             this.btn_Nav4.Name = "btn_Nav4";
             this.btn_Nav4.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav4.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -72,7 +42,7 @@
             this.btn_Nav4.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav4.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav4.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.btn_Nav4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btn_Nav4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav4_MouseClick);
             // 
             // btn_Nav3
@@ -92,7 +62,7 @@
             this.btn_Nav3.ImageOffsetY = 0;
             this.btn_Nav3.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav3.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav3.Location = new System.Drawing.Point(1, 290);
+            this.btn_Nav3.Location = new System.Drawing.Point(1, 315);
             this.btn_Nav3.Name = "btn_Nav3";
             this.btn_Nav3.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav3.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -108,7 +78,7 @@
             this.btn_Nav3.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav3.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav3.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.btn_Nav3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btn_Nav3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav3_MouseClick);
             // 
             // btn_Nav2
@@ -128,7 +98,7 @@
             this.btn_Nav2.ImageOffsetY = 0;
             this.btn_Nav2.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav2.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav2.Location = new System.Drawing.Point(1, 236);
+            this.btn_Nav2.Location = new System.Drawing.Point(1, 261);
             this.btn_Nav2.Name = "btn_Nav2";
             this.btn_Nav2.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav2.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -144,7 +114,7 @@
             this.btn_Nav2.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav2.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav2.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.btn_Nav2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btn_Nav2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav2_MouseClick);
             // 
             // btn_Nav1
@@ -164,7 +134,7 @@
             this.btn_Nav1.ImageOffsetY = 0;
             this.btn_Nav1.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav1.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav1.Location = new System.Drawing.Point(1, 182);
+            this.btn_Nav1.Location = new System.Drawing.Point(1, 207);
             this.btn_Nav1.Name = "btn_Nav1";
             this.btn_Nav1.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav1.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -180,7 +150,7 @@
             this.btn_Nav1.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav1.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav1.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.btn_Nav1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btn_Nav1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav1_MouseClick);
             // 
             // btn_Nav0
@@ -200,7 +170,7 @@
             this.btn_Nav0.ImageOffsetY = 0;
             this.btn_Nav0.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Nav0.ImageSize = new System.Drawing.Size(22, 22);
-            this.btn_Nav0.Location = new System.Drawing.Point(1, 128);
+            this.btn_Nav0.Location = new System.Drawing.Point(1, 153);
             this.btn_Nav0.Name = "btn_Nav0";
             this.btn_Nav0.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btn_Nav0.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -216,7 +186,7 @@
             this.btn_Nav0.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav0.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav0.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav0.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.btn_Nav0.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btn_Nav0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav0_MouseClick);
             // 
             // PN_Nav
@@ -256,27 +226,17 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BorderSize = 1;
             this.ClientSize = new System.Drawing.Size(968, 592);
             this.Controls.Add(this.PN_Tabs);
             this.Controls.Add(this.PN_Nav);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(1);
-            this.Text = "Quản lý - Quản trị";
+            this.Text = "Quản lý cửa hàng Vegetable";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Controls.SetChildIndex(this.PN_Nav, 0);
             this.Controls.SetChildIndex(this.PN_Tabs, 0);
             this.PN_Nav.ResumeLayout(false);
             this.ResumeLayout(false);
 
-        }
-
-        #endregion
-        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav0;
-        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav4;
-        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav3;
-        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav2;
-        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav1;
-        private DinhKhanh_Controls_UI.Panels.DKPanel PN_Nav;
-        public DinhKhanh_Controls_UI.Panels.DKPanel PN_Tabs;
-    }
-}
+        }          #endregion         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav0;         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav4;         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav3;         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav2;         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Nav1;         private DinhKhanh_Controls_UI.Panels.DKPanel PN_Nav;         public DinhKhanh_Controls_UI.Panels.DKPanel PN_Tabs;     } }

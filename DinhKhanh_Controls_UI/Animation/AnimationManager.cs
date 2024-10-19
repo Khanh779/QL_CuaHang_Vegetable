@@ -42,13 +42,11 @@ namespace DinhKhanh_Controls_UI.Animation
                 {
                     an[i] = MAX_VALUE;
                     RemoveAnimation(i);
-                    Complete?.Invoke();
                 }
                 else if (ATs[i] == AnimationType.Out && an[i] <= MIN_VALUE)
                 {
                     an[i] = MIN_VALUE;
                     RemoveAnimation(i);
-                    Complete?.Invoke();
                 }
             }
         }
@@ -67,6 +65,8 @@ namespace DinhKhanh_Controls_UI.Animation
                     an.Clear(); animationSources.Clear();
                     _timer.Dispose();
                     _timer.Stop();
+
+                    Complete?.Invoke();
                 }
             }
             else
@@ -76,6 +76,8 @@ namespace DinhKhanh_Controls_UI.Animation
                 {
                     _timer.Dispose();
                     _timer.Stop();
+
+                    Complete?.Invoke();
                 }
             }
         }
