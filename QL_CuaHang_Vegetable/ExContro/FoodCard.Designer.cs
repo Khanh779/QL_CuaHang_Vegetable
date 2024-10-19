@@ -45,11 +45,11 @@
             this.dkCard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dkCard1.Location = new System.Drawing.Point(3, 3);
             this.dkCard1.Name = "dkCard1";
-            this.dkCard1.Radius = 5;
+            this.dkCard1.Radius = 12;
             this.dkCard1.ShadowAlpha = 255;
             this.dkCard1.ShadowColor = System.Drawing.Color.Black;
             this.dkCard1.ShadowPadding = new System.Windows.Forms.Padding(5);
-            this.dkCard1.Size = new System.Drawing.Size(193, 199);
+            this.dkCard1.Size = new System.Drawing.Size(210, 220);
             this.dkCard1.TabIndex = 0;
             this.dkCard1.Text = "dkCard1";
             // 
@@ -61,7 +61,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FoodCard";
             this.Padding = new System.Windows.Forms.Padding(3);
-            this.Size = new System.Drawing.Size(199, 205);
+            this.Size = new System.Drawing.Size(216, 226);
             this.ResumeLayout(false);
 
         }

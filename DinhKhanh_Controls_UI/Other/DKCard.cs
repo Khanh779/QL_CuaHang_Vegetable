@@ -172,8 +172,9 @@ namespace DinhKhanh_Controls_UI.Other
             e.Graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
-            using (GraphicsPath sgp = GraphicsHelper.GetRoundPath(ClientRectangle, Rad))
+            if (ShadowPadding.All != 0)
             {
+                using (GraphicsPath sgp = GraphicsHelper.GetRoundPath(ClientRectangle, Rad))
                 using (var shadowBitmap = GraphicsHelper.DrawBitmapShadow(ClientRectangle, Color.FromArgb(ShadowAlpha, shadowColor), Rad))
                 using (var shadowBrush = new TextureBrush(shadowBitmap))
                 {
@@ -181,72 +182,73 @@ namespace DinhKhanh_Controls_UI.Other
                 }
             }
 
-            Bitmap bitmap = new Bitmap(Width - shadowPadding.Horizontal, Height - shadowPadding.Vertical);
-            bitmap.MakeTransparent();
-
-            var contentRectangle = new RectangleF(shadowPadding.Left, shadowPadding.Top, Width - shadowPadding.Horizontal, Height - shadowPadding.Vertical);
-            using (GraphicsPath contentPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad))
-            using (GraphicsPath borderPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad, borderThickness))
-            using (Graphics g = Graphics.FromImage(bitmap))
+            var contentRectangle = new RectangleF(shadowPadding.Left, shadowPadding.Top, Width - shadowPadding.Right, Height - shadowPadding.Bottom);
+            using (Bitmap bitmap = new Bitmap((int)contentRectangle.Width, (int)contentRectangle.Height))
             {
-                g.SmoothingMode = SmoothingMode.AntiAlias;
-                g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-
-                // Fill card background with gradient
-                using (var backgroundBrush = new LinearGradientBrush(contentRectangle, cardColor1, cardColor2, angle))
+                bitmap.MakeTransparent();
+                using (GraphicsPath contentPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad))
+                using (GraphicsPath borderPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad, borderThickness))
+                using (Graphics g = Graphics.FromImage(bitmap))
                 {
-                    g.FillPath(backgroundBrush, contentPath);
-                }
+                    g.SmoothingMode = SmoothingMode.AntiAlias;
+                    g.PixelOffsetMode = PixelOffsetMode.HighQuality;
 
-                // Fill the bar depending on the alignment
-                using (var barBrush = new LinearGradientBrush(ClientRectangle, BarColor1, BarColor2, angle))
-                {
-                    int x = shadowPadding.Left;
-                    int y = borderThickness + shadowPadding.Top;
-                    int width = Width - shadowPadding.Horizontal;
-                    int height = barThickness;
-
-                    switch (contentAlignment)
+                    // Fill card background with gradient
+                    using (var backgroundBrush = new LinearGradientBrush(contentRectangle, cardColor1, cardColor2, angle))
                     {
-                        case ContentLayoutAlign.Left:
-                            x = borderThickness + shadowPadding.Left;
-                            y = 0;
-                            width = barThickness;
-                            height = Height;
-                            break;
-                        case ContentLayoutAlign.Right:
-                            x = bitmap.Width - borderThickness - barThickness;
-                            y = 0;
-                            width = barThickness;
-                            height = Height;
-                            break;
-                        case ContentLayoutAlign.Bottom:
-                            y = bitmap.Height - borderThickness - barThickness;
-                            x = 0;
-                            width = bitmap.Width;
-                            height = barThickness;
-                            break;
+                        g.FillPath(backgroundBrush, contentPath);
                     }
 
-                    g.FillRectangle(barBrush, x, y, width, height);
-                }
-
-                // Draw border if borderThickness > 0
-                if (borderThickness > 0)
-                {
-                    using (var borderPen = new Pen(borderColor, borderThickness))
+                    // Fill the bar depending on the alignment
+                    using (var barBrush = new LinearGradientBrush(contentRectangle, BarColor1, BarColor2, angle))
                     {
-                        g.DrawPath(borderPen, borderPath);
+                        var x = contentRectangle.Left;
+                        var y = contentRectangle.Top + borderThickness;
+                        var width = bitmap.Width;
+                        var height = barThickness;
+
+                        switch (contentAlignment)
+                        {
+                            case ContentLayoutAlign.Left:
+                                x = contentRectangle.Left + borderThickness;
+                                y = contentRectangle.Top;
+                                width = barThickness;
+                                height = bitmap.Height;
+                                break;
+                            case ContentLayoutAlign.Right:
+                                x = bitmap.Width - borderThickness - barThickness + 1;
+                                y = contentRectangle.Top;
+                                width = barThickness;
+                                height = bitmap.Height;
+                                break;
+                            case ContentLayoutAlign.Bottom:
+                                y = bitmap.Height - borderThickness - barThickness + 1;
+                                x = contentRectangle.Left;
+                                width = bitmap.Width;
+                                height = barThickness;
+                                break;
+                        }
+
+                        g.FillRectangle(barBrush, x, y, width, height);
+                    }
+
+                    // Draw border if borderThickness > 0
+                    if (borderThickness > 0)
+                    {
+                        using (var borderPen = new Pen(borderColor, borderThickness))
+                        {
+                            g.DrawPath(borderPen, borderPath);
+                        }
+                    }
+
+                    // Draw the main content using texture brush
+                    using (TextureBrush textureBrush = new TextureBrush(bitmap))
+                    {
+                        e.Graphics.FillPath(textureBrush, contentPath);
                     }
                 }
-                // Draw the main content using texture brush
-                using (var textureBrush = new TextureBrush(bitmap))
-                {
-                    e.Graphics.FillPath(textureBrush, contentPath);
-                }
+
             }
-
-            bitmap.Dispose();
         }
 
     }

@@ -37,10 +37,10 @@
             // 
             // dkCard1
             // 
-            this.dkCard1.BarAlignment = DinhKhanh_Controls_UI.Enums.ContentLayoutAlign.Right;
+            this.dkCard1.BarAlignment = DinhKhanh_Controls_UI.Enums.ContentLayoutAlign.Top;
             this.dkCard1.BarColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
             this.dkCard1.BarColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
-            this.dkCard1.BarThickness = 2;
+            this.dkCard1.BarThickness = 0;
             this.dkCard1.BorderColor = System.Drawing.Color.Silver;
             this.dkCard1.BorderThickness = 1;
             this.dkCard1.BrushAngle = 250;
@@ -51,8 +51,8 @@
             this.dkCard1.Radius = 12;
             this.dkCard1.ShadowAlpha = 255;
             this.dkCard1.ShadowColor = System.Drawing.Color.Black;
-            this.dkCard1.ShadowPadding = new System.Windows.Forms.Padding(10);
-            this.dkCard1.Size = new System.Drawing.Size(157, 130);
+            this.dkCard1.ShadowPadding = new System.Windows.Forms.Padding(5);
+            this.dkCard1.Size = new System.Drawing.Size(232, 160);
             this.dkCard1.TabIndex = 18;
             // 
             // btn_Nav0
@@ -125,10 +125,10 @@
             // 
             this.foodCard1.BackColor = System.Drawing.Color.Transparent;
             this.foodCard1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.foodCard1.Location = new System.Drawing.Point(55, 135);
+            this.foodCard1.Location = new System.Drawing.Point(55, 139);
             this.foodCard1.Name = "foodCard1";
             this.foodCard1.Padding = new System.Windows.Forms.Padding(3);
-            this.foodCard1.Size = new System.Drawing.Size(199, 205);
+            this.foodCard1.Size = new System.Drawing.Size(204, 207);
             this.foodCard1.TabIndex = 19;
             // 
             // MauThietKe_KoSua
