@@ -112,11 +112,11 @@ namespace DinhKhanh_Controls_UI.Helper
                 //pathGradientBrush.CenterColor = color; // Màu nằm ở trung tâm
                 //pathGradientBrush.SurroundColors = new Color[] { Color.Transparent }; // Màu nằm ở ngoài
 
-                //g.FillPath(pathGradientBrush, gp);
-                using (Pen pen = new Pen(pathGradientBrush, radius+ size))
-                {
-                    g.DrawPath(pen, gp);
-                }
+                g.FillPath(pathGradientBrush, gp);
+                //using (Pen pen = new Pen(pathGradientBrush, radius+ size))
+                //{
+                //    g.DrawPath(pen, gp);
+                //}
             }
 
             return bmp;

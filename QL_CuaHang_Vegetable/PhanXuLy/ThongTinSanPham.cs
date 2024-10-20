@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace QL_CuaHang_Vegetable.PhanXuLy
 {
-    internal class ThongTinSanPham
+    [Serializable]
+    public class ThongTinSanPham
     {
         public int MaSanPham { get; set; }
         public string TenSanPham { get; set; }

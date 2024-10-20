@@ -271,7 +271,7 @@ namespace DinhKhanh_Controls_UI.Buttons
             }
         }
 
-      
+
 
         int shadowAlpha = 120;
         public int ShadowAlpha
@@ -373,12 +373,16 @@ namespace DinhKhanh_Controls_UI.Buttons
                         g.FillPath(brush, path);
 
                         // Kích thước và vị trí của văn bản
-                        RectangleF textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top, Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
-                            Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
+                        RectangleF textBound = new RectangleF(
+                             BorderThickness + textPadding.Left,
+                             BorderThickness + textPadding.Top,
+                            bmp.Width + shadowPadding.Right - BorderThickness * 2 - textPadding.Right,
+                            bmp.Height + shadowPadding.Bottom - BorderThickness * 2 - textPadding.Bottom
+                        );
 
+                       
                         // Kích thước và vị trí của hình ảnh
-                        RectangleF imageBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top, _imageSize.Width, _imageSize.Height);
-
+                        RectangleF imageBound = new RectangleF(0, 0, 0, 0);
 
                         if (Image != null)
                         {
@@ -386,36 +390,69 @@ namespace DinhKhanh_Controls_UI.Buttons
                             {
                                 case TextImageRelation.TextBeforeImage:
                                     // Văn bản ở trước hình ảnh
-                                    textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
-                                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right - _imageSize.Width - imageOffsetX,
-                                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
-                                    imageBound = new RectangleF(textBound.Right + imageOffsetX, Height / 2 - _imageSize.Height / 2, _imageSize.Width, _imageSize.Height);
+                                    textBound = new RectangleF(
+                                        BorderThickness + textPadding.Left + imageOffsetX,
+                                        BorderThickness + textPadding.Top,
+                                        bmp.Width + shadowPadding.Right - BorderThickness * 2 - textPadding.Right - _imageSize.Width - imageOffsetX,
+                                        bmp.Height + shadowPadding.Bottom - BorderThickness * 2 - textPadding.Bottom
+                                    );
+                                    imageBound = new RectangleF(
+                                        textBound.Width + imageOffsetX,
+                                        contentRectangle.Top + (bmp.Height - _imageSize.Height) / 2,
+                                        _imageSize.Width,
+                                        _imageSize.Height
+                                    );
                                     break;
 
                                 case TextImageRelation.ImageBeforeText:
                                     // Hình ảnh ở trước văn bản
-                                    textBound = new RectangleF(BorderThickness + textPadding.Left + _imageSize.Width + imageOffsetX, BorderThickness + textPadding.Top,
-                                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right - _imageSize.Width - imageOffsetX,
-                                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
-                                    imageBound = new RectangleF(BorderThickness + imageOffsetX, Height / 2 - _imageSize.Height / 2, _imageSize.Width, _imageSize.Height);
+                                    imageBound = new RectangleF(
+                                        BorderThickness + textPadding.Left + imageOffsetX,
+                                        contentRectangle.Top + (bmp.Height - _imageSize.Height) / 2,
+                                        _imageSize.Width,
+                                        _imageSize.Height
+                                    );
+                                    textBound = new RectangleF(
+                                        imageBound.Right + imageOffsetX,
+                                        BorderThickness + textPadding.Top,
+                                        bmp.Width + shadowPadding.Right - BorderThickness * 2 - textPadding.Right - _imageSize.Width - imageOffsetX,
+                                        bmp.Height + shadowPadding.Bottom - BorderThickness * 2 - textPadding.Bottom
+                                    );
                                     break;
 
                                 case TextImageRelation.ImageAboveText:
                                     // Hình ảnh ở trên văn bản
-                                    textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top + _imageSize.Height + imageOffsetY,
-                                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
-                                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2 - _imageSize.Height - imageOffsetY);
-                                    imageBound = new RectangleF(Width / 2 - _imageSize.Width / 2, BorderThickness + imageOffsetY, _imageSize.Width, _imageSize.Height);
+                                    imageBound = new RectangleF(
+                                        contentRectangle.Left + (bmp.Width - _imageSize.Width) / 2,
+                                        shadowPadding.Top + BorderThickness + textPadding.Top + imageOffsetY,
+                                        _imageSize.Width,
+                                        _imageSize.Height
+                                    );
+                                    textBound = new RectangleF(
+                                        BorderThickness + textPadding.Left,
+                                        imageBound.Bottom + textPadding.Top + 2,
+                                        bmp.Width + shadowPadding.Right - BorderThickness * 2 - textPadding.Right,
+                                        bmp.Height + shadowPadding.Bottom - BorderThickness * 2 - textPadding.Bottom - _imageSize.Height - imageOffsetY
+                                    );
                                     break;
 
                                 case TextImageRelation.TextAboveImage:
                                     // Văn bản ở trên hình ảnh
-                                    textBound = new Rectangle(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
-                                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
-                                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2 - _imageSize.Height - imageOffsetY);
-                                    imageBound = new RectangleF(Width / 2 - _imageSize.Width / 2, textBound.Bottom + imageOffsetY, _imageSize.Width, _imageSize.Height);
+                                    textBound = new RectangleF(
+                                        BorderThickness + textPadding.Left,
+                                        BorderThickness + textPadding.Top,
+                                        bmp.Width + shadowPadding.Right - BorderThickness * 2 - textPadding.Right,
+                                        bmp.Height + shadowPadding.Bottom - BorderThickness * 2 - textPadding.Bottom - _imageSize.Height - imageOffsetY
+                                    );
+                                    imageBound = new RectangleF(
+                                        contentRectangle.Left + (bmp.Width - _imageSize.Width) / 2,
+                                        textBound.Bottom + imageOffsetY,
+                                        _imageSize.Width,
+                                        _imageSize.Height
+                                    );
                                     break;
                             }
+
                             g.DrawImage(Image, imageBound);
                         }
 
@@ -456,6 +493,7 @@ namespace DinhKhanh_Controls_UI.Buttons
                     }
                 }
             }
+
         }
 
 

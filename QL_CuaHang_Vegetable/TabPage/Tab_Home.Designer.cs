@@ -39,17 +39,17 @@
             this.labelOverview.Name = "labelOverview";
             this.labelOverview.Size = new System.Drawing.Size(250, 30);
             this.labelOverview.TabIndex = 1;
-            this.labelOverview.Text = "Tổng quan về kho và thực phẩm";
+            this.labelOverview.Text = ".";
             // 
             // panelOverview
             // 
             this.panelOverview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelOverview.BackColor = System.Drawing.Color.White;
+            this.panelOverview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.panelOverview.Location = new System.Drawing.Point(17, 120);
             this.panelOverview.Name = "panelOverview";
-            this.panelOverview.Size = new System.Drawing.Size(740, 200);
+            this.panelOverview.Size = new System.Drawing.Size(740, 208);
             this.panelOverview.TabIndex = 2;
             // 
             // Tab_Home

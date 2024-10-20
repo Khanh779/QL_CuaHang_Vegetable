@@ -157,7 +157,7 @@
             this.btn_Nav1.Size = new System.Drawing.Size(168, 48);
             this.btn_Nav1.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
             this.btn_Nav1.TabIndex = 9;
-            this.btn_Nav1.Text = "Quản lý thực phẩm";
+            this.btn_Nav1.Text = "Quản lý sản phẩm";
             this.btn_Nav1.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
             this.btn_Nav1.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav1.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);

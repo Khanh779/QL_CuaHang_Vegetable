@@ -72,6 +72,7 @@
     <Compile Include="PhanXuLy\ThongTinDonHang.cs" />
     <Compile Include="PhanXuLy\ThongTinSanPham.cs" />
     <Compile Include="PhanXuLy\TrungTamXuLy.cs" />
+    <Compile Include="PhanXuLy\XuLyThongTin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TabPage\Tab_Order.cs">

@@ -8,5 +8,9 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
 {
     public class TrungTamXuLy
     {
+        
+
+
+
     }
 }

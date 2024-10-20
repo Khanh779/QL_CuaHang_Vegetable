@@ -29,18 +29,176 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MauThietKe_KoSua));
-            this.dkCollapsiblePanel1 = new DinhKhanh_Controls_UI.Containers.DKCollapsiblePanel();
-            this.dkButton1 = new DinhKhanh_Controls_UI.Buttons.DKButton();
-            this.dkCard1 = new DinhKhanh_Controls_UI.Other.DKCard();
-            this.btn_Nav0 = new DinhKhanh_Controls_UI.Buttons.DKButton();
-            this.dkButton2 = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.dkButton6 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton3 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton4 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton5 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.foodCard2 = new QL_CuaHang_Vegetable.ExContro.FoodCard();
+            this.dkCollapsiblePanel1 = new DinhKhanh_Controls_UI.Containers.DKCollapsiblePanel();
+            this.dkButton1 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.foodCard1 = new QL_CuaHang_Vegetable.ExContro.FoodCard();
+            this.dkCard1 = new DinhKhanh_Controls_UI.Other.DKCard();
+            this.btn_Nav0 = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.dkButton2 = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.btn_Add_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.dkButton8 = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.btn_Del_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkCollapsiblePanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // dkButton6
+            // 
+            this.dkButton6.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.ColorTransition;
+            this.dkButton6.BorderColor = System.Drawing.Color.Silver;
+            this.dkButton6.BorderThickness = 1;
+            this.dkButton6.ContentAlignment = System.Drawing.ContentAlignment.TopCenter;
+            this.dkButton6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dkButton6.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkButton6.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkButton6.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dkButton6.Image = ((System.Drawing.Image)(resources.GetObject("dkButton6.Image")));
+            this.dkButton6.ImageOffsetX = 0;
+            this.dkButton6.ImageOffsetY = 8;
+            this.dkButton6.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.dkButton6.ImageSize = new System.Drawing.Size(50, 50);
+            this.dkButton6.Location = new System.Drawing.Point(12, 402);
+            this.dkButton6.Name = "dkButton6";
+            this.dkButton6.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dkButton6.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkButton6.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.dkButton6.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dkButton6.Radius = 5;
+            this.dkButton6.ShadowAlpha = 255;
+            this.dkButton6.ShadowColor = System.Drawing.Color.Black;
+            this.dkButton6.ShadowPadding = new System.Windows.Forms.Padding(5);
+            this.dkButton6.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.dkButton6.Size = new System.Drawing.Size(144, 159);
+            this.dkButton6.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.dkButton6.TabIndex = 32;
+            this.dkButton6.Text = "Color Transition\r\n(Chuyển màu)";
+            this.dkButton6.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.dkButton6.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dkButton6.TextPadding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.dkButton6.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.dkButton6.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            // 
+            // dkButton3
+            // 
+            this.dkButton3.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.ColorTransition;
+            this.dkButton3.BorderColor = System.Drawing.Color.Silver;
+            this.dkButton3.BorderThickness = 1;
+            this.dkButton3.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dkButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dkButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkButton3.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkButton3.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dkButton3.Image = null;
+            this.dkButton3.ImageOffsetX = 0;
+            this.dkButton3.ImageOffsetY = 0;
+            this.dkButton3.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dkButton3.ImageSize = new System.Drawing.Size(20, 20);
+            this.dkButton3.Location = new System.Drawing.Point(322, 234);
+            this.dkButton3.Name = "dkButton3";
+            this.dkButton3.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dkButton3.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkButton3.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.dkButton3.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.dkButton3.Radius = 5;
+            this.dkButton3.ShadowAlpha = 255;
+            this.dkButton3.ShadowColor = System.Drawing.Color.Black;
+            this.dkButton3.ShadowPadding = new System.Windows.Forms.Padding(5, 5, 5, 6);
+            this.dkButton3.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.dkButton3.Size = new System.Drawing.Size(143, 162);
+            this.dkButton3.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.dkButton3.TabIndex = 30;
+            this.dkButton3.Text = "Color Transition\r\n(Chuyển màu)";
+            this.dkButton3.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.dkButton3.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dkButton3.TextPadding = new System.Windows.Forms.Padding(0);
+            this.dkButton3.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.dkButton3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            // 
+            // dkButton4
+            // 
+            this.dkButton4.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.dkButton4.BorderColor = System.Drawing.Color.Silver;
+            this.dkButton4.BorderThickness = 1;
+            this.dkButton4.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dkButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dkButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkButton4.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkButton4.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dkButton4.Image = null;
+            this.dkButton4.ImageOffsetX = 0;
+            this.dkButton4.ImageOffsetY = 0;
+            this.dkButton4.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dkButton4.ImageSize = new System.Drawing.Size(20, 20);
+            this.dkButton4.Location = new System.Drawing.Point(167, 234);
+            this.dkButton4.Name = "dkButton4";
+            this.dkButton4.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dkButton4.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkButton4.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.dkButton4.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.dkButton4.Radius = 5;
+            this.dkButton4.ShadowAlpha = 255;
+            this.dkButton4.ShadowColor = System.Drawing.Color.Black;
+            this.dkButton4.ShadowPadding = new System.Windows.Forms.Padding(5, 5, 5, 6);
+            this.dkButton4.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.dkButton4.Size = new System.Drawing.Size(149, 162);
+            this.dkButton4.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.dkButton4.TabIndex = 29;
+            this.dkButton4.Text = "Ripple Animation\r\n(Hoạt hoạ gợn sóng)";
+            this.dkButton4.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.dkButton4.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dkButton4.TextPadding = new System.Windows.Forms.Padding(0);
+            this.dkButton4.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.dkButton4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            // 
+            // dkButton5
+            // 
+            this.dkButton5.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.None;
+            this.dkButton5.BorderColor = System.Drawing.Color.Silver;
+            this.dkButton5.BorderThickness = 1;
+            this.dkButton5.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dkButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dkButton5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkButton5.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkButton5.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dkButton5.Image = null;
+            this.dkButton5.ImageOffsetX = 0;
+            this.dkButton5.ImageOffsetY = 0;
+            this.dkButton5.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dkButton5.ImageSize = new System.Drawing.Size(20, 20);
+            this.dkButton5.Location = new System.Drawing.Point(12, 234);
+            this.dkButton5.Name = "dkButton5";
+            this.dkButton5.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.dkButton5.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkButton5.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.dkButton5.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.dkButton5.Radius = 5;
+            this.dkButton5.ShadowAlpha = 255;
+            this.dkButton5.ShadowColor = System.Drawing.Color.Black;
+            this.dkButton5.ShadowPadding = new System.Windows.Forms.Padding(5, 5, 5, 6);
+            this.dkButton5.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.dkButton5.Size = new System.Drawing.Size(149, 162);
+            this.dkButton5.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.dkButton5.TabIndex = 28;
+            this.dkButton5.Text = "No Animation\r\n(Ko hoạt ảnh)";
+            this.dkButton5.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.dkButton5.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dkButton5.TextPadding = new System.Windows.Forms.Padding(0);
+            this.dkButton5.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.dkButton5.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            // 
+            // foodCard2
+            // 
+            this.foodCard2.BackColor = System.Drawing.Color.Transparent;
+            this.foodCard2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodCard2.Location = new System.Drawing.Point(167, 66);
+            this.foodCard2.Name = "foodCard2";
+            this.foodCard2.Padding = new System.Windows.Forms.Padding(3);
+            this.foodCard2.Size = new System.Drawing.Size(149, 162);
+            this.foodCard2.TabIndex = 27;
             // 
             // dkCollapsiblePanel1
             // 
@@ -90,6 +248,16 @@
             this.dkButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.dkButton1.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.dkButton1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            // 
+            // foodCard1
+            // 
+            this.foodCard1.BackColor = System.Drawing.Color.Transparent;
+            this.foodCard1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodCard1.Location = new System.Drawing.Point(12, 66);
+            this.foodCard1.Name = "foodCard1";
+            this.foodCard1.Padding = new System.Windows.Forms.Padding(3);
+            this.foodCard1.Size = new System.Drawing.Size(149, 162);
+            this.foodCard1.TabIndex = 19;
             // 
             // dkCard1
             // 
@@ -183,139 +351,129 @@
             this.dkButton2.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dkButton2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             // 
-            // dkButton3
+            // btn_Add_Product
             // 
-            this.dkButton3.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.ColorTransition;
-            this.dkButton3.BorderColor = System.Drawing.Color.Silver;
-            this.dkButton3.BorderThickness = 1;
-            this.dkButton3.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dkButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dkButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkButton3.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dkButton3.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dkButton3.Image = null;
-            this.dkButton3.ImageOffsetX = 0;
-            this.dkButton3.ImageOffsetY = 0;
-            this.dkButton3.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.dkButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.dkButton3.Location = new System.Drawing.Point(322, 234);
-            this.dkButton3.Name = "dkButton3";
-            this.dkButton3.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dkButton3.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dkButton3.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.dkButton3.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.dkButton3.Radius = 5;
-            this.dkButton3.ShadowAlpha = 255;
-            this.dkButton3.ShadowColor = System.Drawing.Color.Black;
-            this.dkButton3.ShadowPadding = new System.Windows.Forms.Padding(5, 5, 5, 6);
-            this.dkButton3.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.dkButton3.Size = new System.Drawing.Size(149, 162);
-            this.dkButton3.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.dkButton3.TabIndex = 30;
-            this.dkButton3.Text = "Color Transition\r\n(Chuyển màu)";
-            this.dkButton3.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.dkButton3.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dkButton3.TextPadding = new System.Windows.Forms.Padding(0);
-            this.dkButton3.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.dkButton3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.btn_Add_Product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Add_Product.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.btn_Add_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.btn_Add_Product.BorderThickness = 0;
+            this.btn_Add_Product.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Add_Product.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Add_Product.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btn_Add_Product.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btn_Add_Product.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.btn_Add_Product.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
+            this.btn_Add_Product.Image = null;
+            this.btn_Add_Product.ImageOffsetX = 0;
+            this.btn_Add_Product.ImageOffsetY = 0;
+            this.btn_Add_Product.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Add_Product.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Add_Product.Location = new System.Drawing.Point(167, 413);
+            this.btn_Add_Product.Name = "btn_Add_Product";
+            this.btn_Add_Product.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
+            this.btn_Add_Product.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.btn_Add_Product.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.btn_Add_Product.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.btn_Add_Product.Radius = 5;
+            this.btn_Add_Product.ShadowAlpha = 120;
+            this.btn_Add_Product.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Add_Product.ShadowPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Add_Product.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.btn_Add_Product.Size = new System.Drawing.Size(100, 35);
+            this.btn_Add_Product.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.btn_Add_Product.TabIndex = 44;
+            this.btn_Add_Product.Text = "Thêm";
+            this.btn_Add_Product.TextHoverColor = System.Drawing.Color.White;
+            this.btn_Add_Product.TextNormalColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Add_Product.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Add_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.btn_Add_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
-            // dkButton4
+            // dkButton8
             // 
-            this.dkButton4.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
-            this.dkButton4.BorderColor = System.Drawing.Color.Silver;
-            this.dkButton4.BorderThickness = 1;
-            this.dkButton4.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dkButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dkButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkButton4.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dkButton4.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dkButton4.Image = null;
-            this.dkButton4.ImageOffsetX = 0;
-            this.dkButton4.ImageOffsetY = 0;
-            this.dkButton4.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.dkButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.dkButton4.Location = new System.Drawing.Point(167, 234);
-            this.dkButton4.Name = "dkButton4";
-            this.dkButton4.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dkButton4.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dkButton4.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.dkButton4.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.dkButton4.Radius = 5;
-            this.dkButton4.ShadowAlpha = 255;
-            this.dkButton4.ShadowColor = System.Drawing.Color.Black;
-            this.dkButton4.ShadowPadding = new System.Windows.Forms.Padding(5, 5, 5, 6);
-            this.dkButton4.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.dkButton4.Size = new System.Drawing.Size(149, 162);
-            this.dkButton4.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.dkButton4.TabIndex = 29;
-            this.dkButton4.Text = "Ripple Animation\r\n(Hoạt hoạ gợn sóng)";
-            this.dkButton4.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.dkButton4.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dkButton4.TextPadding = new System.Windows.Forms.Padding(0);
-            this.dkButton4.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.dkButton4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.dkButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dkButton8.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.dkButton8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.dkButton8.BorderThickness = 0;
+            this.dkButton8.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dkButton8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dkButton8.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dkButton8.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkButton8.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
+            this.dkButton8.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
+            this.dkButton8.Image = null;
+            this.dkButton8.ImageOffsetX = 0;
+            this.dkButton8.ImageOffsetY = 0;
+            this.dkButton8.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dkButton8.ImageSize = new System.Drawing.Size(20, 20);
+            this.dkButton8.Location = new System.Drawing.Point(299, 413);
+            this.dkButton8.Name = "dkButton8";
+            this.dkButton8.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
+            this.dkButton8.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
+            this.dkButton8.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(91)))), ((int)(((byte)(26)))));
+            this.dkButton8.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(0)))));
+            this.dkButton8.Radius = 5;
+            this.dkButton8.ShadowAlpha = 120;
+            this.dkButton8.ShadowColor = System.Drawing.Color.Black;
+            this.dkButton8.ShadowPadding = new System.Windows.Forms.Padding(0);
+            this.dkButton8.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.dkButton8.Size = new System.Drawing.Size(100, 35);
+            this.dkButton8.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.dkButton8.TabIndex = 46;
+            this.dkButton8.Text = "Chỉnh sửa";
+            this.dkButton8.TextHoverColor = System.Drawing.Color.White;
+            this.dkButton8.TextNormalColor = System.Drawing.Color.WhiteSmoke;
+            this.dkButton8.TextPadding = new System.Windows.Forms.Padding(0);
+            this.dkButton8.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dkButton8.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
-            // dkButton5
+            // btn_Del_Product
             // 
-            this.dkButton5.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.None;
-            this.dkButton5.BorderColor = System.Drawing.Color.Silver;
-            this.dkButton5.BorderThickness = 1;
-            this.dkButton5.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dkButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dkButton5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkButton5.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dkButton5.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dkButton5.Image = null;
-            this.dkButton5.ImageOffsetX = 0;
-            this.dkButton5.ImageOffsetY = 0;
-            this.dkButton5.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.dkButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.dkButton5.Location = new System.Drawing.Point(12, 234);
-            this.dkButton5.Name = "dkButton5";
-            this.dkButton5.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.dkButton5.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.dkButton5.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.dkButton5.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.dkButton5.Radius = 5;
-            this.dkButton5.ShadowAlpha = 255;
-            this.dkButton5.ShadowColor = System.Drawing.Color.Black;
-            this.dkButton5.ShadowPadding = new System.Windows.Forms.Padding(5, 5, 5, 6);
-            this.dkButton5.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.dkButton5.Size = new System.Drawing.Size(149, 162);
-            this.dkButton5.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.dkButton5.TabIndex = 28;
-            this.dkButton5.Text = "No Animation\r\n(Ko hoạt ảnh)";
-            this.dkButton5.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.dkButton5.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dkButton5.TextPadding = new System.Windows.Forms.Padding(0);
-            this.dkButton5.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.dkButton5.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
-            // 
-            // foodCard2
-            // 
-            this.foodCard2.BackColor = System.Drawing.Color.Transparent;
-            this.foodCard2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.foodCard2.Location = new System.Drawing.Point(167, 66);
-            this.foodCard2.Name = "foodCard2";
-            this.foodCard2.Padding = new System.Windows.Forms.Padding(3);
-            this.foodCard2.Size = new System.Drawing.Size(149, 162);
-            this.foodCard2.TabIndex = 27;
-            // 
-            // foodCard1
-            // 
-            this.foodCard1.BackColor = System.Drawing.Color.Transparent;
-            this.foodCard1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.foodCard1.Location = new System.Drawing.Point(12, 66);
-            this.foodCard1.Name = "foodCard1";
-            this.foodCard1.Padding = new System.Windows.Forms.Padding(3);
-            this.foodCard1.Size = new System.Drawing.Size(149, 162);
-            this.foodCard1.TabIndex = 19;
+            this.btn_Del_Product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Del_Product.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.btn_Del_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.btn_Del_Product.BorderThickness = 0;
+            this.btn_Del_Product.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Del_Product.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Del_Product.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btn_Del_Product.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btn_Del_Product.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
+            this.btn_Del_Product.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btn_Del_Product.Image = null;
+            this.btn_Del_Product.ImageOffsetX = 0;
+            this.btn_Del_Product.ImageOffsetY = 0;
+            this.btn_Del_Product.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Del_Product.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Del_Product.Location = new System.Drawing.Point(405, 413);
+            this.btn_Del_Product.Name = "btn_Del_Product";
+            this.btn_Del_Product.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btn_Del_Product.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
+            this.btn_Del_Product.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.btn_Del_Product.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(76)))), ((int)(((byte)(62)))));
+            this.btn_Del_Product.Radius = 5;
+            this.btn_Del_Product.ShadowAlpha = 120;
+            this.btn_Del_Product.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Del_Product.ShadowPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Del_Product.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.btn_Del_Product.Size = new System.Drawing.Size(100, 35);
+            this.btn_Del_Product.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.btn_Del_Product.TabIndex = 45;
+            this.btn_Del_Product.Text = "Xoá";
+            this.btn_Del_Product.TextHoverColor = System.Drawing.Color.White;
+            this.btn_Del_Product.TextNormalColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Del_Product.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Del_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.btn_Del_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // MauThietKe_KoSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 683);
+            this.Controls.Add(this.btn_Add_Product);
+            this.Controls.Add(this.dkButton8);
+            this.Controls.Add(this.btn_Del_Product);
+            this.Controls.Add(this.dkButton6);
             this.Controls.Add(this.dkButton3);
             this.Controls.Add(this.dkButton4);
             this.Controls.Add(this.dkButton5);
@@ -345,5 +503,9 @@
         private DinhKhanh_Controls_UI.Buttons.DKButton dkButton4;
         private DinhKhanh_Controls_UI.Buttons.DKButton dkButton5;
         private ExContro.FoodCard foodCard2;
+        private DinhKhanh_Controls_UI.Buttons.DKButton dkButton6;
+        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Add_Product;
+        private DinhKhanh_Controls_UI.Buttons.DKButton dkButton8;
+        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Del_Product;
     }
 }
