@@ -1,16 +1,9 @@
 ﻿using DinhKhanh_Controls_UI.Animation;
-using DinhKhanh_Controls_UI.Buttons;
 using DinhKhanh_Controls_UI.Enums;
 using DinhKhanh_Controls_UI.Forms;
 using QL_CuaHang_Vegetable.TabPage;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QL_CuaHang_Vegetable

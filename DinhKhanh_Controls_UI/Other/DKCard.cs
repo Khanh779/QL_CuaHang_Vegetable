@@ -1,13 +1,8 @@
 ﻿using DinhKhanh_Controls_UI.Enums;
 using DinhKhanh_Controls_UI.Helper;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DinhKhanh_Controls_UI.Other
@@ -167,7 +162,7 @@ namespace DinhKhanh_Controls_UI.Other
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-                                  
+
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             e.Graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
@@ -186,7 +181,7 @@ namespace DinhKhanh_Controls_UI.Other
                 shadowPadding.Left,
                 shadowPadding.Top,
                 Width - shadowPadding.Horizontal - 1, // Tính cả padding trái và phải
-                Height - shadowPadding.Vertical- 1    // Tính cả padding trên và dưới
+                Height - shadowPadding.Vertical - 1    // Tính cả padding trên và dưới
             );
 
             // Điều chỉnh kích thước Bitmap
@@ -250,7 +245,7 @@ namespace DinhKhanh_Controls_UI.Other
                         }
                     }
 
-                    using(var fp= GraphicsHelper.GetRoundPath(new RectangleF(contentRectangle.X, contentRectangle.Y, contentRectangle.Width, contentRectangle.Height), Rad))
+                    using (var fp = GraphicsHelper.GetRoundPath(new RectangleF(contentRectangle.X, contentRectangle.Y, contentRectangle.Width, contentRectangle.Height), Rad))
                     {
                         // Draw the main content using texture brush
                         using (TextureBrush textureBrush = new TextureBrush(bitmap))
@@ -258,9 +253,9 @@ namespace DinhKhanh_Controls_UI.Other
                             textureBrush.WrapMode = WrapMode.Clamp;
                             e.Graphics.FillPath(textureBrush, fp);
                         }
-                        
+
                     }
-                   
+
                 }
             }
         }

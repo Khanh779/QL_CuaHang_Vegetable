@@ -1,15 +1,13 @@
-﻿using System.ComponentModel;
-using System.Drawing;
-using System.Windows.Forms;
-using System;
-using System.Drawing.Text;
-using System.Security.Cryptography;
-using System.Drawing.Design;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
-using DinhKhanh_Controls_UI.Animation;
+﻿using DinhKhanh_Controls_UI.Animation;
 using DinhKhanh_Controls_UI.Enums;
 using DinhKhanh_Controls_UI.Helper;
+using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.Drawing.Design;
+using System.Drawing.Drawing2D;
+using System.Drawing.Text;
+using System.Windows.Forms;
 
 
 namespace DinhKhanh_Controls_UI.TextControls
@@ -786,7 +784,7 @@ namespace DinhKhanh_Controls_UI.TextControls
 
         void UpdateInnerTextBoxPosition()
         {
-           
+
             if (innerTextBox != null && innerTextBox.IsHandleCreated)
             {
                 innerTextBox.Location = new Point(2 + BorderWidth + (imageVisible && _image != null ? ImageSize.Width : 0) + offx, (Height - innerTextBox.Height) / 2);

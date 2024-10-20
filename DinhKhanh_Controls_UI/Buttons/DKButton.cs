@@ -380,7 +380,7 @@ namespace DinhKhanh_Controls_UI.Buttons
                             bmp.Height + shadowPadding.Bottom - BorderThickness * 2 - textPadding.Bottom
                         );
 
-                       
+
                         // Kích thước và vị trí của hình ảnh
                         RectangleF imageBound = new RectangleF(0, 0, 0, 0);
 

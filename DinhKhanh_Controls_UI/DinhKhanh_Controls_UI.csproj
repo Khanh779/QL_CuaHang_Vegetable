@@ -62,6 +62,9 @@
     <Compile Include="Buttons\DKImageButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Charts\DKDonutChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Containers\DKCollapsiblePanel.cs">
       <SubType>Component</SubType>
     </Compile>

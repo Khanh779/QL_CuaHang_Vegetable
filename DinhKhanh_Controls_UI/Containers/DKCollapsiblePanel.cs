@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
 using System.ComponentModel;
-using System.Windows.Forms.Design;
+using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
+using System.Windows.Forms.Design;
 
 namespace DinhKhanh_Controls_UI.Containers
 {

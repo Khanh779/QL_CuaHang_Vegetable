@@ -1,18 +1,8 @@
 ﻿using DinhKhanh_Controls_UI.Helper;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Forms;
-using System.Windows.Media;
-using System.Windows.Media.Media3D;
 using Color = System.Drawing.Color;
 using Pen = System.Drawing.Pen;
 
@@ -40,7 +30,7 @@ namespace QL_CuaHang_Vegetable
             int radius = 25;
 
             Color color = Color.Black;
-            var gp = GraphicsHelper.GetRoundPath(ClientRectangle, bordert+ radius, bordert);
+            var gp = GraphicsHelper.GetRoundPath(ClientRectangle, bordert + radius, bordert);
             using (PathGradientBrush pathGradientBrush = new PathGradientBrush(gp))
             using (Graphics g = e.Graphics)
             {

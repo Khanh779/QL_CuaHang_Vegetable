@@ -1,10 +1,5 @@
 ﻿using DinhKhanh_Controls_UI.Enums;
-using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DinhKhanh_Controls_UI.Animation
@@ -23,7 +18,7 @@ namespace DinhKhanh_Controls_UI.Animation
         public Control Control2 { get; set; }
         public Control ControlParent { get; set; }
 
-     
+
 
         public new void StartNewAnimation(AnimationType animationType)
         {

@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DinhKhanh_Controls_UI.Animation
@@ -165,9 +162,9 @@ namespace DinhKhanh_Controls_UI.Animation
                 _timer.Start();
         }
 
-        public void ContinueCurrentAnimation(AnimationType animationType, int index=0)
+        public void ContinueCurrentAnimation(AnimationType animationType, int index = 0)
         {
-            if(index < an.Count)
+            if (index < an.Count)
             {
                 ATs[index] = animationType;
                 an[index] = animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE;

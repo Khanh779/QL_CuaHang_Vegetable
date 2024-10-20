@@ -1,10 +1,6 @@
 ﻿using DinhKhanh_Controls_UI.Buttons;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QL_CuaHang_Vegetable.PhanXuLy
 {
@@ -51,7 +47,7 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
                 throw new Exception("Lỗi đọc file: " + ex.Message);
             }
         }
-        
+
 
         public static DKButton NutBamMau_SangGradient_Title()
         {
@@ -72,12 +68,12 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
 
             btn.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             btn.ImageOffsetY = 8;
-            btn.ImageSize = new System.Drawing.Size(50,50);
+            btn.ImageSize = new System.Drawing.Size(50, 50);
             btn.Radius = 5;
             btn.ShadowPadding = new System.Windows.Forms.Padding(5);
-            btn.TextPadding = new System.Windows.Forms.Padding(0,5,0,0);
+            btn.TextPadding = new System.Windows.Forms.Padding(0, 5, 0, 0);
 
-            btn.TextNormalColor = System.Drawing.Color.FromArgb(64,64,64);
+            btn.TextNormalColor = System.Drawing.Color.FromArgb(64, 64, 64);
             btn.TextPressColor = System.Drawing.Color.FromArgb(54, 54, 54);
             btn.TextHoverColor = System.Drawing.Color.FromArgb(74, 74, 74);
 

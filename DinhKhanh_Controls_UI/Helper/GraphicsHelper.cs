@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DinhKhanh_Controls_UI.Helper
@@ -73,7 +69,7 @@ namespace DinhKhanh_Controls_UI.Helper
                 //Bottom-Right Arc  là vòng cung dưới phải
                 GraphPath.AddArc(Rect.X + Rect.Width - w2 - radius,
                             Rect.Y + Rect.Height - w2 - radius, radius, radius, 0, 90);
-                
+
                 //Bottom-Left Arc   là còng cung dưới trái
                 GraphPath.AddArc(Rect.X + w2, Rect.Y - w2 + Rect.Height - radius, radius,
                                  radius, 90, 90);

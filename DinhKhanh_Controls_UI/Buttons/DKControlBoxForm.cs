@@ -74,11 +74,11 @@ namespace DinhKhanh_Controls_UI.Buttons
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            if(controlBoxStyle == ControlBoxStyle.Close)
+            if (controlBoxStyle == ControlBoxStyle.Close)
             {
                 e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 e.Graphics.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            }    
+            }
 
             DrawControlBoxButton(e.Graphics, controlBoxStyle, Width / 2 - iconSize / 2, Height / 2 - iconSize / 2);
         }
@@ -150,14 +150,14 @@ namespace DinhKhanh_Controls_UI.Buttons
                         case ControlBoxStyle.Maximize_Restore:
                             if (form.WindowState == FormWindowState.Normal)
                             {
-                                form.MaximumSize=  new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+                                form.MaximumSize = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
                                 form.WindowState = FormWindowState.Maximized;
-                            } 
+                            }
                             else
                             {
                                 form.MaximumSize = new Size(0, 0);
                                 form.WindowState = FormWindowState.Normal;
-                            } 
+                            }
                             break;
 
                         case ControlBoxStyle.Close:
