@@ -47,7 +47,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Tab_Settings";
-            this.Size = new System.Drawing.Size(775, 532);
+            this.Size = new System.Drawing.Size(797, 554);
             this.ResumeLayout(false);
 
         }

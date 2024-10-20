@@ -41,6 +41,7 @@
             this.dkCard1 = new DinhKhanh_Controls_UI.Other.DKCard();
             this.btn_Nav0 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton2 = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.foodCard2 = new QL_CuaHang_Vegetable.ExContro.FoodCard();
             this.foodCard1 = new QL_CuaHang_Vegetable.ExContro.FoodCard();
             this.dkButton7 = new DinhKhanh_Controls_UI.Buttons.DKButton();
@@ -310,7 +311,7 @@
             this.dkCollapsiblePanel1.ContainerPadding = new System.Windows.Forms.Padding(10);
             this.dkCollapsiblePanel1.Controls.Add(this.dkButton1);
             this.dkCollapsiblePanel1.IsCollapsed = false;
-            this.dkCollapsiblePanel1.Location = new System.Drawing.Point(517, 66);
+            this.dkCollapsiblePanel1.Location = new System.Drawing.Point(486, 12);
             this.dkCollapsiblePanel1.Name = "dkCollapsiblePanel1";
             this.dkCollapsiblePanel1.Padding = new System.Windows.Forms.Padding(10);
             this.dkCollapsiblePanel1.Size = new System.Drawing.Size(344, 325);
@@ -333,7 +334,7 @@
             this.dkButton1.ImageOffsetY = 0;
             this.dkButton1.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.dkButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.dkButton1.Location = new System.Drawing.Point(58, 107);
+            this.dkButton1.Location = new System.Drawing.Point(51, 92);
             this.dkButton1.Name = "dkButton1";
             this.dkButton1.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dkButton1.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -446,6 +447,14 @@
             this.dkButton2.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dkButton2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.panel1.Location = new System.Drawing.Point(501, 348);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 48;
+            // 
             // foodCard2
             // 
             this.foodCard2.BackColor = System.Drawing.Color.Transparent;
@@ -481,7 +490,7 @@
             this.dkButton7.ImageOffsetY = 8;
             this.dkButton7.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.dkButton7.ImageSize = new System.Drawing.Size(50, 50);
-            this.dkButton7.Location = new System.Drawing.Point(167, 473);
+            this.dkButton7.Location = new System.Drawing.Point(177, 467);
             this.dkButton7.Name = "dkButton7";
             this.dkButton7.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dkButton7.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -492,9 +501,9 @@
             this.dkButton7.ShadowColor = System.Drawing.Color.Black;
             this.dkButton7.ShadowPadding = new System.Windows.Forms.Padding(5);
             this.dkButton7.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.dkButton7.Size = new System.Drawing.Size(235, 170);
+            this.dkButton7.Size = new System.Drawing.Size(239, 170);
             this.dkButton7.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.dkButton7.TabIndex = 47;
+            this.dkButton7.TabIndex = 49;
             this.dkButton7.Text = "Color Transition\r\n(Chuyển màu)";
             this.dkButton7.TextHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
             this.dkButton7.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -508,6 +517,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 683);
             this.Controls.Add(this.dkButton7);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_Add_Product);
             this.Controls.Add(this.dkButton8);
             this.Controls.Add(this.btn_Del_Product);
@@ -545,6 +555,7 @@
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Add_Product;
         private DinhKhanh_Controls_UI.Buttons.DKButton dkButton8;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Del_Product;
+        private System.Windows.Forms.Panel panel1;
         private DinhKhanh_Controls_UI.Buttons.DKButton dkButton7;
     }
 }

@@ -39,7 +39,7 @@
             this.dkCard1.BorderThickness = 1;
             this.dkCard1.BrushAngle = 0;
             this.dkCard1.CardColor1 = System.Drawing.Color.White;
-            this.dkCard1.CardColor2 = System.Drawing.Color.White;
+            this.dkCard1.CardColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
             this.dkCard1.Location = new System.Drawing.Point(22, 78);
             this.dkCard1.Name = "dkCard1";
             this.dkCard1.Radius = 8;
@@ -58,7 +58,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Tab_Home";
-            this.Size = new System.Drawing.Size(775, 532);
+            this.Size = new System.Drawing.Size(797, 554);
             this.ResumeLayout(false);
 
         }

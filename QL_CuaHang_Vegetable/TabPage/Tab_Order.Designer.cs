@@ -45,7 +45,8 @@
             this.listViewOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listViewOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.listViewOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.listViewOrders.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listViewOrders.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.CH_CodeOrder,
             this.CH_ProductName,
@@ -58,7 +59,7 @@
             this.listViewOrders.HideSelection = false;
             this.listViewOrders.Location = new System.Drawing.Point(22, 80);
             this.listViewOrders.Name = "listViewOrders";
-            this.listViewOrders.Size = new System.Drawing.Size(740, 369);
+            this.listViewOrders.Size = new System.Drawing.Size(762, 373);
             this.listViewOrders.TabIndex = 1;
             this.listViewOrders.UseCompatibleStateImageBehavior = false;
             this.listViewOrders.View = System.Windows.Forms.View.Details;
@@ -98,7 +99,7 @@
             this.LB_ItemCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LB_ItemCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.LB_ItemCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.LB_ItemCount.Location = new System.Drawing.Point(18, 469);
+            this.LB_ItemCount.Location = new System.Drawing.Point(18, 473);
             this.LB_ItemCount.Name = "LB_ItemCount";
             this.LB_ItemCount.Size = new System.Drawing.Size(218, 36);
             this.LB_ItemCount.TabIndex = 47;
@@ -121,7 +122,7 @@
             this.btn_Add_Order.ImageOffsetY = 0;
             this.btn_Add_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Add_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add_Order.Location = new System.Drawing.Point(450, 469);
+            this.btn_Add_Order.Location = new System.Drawing.Point(472, 473);
             this.btn_Add_Order.Name = "btn_Add_Order";
             this.btn_Add_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
             this.btn_Add_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
@@ -159,7 +160,7 @@
             this.btn_Edit_Order.ImageOffsetY = 0;
             this.btn_Edit_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Edit_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Edit_Order.Location = new System.Drawing.Point(556, 469);
+            this.btn_Edit_Order.Location = new System.Drawing.Point(578, 473);
             this.btn_Edit_Order.Name = "btn_Edit_Order";
             this.btn_Edit_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
             this.btn_Edit_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
@@ -197,7 +198,7 @@
             this.btn_Del_Order.ImageOffsetY = 0;
             this.btn_Del_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Del_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Del_Order.Location = new System.Drawing.Point(662, 469);
+            this.btn_Del_Order.Location = new System.Drawing.Point(684, 473);
             this.btn_Del_Order.Name = "btn_Del_Order";
             this.btn_Del_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_Del_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
@@ -270,7 +271,7 @@
             this.Controls.Add(this.listViewOrders);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Tab_Order";
-            this.Size = new System.Drawing.Size(775, 550);
+            this.Size = new System.Drawing.Size(797, 554);
             this.ResumeLayout(false);
 
         }
