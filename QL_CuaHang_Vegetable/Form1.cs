@@ -173,6 +173,8 @@ namespace QL_CuaHang_Vegetable
         {
 
             // Tạo graphics và bitmap cho hoạt ảnh
+            AntiFlicker(control1);
+            AntiFlicker(control2);
             var _slideGraphics = Graphics.FromHwnd(control2.Handle);
             var _slideBitmap = new Bitmap(control1.Width, control1.Height + control2.Height);
             _slideBitmap.MakeTransparent();
