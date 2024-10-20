@@ -17,11 +17,18 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
         public DateTime NgayDatHang { get; set; }
         public double TongTien { get; set; }
         public TrangThai_DonHang TrangThai { get; set; }
+        public LoaiDonHang LoaiDonHang { get; set; }
 
 
         public ThongTinDonHang()
         {
         }   
+    }
+
+    public enum LoaiDonHang
+    {
+        Nhap,
+        Xuat
     }
 
     public enum TrangThai_DonHang
