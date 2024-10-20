@@ -147,18 +147,22 @@ namespace QL_CuaHang_Vegetable
                 PN_Tabs.Controls.Add(newControl);
                 newControl.Dock = DockStyle.Fill;
 
-                AntiFlicker(newControl);
+                //AntiFlicker(newControl);
 
                 // Nếu có control hiện tại, thực hiện hoạt ảnh trượt
-                if (currentControl != null)
-                {
-                    DoSlideAnimate(currentControl, newControl, currentControl.TabIndex < newControl.TabIndex ? false : true);
-                }
+                //if (currentControl != null)
+                //{
+                //    DoSlideAnimate(currentControl, newControl, currentControl.TabIndex < newControl.TabIndex ? false : true);
+                //}
 
                 // Cập nhật control đã chọn
                 SelectedTab = newControl;
             }
         }
+
+        // T tính làm hiệu ứng hoạt hình, mà... nó chạy đc ấy, mà phải đợi 0,5 ~ 1 giây mới hoàn thành xong hiệu ứng nên t bỏ
+
+        #region Vùng hiệu ứng push
 
         public void AntiFlicker(Control control)
         {
@@ -167,7 +171,6 @@ namespace QL_CuaHang_Vegetable
                 System.Reflection.BindingFlags.NonPublic)
                 .SetValue(control, true, null);
         }
-
 
         private void DoSlideAnimate(Control control1, Control control2, bool moveBack)
         {
@@ -197,7 +200,7 @@ namespace QL_CuaHang_Vegetable
             }
 
             AnimationManager _slideAnimator = new AnimationManager(); // Tạo một AnimationManager mới
-            _slideAnimator.Increment = 0.08; // Đặt tốc độ hoạt ảnh
+            _slideAnimator.Increment = 0.2; // Đặt tốc độ hoạt ảnh
 
             // Cập nhật hàm vẽ khi hoạt ảnh diễn ra
             _slideAnimator.AnimationProgress += (alpha) =>
@@ -234,6 +237,8 @@ namespace QL_CuaHang_Vegetable
                 _slideAnimator.StartNewAnimation(AnimationType.Out);
 
         }
+
+        #endregion Vùng hiệu ứng push
 
     }
 }

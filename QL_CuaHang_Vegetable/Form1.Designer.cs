@@ -29,7 +29,7 @@
             this.btn_Nav4.Location = new System.Drawing.Point(1, 369);
             this.btn_Nav4.Name = "btn_Nav4";
             this.btn_Nav4.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.btn_Nav4.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_Nav4.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.btn_Nav4.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav4.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav4.Radius = 0;
@@ -68,7 +68,7 @@
             this.btn_Nav3.Location = new System.Drawing.Point(1, 315);
             this.btn_Nav3.Name = "btn_Nav3";
             this.btn_Nav3.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.btn_Nav3.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_Nav3.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.btn_Nav3.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav3.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav3.Radius = 0;
@@ -107,7 +107,7 @@
             this.btn_Nav2.Location = new System.Drawing.Point(1, 261);
             this.btn_Nav2.Name = "btn_Nav2";
             this.btn_Nav2.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.btn_Nav2.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_Nav2.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.btn_Nav2.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav2.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav2.Radius = 0;
@@ -146,7 +146,7 @@
             this.btn_Nav1.Location = new System.Drawing.Point(1, 207);
             this.btn_Nav1.Name = "btn_Nav1";
             this.btn_Nav1.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.btn_Nav1.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_Nav1.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.btn_Nav1.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav1.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav1.Radius = 0;
@@ -185,7 +185,7 @@
             this.btn_Nav0.Location = new System.Drawing.Point(1, 153);
             this.btn_Nav0.Name = "btn_Nav0";
             this.btn_Nav0.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.btn_Nav0.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.btn_Nav0.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.btn_Nav0.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav0.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav0.Radius = 0;
@@ -218,7 +218,7 @@
             this.PN_Nav.Location = new System.Drawing.Point(1, 37);
             this.PN_Nav.Name = "PN_Nav";
             this.PN_Nav.PanelColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.PN_Nav.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.PN_Nav.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.PN_Nav.Radius = 0;
             this.PN_Nav.ShadowAlpha = 120;
             this.PN_Nav.ShadowColor = System.Drawing.Color.Black;
@@ -246,7 +246,7 @@
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.BorderSize = 1;
             this.ClientSize = new System.Drawing.Size(968, 592);
             this.Controls.Add(this.PN_Tabs);
