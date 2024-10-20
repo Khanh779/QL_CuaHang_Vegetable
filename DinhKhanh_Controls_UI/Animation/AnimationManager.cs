@@ -165,6 +165,17 @@ namespace DinhKhanh_Controls_UI.Animation
                 _timer.Start();
         }
 
+        public void ContinueCurrentAnimation(AnimationType animationType, int index=0)
+        {
+            if(index < an.Count)
+            {
+                ATs[index] = animationType;
+                an[index] = animationType == AnimationType.In ? MIN_VALUE : MAX_VALUE;
+                if (!IsAnimating())
+                    _timer.Start();
+            }
+        }
+
 
         //public void StartNewAnimation(AnimationType animationType, Point point)
         //{

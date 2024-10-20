@@ -167,14 +167,14 @@ namespace DinhKhanh_Controls_UI.Other
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-
+                                  
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             e.Graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
             if (ShadowPadding.All != 0)
             {
-                using (GraphicsPath sgp = GraphicsHelper.GetRoundPath(ClientRectangle, Rad))
+                using (GraphicsPath sgp = GraphicsHelper.GetRoundPath(ClientRectangle, Rad + borderThickness))
                 using (var shadowBitmap = GraphicsHelper.DrawBitmapShadow(ClientRectangle, Color.FromArgb(ShadowAlpha, shadowColor), Rad))
                 using (var shadowBrush = new TextureBrush(shadowBitmap))
                 {
@@ -186,20 +186,20 @@ namespace DinhKhanh_Controls_UI.Other
                 shadowPadding.Left,
                 shadowPadding.Top,
                 Width - shadowPadding.Horizontal - 1, // Tính cả padding trái và phải
-                Height - shadowPadding.Vertical - 1    // Tính cả padding trên và dưới
+                Height - shadowPadding.Vertical- 1    // Tính cả padding trên và dưới
             );
 
             // Điều chỉnh kích thước Bitmap
-            using (Bitmap bitmap = new Bitmap((int)contentRectangle.Width, (int)contentRectangle.Height))
+            using (Bitmap bitmap = new Bitmap((int)contentRectangle.Right, (int)contentRectangle.Bottom))
             {
                 bitmap.MakeTransparent();
 
                 using (GraphicsPath contentPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad))
-                using (GraphicsPath borderPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad, borderThickness))
                 using (Graphics g = Graphics.FromImage(bitmap))
                 {
                     g.SmoothingMode = SmoothingMode.AntiAlias;
                     g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                    g.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
                     // Fill card background with gradient
                     using (var backgroundBrush = new LinearGradientBrush(contentRectangle, cardColor1, cardColor2, angle))
@@ -243,17 +243,24 @@ namespace DinhKhanh_Controls_UI.Other
                     // Draw border if borderThickness > 0
                     if (borderThickness > 0)
                     {
+                        using (GraphicsPath borderPath = GraphicsHelper.GetRoundPath(contentRectangle, Rad, borderThickness))
                         using (var borderPen = new Pen(borderColor, borderThickness))
                         {
                             g.DrawPath(borderPen, borderPath);
                         }
                     }
 
-                    // Draw the main content using texture brush
-                    using (TextureBrush textureBrush = new TextureBrush(bitmap))
+                    using(var fp= GraphicsHelper.GetRoundPath(new RectangleF(contentRectangle.X, contentRectangle.Y, contentRectangle.Width, contentRectangle.Height), Rad))
                     {
-                        e.Graphics.FillPath(textureBrush, contentPath);
+                        // Draw the main content using texture brush
+                        using (TextureBrush textureBrush = new TextureBrush(bitmap))
+                        {
+                            textureBrush.WrapMode = WrapMode.Clamp;
+                            e.Graphics.FillPath(textureBrush, fp);
+                        }
+                        
                     }
+                   
                 }
             }
         }

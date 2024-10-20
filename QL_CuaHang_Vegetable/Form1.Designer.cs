@@ -33,6 +33,9 @@
             this.btn_Nav4.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav4.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav4.Radius = 0;
+            this.btn_Nav4.ShadowAlpha = 120;
+            this.btn_Nav4.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Nav4.ShadowPadding = new System.Windows.Forms.Padding(0);
             this.btn_Nav4.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
             this.btn_Nav4.Size = new System.Drawing.Size(168, 48);
             this.btn_Nav4.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
@@ -42,7 +45,7 @@
             this.btn_Nav4.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav4.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav4.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btn_Nav4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_Nav4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav4_MouseClick);
             // 
             // btn_Nav3
@@ -69,6 +72,9 @@
             this.btn_Nav3.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav3.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav3.Radius = 0;
+            this.btn_Nav3.ShadowAlpha = 120;
+            this.btn_Nav3.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Nav3.ShadowPadding = new System.Windows.Forms.Padding(0);
             this.btn_Nav3.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
             this.btn_Nav3.Size = new System.Drawing.Size(168, 48);
             this.btn_Nav3.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
@@ -78,7 +84,7 @@
             this.btn_Nav3.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav3.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav3.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btn_Nav3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_Nav3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav3_MouseClick);
             // 
             // btn_Nav2
@@ -105,6 +111,9 @@
             this.btn_Nav2.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav2.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav2.Radius = 0;
+            this.btn_Nav2.ShadowAlpha = 120;
+            this.btn_Nav2.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Nav2.ShadowPadding = new System.Windows.Forms.Padding(0);
             this.btn_Nav2.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
             this.btn_Nav2.Size = new System.Drawing.Size(168, 48);
             this.btn_Nav2.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
@@ -114,7 +123,7 @@
             this.btn_Nav2.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav2.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav2.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btn_Nav2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_Nav2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav2_MouseClick);
             // 
             // btn_Nav1
@@ -141,6 +150,9 @@
             this.btn_Nav1.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav1.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav1.Radius = 0;
+            this.btn_Nav1.ShadowAlpha = 120;
+            this.btn_Nav1.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Nav1.ShadowPadding = new System.Windows.Forms.Padding(0);
             this.btn_Nav1.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
             this.btn_Nav1.Size = new System.Drawing.Size(168, 48);
             this.btn_Nav1.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
@@ -150,7 +162,7 @@
             this.btn_Nav1.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav1.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav1.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btn_Nav1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_Nav1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav1_MouseClick);
             // 
             // btn_Nav0
@@ -177,6 +189,9 @@
             this.btn_Nav0.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(253)))), ((int)(((byte)(226)))));
             this.btn_Nav0.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(233)))), ((int)(((byte)(206)))));
             this.btn_Nav0.Radius = 0;
+            this.btn_Nav0.ShadowAlpha = 120;
+            this.btn_Nav0.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Nav0.ShadowPadding = new System.Windows.Forms.Padding(0);
             this.btn_Nav0.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
             this.btn_Nav0.Size = new System.Drawing.Size(168, 48);
             this.btn_Nav0.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
@@ -186,7 +201,7 @@
             this.btn_Nav0.TextNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Nav0.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_Nav0.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.btn_Nav0.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btn_Nav0.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_Nav0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Nav0_MouseClick);
             // 
             // PN_Nav
@@ -205,6 +220,9 @@
             this.PN_Nav.PanelColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.PN_Nav.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.PN_Nav.Radius = 0;
+            this.PN_Nav.ShadowAlpha = 120;
+            this.PN_Nav.ShadowColor = System.Drawing.Color.Black;
+            this.PN_Nav.ShadowPadding = new System.Windows.Forms.Padding(0);
             this.PN_Nav.Size = new System.Drawing.Size(169, 554);
             this.PN_Nav.TabIndex = 14;
             // 
@@ -219,6 +237,9 @@
             this.PN_Tabs.PanelColor1 = System.Drawing.Color.Transparent;
             this.PN_Tabs.PanelColor2 = System.Drawing.Color.Transparent;
             this.PN_Tabs.Radius = 0;
+            this.PN_Tabs.ShadowAlpha = 120;
+            this.PN_Tabs.ShadowColor = System.Drawing.Color.Black;
+            this.PN_Tabs.ShadowPadding = new System.Windows.Forms.Padding(0);
             this.PN_Tabs.Size = new System.Drawing.Size(797, 554);
             this.PN_Tabs.TabIndex = 15;
             // 

@@ -129,14 +129,10 @@ namespace DinhKhanh_Controls_UI.Buttons
             set
             {
                 animationMode = value;
-                if (animationMode == AnimationMode.ColorTransition)
-                {
-                    animationManager.Singular = true;
-                }
                 if (animationMode == AnimationMode.Ripple)
-                {
                     animationManager.Singular = false;
-                }
+                else
+                    animationManager.Singular = true;
                 Invalidate();
             }
         }
@@ -275,6 +271,41 @@ namespace DinhKhanh_Controls_UI.Buttons
             }
         }
 
+      
+
+        int shadowAlpha = 120;
+        public int ShadowAlpha
+        {
+            get => shadowAlpha;
+            set
+            {
+                shadowAlpha = value;
+                Invalidate();
+            }
+        }
+
+        Color shadowColor = Color.Black;
+        public Color ShadowColor
+        {
+            get => shadowColor;
+            set
+            {
+                shadowColor = value;
+                Invalidate();
+            }
+        }
+
+        Padding shadowPadding = new Padding(0);
+        public Padding ShadowPadding
+        {
+            get => shadowPadding;
+            set
+            {
+                shadowPadding = value;
+                Invalidate();
+            }
+        }
+
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -282,9 +313,24 @@ namespace DinhKhanh_Controls_UI.Buttons
             e.Graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
             e.Graphics.TextRenderingHint = TextRenderingHint;
-            e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
-            using (Bitmap bmp = new Bitmap(Width, Height))
+            // Tạo shadow cho control
+            using (GraphicsPath sgp = GraphicsHelper.GetRoundPath(ClientRectangle, Radius))
+            using (var shadowBitmap = GraphicsHelper.DrawBitmapShadow(ClientRectangle, Color.FromArgb(ShadowAlpha, ShadowColor), Radius))
+            using (var shadowBrush = new TextureBrush(shadowBitmap))
+            {
+                e.Graphics.FillPath(shadowBrush, sgp);
+            }
+
+            var contentRectangle = new RectangleF(
+              shadowPadding.Left,
+              shadowPadding.Top,
+              Width - shadowPadding.Horizontal, // Tính cả padding trái và phải
+              Height - shadowPadding.Vertical    // Tính cả padding trên và dưới
+            );
+
+            using (GraphicsPath contentPath = GraphicsHelper.GetRoundPath(contentRectangle, Radius))
+            using (Bitmap bmp = new Bitmap((int)contentRectangle.Right, (int)contentRectangle.Bottom))
             {
                 bmp.MakeTransparent();
 
@@ -294,112 +340,99 @@ namespace DinhKhanh_Controls_UI.Buttons
                     g.PixelOffsetMode = PixelOffsetMode.HighQuality;
                     g.InterpolationMode = InterpolationMode.HighQualityBicubic;
                     g.TextRenderingHint = TextRenderingHint;
-                    g.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
-                    Color color1 =
-        animationMode == AnimationMode.ColorTransition
-            ? (_isPressed ? ColorHelper.BlendColor(_pressColor2, _pressColor1, animationManager.GetProgress() * 255)
-                : _isHovering ? ColorHelper.BlendColor(_hoverColor2, _hoverColor1, animationManager.GetProgress() * 255)
-                    : ColorHelper.BlendColor(_normalColor2, _normalColor1, animationManager.GetProgress() * 255))
-            : animationMode == AnimationMode.Ripple ? (_isHovering ? _hoverColor1 : _normalColor1)
-                : (_isPressed ? _pressColor1 : _isHovering ? _hoverColor1 : _normalColor1);
+                    Color color1 = animationMode == AnimationMode.ColorTransition
+                        ? (_isPressed
+                            ? ColorHelper.BlendColor(_hoverColor1, _pressColor1, animationManager.GetProgress() * 255)
+                            : _isHovering
+                                ? ColorHelper.BlendColor(_normalColor1, _hoverColor1, animationManager.GetProgress() * 255)
+                                : ColorHelper.BlendColor(_normalColor1, _hoverColor1, animationManager.GetProgress() * 255))
+                        : animationMode == AnimationMode.Ripple
+                            ? (_isHovering ? _hoverColor1 : _normalColor1)
+
+                            : (_isPressed ? _pressColor1 : _isHovering ? _hoverColor1 : _normalColor1);
 
                     Color color2 = animationMode == AnimationMode.ColorTransition
-                            ? (_isPressed ? ColorHelper.BlendColor(_pressColor1, _pressColor2, animationManager.GetProgress() * 255) :
-                             _isHovering ? ColorHelper.BlendColor(_hoverColor1, _hoverColor2, animationManager.GetProgress() * 255)
-                                    : ColorHelper.BlendColor(_normalColor1, _normalColor2, animationManager.GetProgress() * 255))
-                            : animationMode == AnimationMode.Ripple ? (_isHovering
-                                    ? _hoverColor2 : _normalColor2) : (_isPressed ? _pressColor2 : _isHovering ? _hoverColor2 : _normalColor2);
+                        ? (_isPressed
+                            ? ColorHelper.BlendColor(_hoverColor2, _pressColor2, animationManager.GetProgress() * 255)
+                            : _isHovering
+                                ? ColorHelper.BlendColor(_normalColor2, _hoverColor2, animationManager.GetProgress() * 255)
+                                : ColorHelper.BlendColor(_normalColor2, _hoverColor2, animationManager.GetProgress() * 255))
+                        : animationMode == AnimationMode.Ripple
+                            ? (_isHovering ? _hoverColor2 : _normalColor2)
+
+                            : (_isPressed ? _pressColor2 : _isHovering ? _hoverColor2 : _normalColor2);
 
 
 
-                    StringFormat sf = new StringFormat();
-                    TextHelper.SetStringAlign(sf, contentAlignment);
-
-                    // Kích thước và vị trí của văn bản
-                    RectangleF textBound = new RectangleF(BorderThickness + textPadding.Left,
-                        BorderThickness + textPadding.Top,
-                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
-                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
-
-                    // Kích thước và vị trí của hình ảnh
-                    RectangleF imageBound = new RectangleF(BorderThickness + textPadding.Left,
-                        BorderThickness + textPadding.Top, _imageSize.Width, _imageSize.Height);
-
-                    if (Image != null)
+                    // Vẽ nội dung chính
+                    using (var brush = new LinearGradientBrush(contentRectangle, color1, color2, gradientMode))
+                    using (GraphicsPath path = GraphicsHelper.GetRoundPath(contentRectangle, Radius))
+                    using (GraphicsPath borderPath = GraphicsHelper.GetRoundPath(contentRectangle, Radius, BorderThickness))
                     {
-                        switch (ImageRelation)
+                        g.FillPath(brush, path);
+
+                        // Kích thước và vị trí của văn bản
+                        RectangleF textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top, Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
+                            Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
+
+                        // Kích thước và vị trí của hình ảnh
+                        RectangleF imageBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top, _imageSize.Width, _imageSize.Height);
+
+
+                        if (Image != null)
                         {
-                            case TextImageRelation.TextBeforeImage:
-                                // Văn bản ở trước hình ảnh
-                                textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
-                                    Width - BorderThickness * 2 - textPadding.Left - textPadding.Right - _imageSize.Width - imageOffsetX,
-                                    Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
-                                imageBound = new RectangleF(textBound.Right + imageOffsetX, Height / 2 - _imageSize.Height / 2, _imageSize.Width, _imageSize.Height);
-                                break;
+                            switch (ImageRelation)
+                            {
+                                case TextImageRelation.TextBeforeImage:
+                                    // Văn bản ở trước hình ảnh
+                                    textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
+                                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right - _imageSize.Width - imageOffsetX,
+                                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
+                                    imageBound = new RectangleF(textBound.Right + imageOffsetX, Height / 2 - _imageSize.Height / 2, _imageSize.Width, _imageSize.Height);
+                                    break;
 
-                            case TextImageRelation.ImageBeforeText:
-                                // Hình ảnh ở trước văn bản
-                                textBound = new RectangleF(BorderThickness + textPadding.Left + _imageSize.Width + imageOffsetX, BorderThickness + textPadding.Top,
-                                    Width - BorderThickness * 2 - textPadding.Left - textPadding.Right - _imageSize.Width - imageOffsetX,
-                                    Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
-                                imageBound = new RectangleF(BorderThickness + imageOffsetX, Height / 2 - _imageSize.Height / 2, _imageSize.Width, _imageSize.Height);
-                                break;
+                                case TextImageRelation.ImageBeforeText:
+                                    // Hình ảnh ở trước văn bản
+                                    textBound = new RectangleF(BorderThickness + textPadding.Left + _imageSize.Width + imageOffsetX, BorderThickness + textPadding.Top,
+                                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right - _imageSize.Width - imageOffsetX,
+                                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2);
+                                    imageBound = new RectangleF(BorderThickness + imageOffsetX, Height / 2 - _imageSize.Height / 2, _imageSize.Width, _imageSize.Height);
+                                    break;
 
-                            case TextImageRelation.ImageAboveText:
-                                // Hình ảnh ở trên văn bản
-                                textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top + _imageSize.Height + imageOffsetY,
-                                    Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
-                                    Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2 - _imageSize.Height - imageOffsetY);
-                                imageBound = new RectangleF(Width / 2 - _imageSize.Width / 2, BorderThickness + imageOffsetY, _imageSize.Width, _imageSize.Height);
-                                break;
+                                case TextImageRelation.ImageAboveText:
+                                    // Hình ảnh ở trên văn bản
+                                    textBound = new RectangleF(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top + _imageSize.Height + imageOffsetY,
+                                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
+                                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2 - _imageSize.Height - imageOffsetY);
+                                    imageBound = new RectangleF(Width / 2 - _imageSize.Width / 2, BorderThickness + imageOffsetY, _imageSize.Width, _imageSize.Height);
+                                    break;
 
-                            case TextImageRelation.TextAboveImage:
-                                // Văn bản ở trên hình ảnh
-                                textBound = new Rectangle(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
-                                    Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
-                                    Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2 - _imageSize.Height - imageOffsetY);
-                                imageBound = new RectangleF(Width / 2 - _imageSize.Width / 2, textBound.Bottom + imageOffsetY, _imageSize.Width, _imageSize.Height);
-                                break;
+                                case TextImageRelation.TextAboveImage:
+                                    // Văn bản ở trên hình ảnh
+                                    textBound = new Rectangle(BorderThickness + textPadding.Left, BorderThickness + textPadding.Top,
+                                        Width - BorderThickness * 2 - textPadding.Left - textPadding.Right,
+                                        Height - textPadding.Top - textPadding.Bottom - BorderThickness * 2 - _imageSize.Height - imageOffsetY);
+                                    imageBound = new RectangleF(Width / 2 - _imageSize.Width / 2, textBound.Bottom + imageOffsetY, _imageSize.Width, _imageSize.Height);
+                                    break;
+                            }
+                            g.DrawImage(Image, imageBound);
+                        }
+
+                        StringFormat sf = new StringFormat();
+                        TextHelper.SetStringAlign(sf, contentAlignment);
+
+                        using (var textBrush = new SolidBrush(_isPressed ? _textPressColor : _isHovering ? _textHoverColor : _textNormalColor))
+                            g.DrawString(Text, Font, textBrush, textBound, sf);
+
+                        if (BorderThickness > 0)
+                        {
+                            using (var pen = new Pen(_borderColor, BorderThickness))
+                                g.DrawPath(pen, borderPath);
                         }
                     }
 
-
-                    using (var pen = new Pen(_borderColor, _borderThickness))
-                    using (var textBru = new SolidBrush(_isPressed ? _textPressColor : _isHovering ? _textHoverColor : _textNormalColor))
-                    using (LinearGradientBrush brush = new LinearGradientBrush(ClientRectangle, color1, color2, gradientMode))
-                    {
-                        switch (shapeType)
-                        {
-                            case ShapeType.RoundedRectangle:
-                                using (GraphicsPath path = GraphicsHelper.GetRoundPath(ClientRectangle, Radius))
-                                using (GraphicsPath borpath = GraphicsHelper.GetRoundPath(ClientRectangle, Radius, _borderThickness))
-                                {
-                                    g.FillPath(brush, path);
-
-                                    if (Image != null)
-                                    {
-                                        g.DrawImage(Image, imageBound);
-                                    }
-
-                                    g.DrawString(Text, Font, textBru, textBound, sf);
-                                    if (BorderThickness != 0) g.DrawPath(pen, borpath);
-                                }
-
-                                break;
-                            case ShapeType.Ellipse:
-                                RectangleF rect = new RectangleF(0.5f, 0.5f, Width - 1, Height - 1);
-                                g.FillEllipse(brush, rect);
-                                if (Image != null)
-                                {
-                                    g.DrawImage(Image, imageBound);
-                                }
-                                g.DrawString(Text, Font, textBru, textBound, sf);
-                                if (BorderThickness != 0) g.DrawEllipse(pen, rect);
-                                break;
-                        }
-                    }
-
+                    // Hiệu ứng ripple (nếu có)
                     if (animationMode == AnimationMode.Ripple)
                     {
                         for (int i = 0; i < animationManager.GetAnimationCount(); i++)
@@ -408,6 +441,7 @@ namespace DinhKhanh_Controls_UI.Buttons
                             Point source = animationManager.GetSource(i);
                             float rippleSize = (float)(progress * Width * 2);
                             RectangleF rippleRect = new RectangleF(source.X - rippleSize / 2, source.Y - rippleSize / 2, rippleSize, rippleSize);
+
                             using (Brush rippleBrush = new SolidBrush(Color.FromArgb((int)(51 - progress * 50), ForeColor)))
                             {
                                 g.FillEllipse(rippleBrush, rippleRect);
@@ -415,16 +449,15 @@ namespace DinhKhanh_Controls_UI.Buttons
                         }
                     }
 
+                    // Vẽ kết quả lên control
                     using (TextureBrush tb = new TextureBrush(bmp))
                     {
-                        e.Graphics.FillRectangle(tb, ClientRectangle);
+                        e.Graphics.FillPath(tb, contentPath);
                     }
-
-
                 }
-
             }
         }
+
 
 
         [Editor(typeof(ColorEditor), typeof(UITypeEditor))]
