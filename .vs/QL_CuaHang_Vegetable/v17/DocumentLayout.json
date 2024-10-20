@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\phanxuly\\thongtindonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\phanxuly\\thongtindonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\phanxuly\\thongtindonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\phanxuly\\thongtindonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ThongTinDonHang.cs",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\PhanXuLy\\ThongTinDonHang.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\PhanXuLy\\ThongTinDonHang.cs",
               "ToolTip": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\PhanXuLy\\ThongTinDonHang.cs",
               "RelativeToolTip": "QL_CuaHang_Vegetable\\PhanXuLy\\ThongTinDonHang.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T14:20:39.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Tab_Home.cs [Design]",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Home.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\TabPage\\Tab_Home.cs",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Tab_Order.cs [Design]",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Order.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\TabPage\\Tab_Order.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Tab_Food.cs [Design]",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Food.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\TabPage\\Tab_Food.cs",
