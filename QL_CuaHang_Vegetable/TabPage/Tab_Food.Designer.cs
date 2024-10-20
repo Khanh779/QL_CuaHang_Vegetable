@@ -104,7 +104,7 @@
             this.dkTextBox1.ImageSize = new System.Drawing.Size(20, 20);
             this.dkTextBox1.ImageVisible = false;
             this.dkTextBox1.Lines = new string[0];
-            this.dkTextBox1.Location = new System.Drawing.Point(545, 30);
+            this.dkTextBox1.Location = new System.Drawing.Point(567, 30);
             this.dkTextBox1.MaxLength = 32767;
             this.dkTextBox1.Name = "dkTextBox1";
             this.dkTextBox1.PasswordChar = '\0';
