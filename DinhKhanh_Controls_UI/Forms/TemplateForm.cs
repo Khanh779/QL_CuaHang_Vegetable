@@ -52,6 +52,17 @@ namespace DinhKhanh_Controls_UI.Forms
             }
         }
 
+       public new bool MaximizeBox
+        {
+            get => base.MaximizeBox;
+            set
+            {
+                base.MaximizeBox = value;
+                dkControlBoxForm2.Visible = value;
+                Invalidate();
+            }
+        }
+
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);

@@ -26,10 +26,10 @@ namespace QL_CuaHang_Vegetable.TabPage
 
         private void Tab_Report_Load(object sender, System.EventArgs e)
         {
-            DKDonutChartItem item0 = new DKDonutChartItem { Name = "dKDonutChartItem0", Value = 100, Color = Color.Red, Index = 0 };
-            DKDonutChartItem item1 = new DKDonutChartItem { Name = "dKDonutChartItem1", Value = 200, Color = Color.Blue, Index = 1 };
-            DKDonutChartItem item2 = new DKDonutChartItem { Name = "dKDonutChartItem2", Value = 300, Color = Color.Green, Index = 2 };
-            DKDonutChartItem item3 = new DKDonutChartItem { Name = "dKDonutChartItem2", Value = 300, Color = Color.Green, Index = 3 };
+            DKDonutChartItem item0 = new DKDonutChartItem { Name = "dKDonutChartItem0", Value = 25, Color = Color.FromArgb(86, 169, 128), Index = 0 };
+            DKDonutChartItem item1 = new DKDonutChartItem { Name = "dKDonutChartItem1", Value = 25, Color = Color.DodgerBlue, Index = 1 };
+            DKDonutChartItem item2 = new DKDonutChartItem { Name = "dKDonutChartItem2", Value = 25, Color = Color.FromArgb(255, 128, 0), Index = 2 };
+            DKDonutChartItem item3 = new DKDonutChartItem { Name = "dKDonutChartItem2", Value = 25, Color = Color.FromArgb(253, 1, 73), Index = 3 };
 
             dkDonutChart1.Items.Add(item0);
             dkDonutChart1.Items.Add(item1);

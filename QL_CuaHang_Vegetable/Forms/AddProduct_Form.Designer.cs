@@ -54,6 +54,7 @@
             this.dkButton1 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Del_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.LB_ItemCount = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Product)).BeginInit();
             this.SuspendLayout();
@@ -522,7 +523,7 @@
             this.btn_Duyet.ImageOffsetY = 0;
             this.btn_Duyet.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Duyet.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Duyet.Location = new System.Drawing.Point(39, 218);
+            this.btn_Duyet.Location = new System.Drawing.Point(39, 231);
             this.btn_Duyet.Name = "btn_Duyet";
             this.btn_Duyet.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
             this.btn_Duyet.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
@@ -629,17 +630,31 @@
             this.LB_ItemCount.TabIndex = 69;
             this.LB_ItemCount.Text = "i: Ngày tạo sẽ được tạo tự động";
             // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label11.ForeColor = System.Drawing.Color.DarkGray;
+            this.label11.Location = new System.Drawing.Point(17, 199);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 20);
+            this.label11.TabIndex = 84;
+            this.label11.Text = "Thêm hình sản phẩm";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // AddProduct_Form
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(794, 388);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.LB_ItemCount);
             this.Controls.Add(this.btn_Del_Product);
             this.Controls.Add(this.dkButton1);
             this.Controls.Add(this.btn_Duyet);
             this.Controls.Add(this.PB_Product);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "AddProduct_Form";
             this.ShowInTaskbar = false;
             this.Text = "Thêm sản phẩm";
@@ -649,6 +664,7 @@
             this.Controls.SetChildIndex(this.dkButton1, 0);
             this.Controls.SetChildIndex(this.btn_Del_Product, 0);
             this.Controls.SetChildIndex(this.LB_ItemCount, 0);
+            this.Controls.SetChildIndex(this.label11, 0);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PB_Product)).EndInit();
             this.ResumeLayout(false);
@@ -682,5 +698,6 @@
         private DinhKhanh_Controls_UI.Buttons.DKButton dkButton1;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Del_Product;
         private System.Windows.Forms.Label LB_ItemCount;
+        private System.Windows.Forms.Label label11;
     }
 }
