@@ -63,21 +63,22 @@ namespace DinhKhanh_Controls_UI.Helper
 
             if (radius != 0)
             {
-                //Top-Left Arc
+                //Top-Left Arc  là vòng cung trên trái
                 GraphPath.AddArc(Rect.X + w2, Rect.Y + w2, radius, radius, 180, 90);
 
-                //Top-Right Arc
+                //Top-Right Arc  là vòng cung trên phải
                 GraphPath.AddArc(Rect.X + Rect.Width - radius - w2, Rect.Y + w2, radius,
                                  radius, 270, 90);
 
-                //Bottom-Right Arc
+                //Bottom-Right Arc  là vòng cung dưới phải
                 GraphPath.AddArc(Rect.X + Rect.Width - w2 - radius,
                             Rect.Y + Rect.Height - w2 - radius, radius, radius, 0, 90);
-                //Bottom-Left Arc
+                
+                //Bottom-Left Arc   là còng cung dưới trái
                 GraphPath.AddArc(Rect.X + w2, Rect.Y - w2 + Rect.Height - radius, radius,
                                  radius, 90, 90);
 
-                //Close line ( Left)           
+                //Close line ( Left)            // Đóng đường 
                 GraphPath.AddLine(Rect.X + w2, Rect.Y + Rect.Height - r2 - w2, Rect.X +
                 w2, Rect.Y + r2 + w2);
 
@@ -87,6 +88,10 @@ namespace DinhKhanh_Controls_UI.Helper
             return GraphPath;
         }
 
+
+        // Cái này vẽ bóng đổ thôi
+        // Thật ra ông muốn bóng đổ đẹp thì bên wpf nó có sẵn á, bên winform ko có sẵn nên phải vẽ bằng tay
+        // wpf nó mới mà nó đẹp hơn nó xài phần cứng để render nên đẹp và mượt hơn
 
         public static Bitmap DrawBitmapShadow(RectangleF rectf, Color color, float radius, float size = 8)
         {

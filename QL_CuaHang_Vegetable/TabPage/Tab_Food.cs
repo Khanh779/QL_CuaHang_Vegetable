@@ -36,7 +36,7 @@ namespace QL_CuaHang_Vegetable.TabPage
         private void FLP_Products_Paint(object sender, PaintEventArgs e)
         {
             // Vẽ khung xám
-            ControlPaint.DrawBorder(e.Graphics, FLP_Products.ClientRectangle, Color.Silver, ButtonBorderStyle.Solid);
+            ControlPaint.DrawBorder(e.Graphics, FLP_Products.ClientRectangle, Color.Gainsboro, ButtonBorderStyle.Solid);
         }
     }
 }

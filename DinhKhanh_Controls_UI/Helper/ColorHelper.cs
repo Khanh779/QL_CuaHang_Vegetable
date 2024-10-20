@@ -9,13 +9,7 @@ namespace DinhKhanh_Controls_UI.Helper
 {
     public class ColorHelper
     {
-        /// <summary>
-        /// The BlendColor
-        /// </summary>
-        /// <param name="backgroundColor">The backgroundColor<see cref="Color"/></param>
-        /// <param name="frontColor">The frontColor<see cref="Color"/></param>
-        /// <param name="blend">The blend<see cref="double"/></param>
-        /// <returns>The <see cref="Color"/></returns>
+       
         public static Color BlendColor(Color backgroundColor, Color frontColor, double blend)
         {
             var ratio = blend / 255d;
@@ -27,6 +21,7 @@ namespace DinhKhanh_Controls_UI.Helper
             return Color.FromArgb(a, r, g, b);
         }
 
+        // Lấy màu mặc định sãn có luôn
 
         public static Color NormalColor
         {

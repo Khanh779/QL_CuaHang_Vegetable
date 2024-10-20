@@ -10,10 +10,10 @@ namespace DinhKhanh_Controls_UI.Enums
     { 
         In, 
         Out, 
-        InOut, 
-        OutIn, 
-        InOutIn, 
-        OutInOut 
+        //InOut, 
+        //OutIn, 
+        //InOutIn, 
+        //OutInOut 
     }
 
     //public enum AnimationType

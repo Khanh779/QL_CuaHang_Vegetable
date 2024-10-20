@@ -9,6 +9,8 @@ namespace DinhKhanh_Controls_UI.Helper
 {
     public class TextHelper
     {
+
+        // Cái này t đặt để vẽ string theo ý muốn của mình (thực ra đúng vị trí mình muốn0
         public static void SetStringAlign(StringFormat stringFormat, ContentAlignment contentAlignment)
         {
             switch (contentAlignment)

@@ -28,19 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tab_Food));
             this.label1 = new System.Windows.Forms.Label();
-            this.dkButton3 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.FLP_Products = new System.Windows.Forms.FlowLayoutPanel();
+            this.LB_ItemCount = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.dkTextBox1 = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
+            this.dkImageButton1 = new DinhKhanh_Controls_UI.Buttons.DKImageButton();
+            this.btn_Add_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.btn_Edit_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.btn_Del_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.dkButton3 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton1 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton2 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton4 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton5 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton6 = new DinhKhanh_Controls_UI.Buttons.DKButton();
-            this.LB_ItemCount = new System.Windows.Forms.Label();
-            this.btn_Del_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
-            this.dkButton7 = new DinhKhanh_Controls_UI.Buttons.DKButton();
-            this.btn_Add_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.FLP_Products.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,9 +53,201 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(398, 36);
+            this.label1.Size = new System.Drawing.Size(279, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lý sản phẩm (thực phẩm)";
+            // 
+            // FLP_Products
+            // 
+            this.FLP_Products.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FLP_Products.AutoScroll = true;
+            this.FLP_Products.BackColor = System.Drawing.Color.Transparent;
+            this.FLP_Products.Controls.Add(this.dkButton3);
+            this.FLP_Products.Controls.Add(this.dkButton1);
+            this.FLP_Products.Controls.Add(this.dkButton2);
+            this.FLP_Products.Controls.Add(this.dkButton4);
+            this.FLP_Products.Controls.Add(this.dkButton5);
+            this.FLP_Products.Controls.Add(this.dkButton6);
+            this.FLP_Products.Location = new System.Drawing.Point(22, 80);
+            this.FLP_Products.Name = "FLP_Products";
+            this.FLP_Products.Padding = new System.Windows.Forms.Padding(5);
+            this.FLP_Products.Size = new System.Drawing.Size(740, 369);
+            this.FLP_Products.TabIndex = 32;
+            // 
+            // LB_ItemCount
+            // 
+            this.LB_ItemCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.LB_ItemCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.LB_ItemCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.LB_ItemCount.Location = new System.Drawing.Point(18, 469);
+            this.LB_ItemCount.Name = "LB_ItemCount";
+            this.LB_ItemCount.Size = new System.Drawing.Size(218, 36);
+            this.LB_ItemCount.TabIndex = 38;
+            this.LB_ItemCount.Text = "Số lượng: 12 sản phẩm";
+            // 
+            // dkTextBox1
+            // 
+            this.dkTextBox1.AcceptReturn = false;
+            this.dkTextBox1.AcceptTab = false;
+            this.dkTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
+            this.dkTextBox1.BorderColor = System.Drawing.Color.Gray;
+            this.dkTextBox1.BorderWidth = 1;
+            this.dkTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.dkTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.dkTextBox1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.dkTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.dkTextBox1.HideSelection = true;
+            this.dkTextBox1.Image = null;
+            this.dkTextBox1.ImageAlignRight = false;
+            this.dkTextBox1.ImageSize = new System.Drawing.Size(20, 20);
+            this.dkTextBox1.ImageVisible = false;
+            this.dkTextBox1.Lines = new string[0];
+            this.dkTextBox1.Location = new System.Drawing.Point(545, 30);
+            this.dkTextBox1.MaxLength = 32767;
+            this.dkTextBox1.Name = "dkTextBox1";
+            this.dkTextBox1.PasswordChar = '\0';
+            this.dkTextBox1.ReadOnly = false;
+            this.dkTextBox1.ShortCutKeysEnabled = true;
+            this.dkTextBox1.Size = new System.Drawing.Size(217, 36);
+            this.dkTextBox1.TabIndex = 45;
+            this.dkTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dkTextBox1.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.dkTextBox1.UnderlineStyle = true;
+            this.dkTextBox1.UseAnimation = false;
+            this.dkTextBox1.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dkTextBox1.Watermark = "Nhập mã hoặc tên sản phẩm";
+            this.dkTextBox1.WatermarkForeColor = System.Drawing.Color.Gray;
+            this.dkTextBox1.WordWrap = true;
+            // 
+            // dkImageButton1
+            // 
+            this.dkImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dkImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dkImageButton1.ImageButton = ((System.Drawing.Image)(resources.GetObject("dkImageButton1.ImageButton")));
+            this.dkImageButton1.ImageHoverSize = new System.Drawing.Size(30, 30);
+            this.dkImageButton1.ImageNormalSize = new System.Drawing.Size(25, 25);
+            this.dkImageButton1.Location = new System.Drawing.Point(302, 30);
+            this.dkImageButton1.Name = "dkImageButton1";
+            this.dkImageButton1.Size = new System.Drawing.Size(39, 36);
+            this.dkImageButton1.TabIndex = 44;
+            this.dkImageButton1.Text = "dkImageButton1";
+            this.toolTip1.SetToolTip(this.dkImageButton1, "Cập nhật lại");
+            // 
+            // btn_Add_Product
+            // 
+            this.btn_Add_Product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Add_Product.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.btn_Add_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.btn_Add_Product.BorderThickness = 0;
+            this.btn_Add_Product.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Add_Product.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Add_Product.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btn_Add_Product.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btn_Add_Product.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.btn_Add_Product.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
+            this.btn_Add_Product.Image = null;
+            this.btn_Add_Product.ImageOffsetX = 0;
+            this.btn_Add_Product.ImageOffsetY = 0;
+            this.btn_Add_Product.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Add_Product.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Add_Product.Location = new System.Drawing.Point(450, 469);
+            this.btn_Add_Product.Name = "btn_Add_Product";
+            this.btn_Add_Product.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
+            this.btn_Add_Product.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.btn_Add_Product.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.btn_Add_Product.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
+            this.btn_Add_Product.Radius = 5;
+            this.btn_Add_Product.ShadowAlpha = 120;
+            this.btn_Add_Product.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Add_Product.ShadowPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Add_Product.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.btn_Add_Product.Size = new System.Drawing.Size(100, 35);
+            this.btn_Add_Product.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.btn_Add_Product.TabIndex = 41;
+            this.btn_Add_Product.Text = "Thêm";
+            this.btn_Add_Product.TextHoverColor = System.Drawing.Color.White;
+            this.btn_Add_Product.TextNormalColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Add_Product.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Add_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.btn_Add_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // btn_Edit_Product
+            // 
+            this.btn_Edit_Product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Edit_Product.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.btn_Edit_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.btn_Edit_Product.BorderThickness = 0;
+            this.btn_Edit_Product.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Edit_Product.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Edit_Product.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btn_Edit_Product.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btn_Edit_Product.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
+            this.btn_Edit_Product.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
+            this.btn_Edit_Product.Image = null;
+            this.btn_Edit_Product.ImageOffsetX = 0;
+            this.btn_Edit_Product.ImageOffsetY = 0;
+            this.btn_Edit_Product.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Edit_Product.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Edit_Product.Location = new System.Drawing.Point(556, 469);
+            this.btn_Edit_Product.Name = "btn_Edit_Product";
+            this.btn_Edit_Product.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
+            this.btn_Edit_Product.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
+            this.btn_Edit_Product.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(91)))), ((int)(((byte)(26)))));
+            this.btn_Edit_Product.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(0)))));
+            this.btn_Edit_Product.Radius = 5;
+            this.btn_Edit_Product.ShadowAlpha = 120;
+            this.btn_Edit_Product.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Edit_Product.ShadowPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Edit_Product.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.btn_Edit_Product.Size = new System.Drawing.Size(100, 35);
+            this.btn_Edit_Product.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.btn_Edit_Product.TabIndex = 43;
+            this.btn_Edit_Product.Text = "Chỉnh sửa";
+            this.btn_Edit_Product.TextHoverColor = System.Drawing.Color.White;
+            this.btn_Edit_Product.TextNormalColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Edit_Product.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Edit_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.btn_Edit_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // btn_Del_Product
+            // 
+            this.btn_Del_Product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Del_Product.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.btn_Del_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.btn_Del_Product.BorderThickness = 0;
+            this.btn_Del_Product.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Del_Product.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Del_Product.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btn_Del_Product.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btn_Del_Product.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
+            this.btn_Del_Product.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btn_Del_Product.Image = null;
+            this.btn_Del_Product.ImageOffsetX = 0;
+            this.btn_Del_Product.ImageOffsetY = 0;
+            this.btn_Del_Product.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Del_Product.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Del_Product.Location = new System.Drawing.Point(662, 469);
+            this.btn_Del_Product.Name = "btn_Del_Product";
+            this.btn_Del_Product.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btn_Del_Product.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
+            this.btn_Del_Product.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.btn_Del_Product.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(76)))), ((int)(((byte)(62)))));
+            this.btn_Del_Product.Radius = 5;
+            this.btn_Del_Product.ShadowAlpha = 120;
+            this.btn_Del_Product.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Del_Product.ShadowPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Del_Product.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.btn_Del_Product.Size = new System.Drawing.Size(100, 35);
+            this.btn_Del_Product.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.btn_Del_Product.TabIndex = 42;
+            this.btn_Del_Product.Text = "Xoá";
+            this.btn_Del_Product.TextHoverColor = System.Drawing.Color.White;
+            this.btn_Del_Product.TextNormalColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Del_Product.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Del_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.btn_Del_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // dkButton3
             // 
@@ -88,25 +284,6 @@
             this.dkButton3.TextPadding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.dkButton3.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.dkButton3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
-            // 
-            // FLP_Products
-            // 
-            this.FLP_Products.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.FLP_Products.AutoScroll = true;
-            this.FLP_Products.BackColor = System.Drawing.Color.Transparent;
-            this.FLP_Products.Controls.Add(this.dkButton3);
-            this.FLP_Products.Controls.Add(this.dkButton1);
-            this.FLP_Products.Controls.Add(this.dkButton2);
-            this.FLP_Products.Controls.Add(this.dkButton4);
-            this.FLP_Products.Controls.Add(this.dkButton5);
-            this.FLP_Products.Controls.Add(this.dkButton6);
-            this.FLP_Products.Location = new System.Drawing.Point(22, 80);
-            this.FLP_Products.Name = "FLP_Products";
-            this.FLP_Products.Padding = new System.Windows.Forms.Padding(5);
-            this.FLP_Products.Size = new System.Drawing.Size(740, 369);
-            this.FLP_Products.TabIndex = 32;
             // 
             // dkButton1
             // 
@@ -288,137 +465,14 @@
             this.dkButton6.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.dkButton6.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             // 
-            // LB_ItemCount
-            // 
-            this.LB_ItemCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LB_ItemCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.LB_ItemCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.LB_ItemCount.Location = new System.Drawing.Point(18, 469);
-            this.LB_ItemCount.Name = "LB_ItemCount";
-            this.LB_ItemCount.Size = new System.Drawing.Size(218, 36);
-            this.LB_ItemCount.TabIndex = 38;
-            this.LB_ItemCount.Text = "Số lượng: 12 sản phẩm";
-            // 
-            // btn_Del_Product
-            // 
-            this.btn_Del_Product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Del_Product.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
-            this.btn_Del_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
-            this.btn_Del_Product.BorderThickness = 0;
-            this.btn_Del_Product.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Del_Product.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Del_Product.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btn_Del_Product.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.btn_Del_Product.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
-            this.btn_Del_Product.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.btn_Del_Product.Image = null;
-            this.btn_Del_Product.ImageOffsetX = 0;
-            this.btn_Del_Product.ImageOffsetY = 0;
-            this.btn_Del_Product.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Del_Product.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Del_Product.Location = new System.Drawing.Point(662, 469);
-            this.btn_Del_Product.Name = "btn_Del_Product";
-            this.btn_Del_Product.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            this.btn_Del_Product.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
-            this.btn_Del_Product.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
-            this.btn_Del_Product.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(76)))), ((int)(((byte)(62)))));
-            this.btn_Del_Product.Radius = 5;
-            this.btn_Del_Product.ShadowAlpha = 120;
-            this.btn_Del_Product.ShadowColor = System.Drawing.Color.Black;
-            this.btn_Del_Product.ShadowPadding = new System.Windows.Forms.Padding(0);
-            this.btn_Del_Product.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.btn_Del_Product.Size = new System.Drawing.Size(100, 35);
-            this.btn_Del_Product.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.btn_Del_Product.TabIndex = 42;
-            this.btn_Del_Product.Text = "Xoá";
-            this.btn_Del_Product.TextHoverColor = System.Drawing.Color.White;
-            this.btn_Del_Product.TextNormalColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Del_Product.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btn_Del_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.btn_Del_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            // 
-            // dkButton7
-            // 
-            this.dkButton7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dkButton7.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
-            this.dkButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
-            this.dkButton7.BorderThickness = 0;
-            this.dkButton7.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dkButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dkButton7.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.dkButton7.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkButton7.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
-            this.dkButton7.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
-            this.dkButton7.Image = null;
-            this.dkButton7.ImageOffsetX = 0;
-            this.dkButton7.ImageOffsetY = 0;
-            this.dkButton7.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.dkButton7.ImageSize = new System.Drawing.Size(20, 20);
-            this.dkButton7.Location = new System.Drawing.Point(556, 469);
-            this.dkButton7.Name = "dkButton7";
-            this.dkButton7.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
-            this.dkButton7.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
-            this.dkButton7.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(91)))), ((int)(((byte)(26)))));
-            this.dkButton7.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(110)))), ((int)(((byte)(0)))));
-            this.dkButton7.Radius = 5;
-            this.dkButton7.ShadowAlpha = 120;
-            this.dkButton7.ShadowColor = System.Drawing.Color.Black;
-            this.dkButton7.ShadowPadding = new System.Windows.Forms.Padding(0);
-            this.dkButton7.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.dkButton7.Size = new System.Drawing.Size(100, 35);
-            this.dkButton7.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.dkButton7.TabIndex = 43;
-            this.dkButton7.Text = "Chỉnh sửa";
-            this.dkButton7.TextHoverColor = System.Drawing.Color.White;
-            this.dkButton7.TextNormalColor = System.Drawing.Color.WhiteSmoke;
-            this.dkButton7.TextPadding = new System.Windows.Forms.Padding(0);
-            this.dkButton7.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dkButton7.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            // 
-            // btn_Add_Product
-            // 
-            this.btn_Add_Product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Add_Product.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
-            this.btn_Add_Product.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
-            this.btn_Add_Product.BorderThickness = 0;
-            this.btn_Add_Product.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Add_Product.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Add_Product.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btn_Add_Product.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.btn_Add_Product.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.btn_Add_Product.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
-            this.btn_Add_Product.Image = null;
-            this.btn_Add_Product.ImageOffsetX = 0;
-            this.btn_Add_Product.ImageOffsetY = 0;
-            this.btn_Add_Product.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Add_Product.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add_Product.Location = new System.Drawing.Point(450, 469);
-            this.btn_Add_Product.Name = "btn_Add_Product";
-            this.btn_Add_Product.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
-            this.btn_Add_Product.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.btn_Add_Product.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.btn_Add_Product.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(139)))), ((int)(((byte)(98)))));
-            this.btn_Add_Product.Radius = 5;
-            this.btn_Add_Product.ShadowAlpha = 120;
-            this.btn_Add_Product.ShadowColor = System.Drawing.Color.Black;
-            this.btn_Add_Product.ShadowPadding = new System.Windows.Forms.Padding(0);
-            this.btn_Add_Product.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.btn_Add_Product.Size = new System.Drawing.Size(100, 35);
-            this.btn_Add_Product.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.btn_Add_Product.TabIndex = 41;
-            this.btn_Add_Product.Text = "Thêm";
-            this.btn_Add_Product.TextHoverColor = System.Drawing.Color.White;
-            this.btn_Add_Product.TextNormalColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Add_Product.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btn_Add_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.btn_Add_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            // 
             // Tab_Food
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.dkTextBox1);
+            this.Controls.Add(this.dkImageButton1);
             this.Controls.Add(this.btn_Add_Product);
-            this.Controls.Add(this.dkButton7);
+            this.Controls.Add(this.btn_Edit_Product);
             this.Controls.Add(this.btn_Del_Product);
             this.Controls.Add(this.LB_ItemCount);
             this.Controls.Add(this.FLP_Products);
@@ -443,7 +497,10 @@
         private DinhKhanh_Controls_UI.Buttons.DKButton dkButton6;
         private System.Windows.Forms.Label LB_ItemCount;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Del_Product;
-        private DinhKhanh_Controls_UI.Buttons.DKButton dkButton7;
+        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Edit_Product;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Add_Product;
+        private DinhKhanh_Controls_UI.Buttons.DKImageButton dkImageButton1;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private DinhKhanh_Controls_UI.TextControls.DKTextBox dkTextBox1;
     }
 }
