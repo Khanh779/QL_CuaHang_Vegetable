@@ -115,7 +115,7 @@
             this.dkTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.dkTextBox1.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             this.dkTextBox1.UnderlineStyle = true;
-            this.dkTextBox1.UseAnimation = false;
+            this.dkTextBox1.UseAnimation = true;
             this.dkTextBox1.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dkTextBox1.Watermark = "Nhập mã hoặc tên sản phẩm";
             this.dkTextBox1.WatermarkForeColor = System.Drawing.Color.Gray;

@@ -27,6 +27,7 @@
             this.btn_Add_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Edit_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Del_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.dkTextBox1 = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -215,10 +216,45 @@
             this.btn_Del_Order.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.btn_Del_Order.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
+            // dkTextBox1
+            // 
+            this.dkTextBox1.AcceptReturn = false;
+            this.dkTextBox1.AcceptTab = false;
+            this.dkTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
+            this.dkTextBox1.BorderColor = System.Drawing.Color.Gray;
+            this.dkTextBox1.BorderWidth = 1;
+            this.dkTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.dkTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.dkTextBox1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.dkTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.dkTextBox1.HideSelection = true;
+            this.dkTextBox1.Image = null;
+            this.dkTextBox1.ImageAlignRight = false;
+            this.dkTextBox1.ImageSize = new System.Drawing.Size(20, 20);
+            this.dkTextBox1.ImageVisible = false;
+            this.dkTextBox1.Lines = new string[0];
+            this.dkTextBox1.Location = new System.Drawing.Point(545, 30);
+            this.dkTextBox1.MaxLength = 32767;
+            this.dkTextBox1.Name = "dkTextBox1";
+            this.dkTextBox1.PasswordChar = '\0';
+            this.dkTextBox1.ReadOnly = false;
+            this.dkTextBox1.ShortCutKeysEnabled = true;
+            this.dkTextBox1.Size = new System.Drawing.Size(217, 36);
+            this.dkTextBox1.TabIndex = 48;
+            this.dkTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dkTextBox1.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.dkTextBox1.UnderlineStyle = true;
+            this.dkTextBox1.UseAnimation = true;
+            this.dkTextBox1.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dkTextBox1.Watermark = "Nhập mã hoặc tên đơn hàng";
+            this.dkTextBox1.WatermarkForeColor = System.Drawing.Color.Gray;
+            this.dkTextBox1.WordWrap = true;
+            // 
             // Tab_Order
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.dkTextBox1);
             this.Controls.Add(this.LB_ItemCount);
             this.Controls.Add(this.btn_Add_Order);
             this.Controls.Add(this.btn_Edit_Order);
@@ -244,5 +280,6 @@
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Del_Order;
         private System.Windows.Forms.ColumnHeader CH_Status;
         private System.Windows.Forms.Label LB_ItemCount;
+        private DinhKhanh_Controls_UI.TextControls.DKTextBox dkTextBox1;
     }
 }
