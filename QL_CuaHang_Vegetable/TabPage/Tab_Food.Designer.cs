@@ -72,7 +72,7 @@
             this.FLP_Products.Controls.Add(this.dkButton6);
             this.FLP_Products.Location = new System.Drawing.Point(22, 80);
             this.FLP_Products.Name = "FLP_Products";
-            this.FLP_Products.Padding = new System.Windows.Forms.Padding(5);
+            this.FLP_Products.Padding = new System.Windows.Forms.Padding(12);
             this.FLP_Products.Size = new System.Drawing.Size(762, 391);
             this.FLP_Products.TabIndex = 32;
             // 
@@ -264,7 +264,7 @@
             this.dkButton3.ImageOffsetY = 8;
             this.dkButton3.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.dkButton3.ImageSize = new System.Drawing.Size(50, 50);
-            this.dkButton3.Location = new System.Drawing.Point(8, 8);
+            this.dkButton3.Location = new System.Drawing.Point(15, 15);
             this.dkButton3.Name = "dkButton3";
             this.dkButton3.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dkButton3.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -300,7 +300,7 @@
             this.dkButton1.ImageOffsetY = 8;
             this.dkButton1.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.dkButton1.ImageSize = new System.Drawing.Size(50, 50);
-            this.dkButton1.Location = new System.Drawing.Point(253, 8);
+            this.dkButton1.Location = new System.Drawing.Point(260, 15);
             this.dkButton1.Name = "dkButton1";
             this.dkButton1.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dkButton1.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -336,7 +336,7 @@
             this.dkButton2.ImageOffsetY = 8;
             this.dkButton2.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.dkButton2.ImageSize = new System.Drawing.Size(50, 50);
-            this.dkButton2.Location = new System.Drawing.Point(498, 8);
+            this.dkButton2.Location = new System.Drawing.Point(505, 15);
             this.dkButton2.Name = "dkButton2";
             this.dkButton2.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dkButton2.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -372,7 +372,7 @@
             this.dkButton4.ImageOffsetY = 8;
             this.dkButton4.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.dkButton4.ImageSize = new System.Drawing.Size(50, 50);
-            this.dkButton4.Location = new System.Drawing.Point(8, 184);
+            this.dkButton4.Location = new System.Drawing.Point(15, 191);
             this.dkButton4.Name = "dkButton4";
             this.dkButton4.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dkButton4.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -408,7 +408,7 @@
             this.dkButton5.ImageOffsetY = 8;
             this.dkButton5.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.dkButton5.ImageSize = new System.Drawing.Size(50, 50);
-            this.dkButton5.Location = new System.Drawing.Point(253, 184);
+            this.dkButton5.Location = new System.Drawing.Point(260, 191);
             this.dkButton5.Name = "dkButton5";
             this.dkButton5.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dkButton5.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
@@ -444,7 +444,7 @@
             this.dkButton6.ImageOffsetY = 8;
             this.dkButton6.ImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.dkButton6.ImageSize = new System.Drawing.Size(50, 50);
-            this.dkButton6.Location = new System.Drawing.Point(498, 184);
+            this.dkButton6.Location = new System.Drawing.Point(505, 191);
             this.dkButton6.Name = "dkButton6";
             this.dkButton6.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.dkButton6.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
