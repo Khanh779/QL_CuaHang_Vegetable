@@ -791,7 +791,7 @@ namespace DinhKhanh_Controls_UI.TextControls
 
                 if (wm != null && wm.IsHandleCreated)
                 {
-                    wm.Size = new Size(Width - offx + 1 - BorderWidth * 2 - (imageVisible && _image != null ? ImageSize.Width : 0), innerTextBox.Height);
+                    wm.Size = new Size(Width - offx - 1 - BorderWidth * 2 - (imageVisible && _image != null ? ImageSize.Width : 0) - 3, innerTextBox.Height);
                     wm.Location = new Point(innerTextBox.Location.X + (TextAlign == HorizontalAlignment.Left ? 1 : TextAlign == HorizontalAlignment.Right ? -1 : 0),
                         innerTextBox.Location.Y);
 

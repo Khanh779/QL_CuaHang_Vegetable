@@ -59,5 +59,35 @@ namespace QL_CuaHang_Vegetable.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7f916ded027eef14543550b385a4306cqua_cam_1 {
+            get {
+                object obj = ResourceManager.GetObject("_7f916ded027eef14543550b385a4306cqua_cam_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_refresh_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_refresh_96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_used_product_80 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_used_product_80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

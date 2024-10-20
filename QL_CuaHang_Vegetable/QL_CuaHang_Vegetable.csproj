@@ -63,6 +63,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddProduct_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProduct_Form.Designer.cs">
+      <DependentUpon>AddProduct_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="MauThietKe_KoSua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProduct_Form.resx">
+      <DependentUpon>AddProduct_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MauThietKe_KoSua.resx">
       <DependentUpon>MauThietKe_KoSua.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +166,15 @@
       <Project>{6EC34E19-D310-4CC5-A522-3E48FC4D84C7}</Project>
       <Name>DinhKhanh_Controls_UI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-used-product-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7f916ded027eef14543550b385a4306cqua-cam-1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

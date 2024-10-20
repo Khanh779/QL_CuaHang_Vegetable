@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using QL_CuaHang_Vegetable.Forms;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace QL_CuaHang_Vegetable.TabPage
@@ -30,6 +31,15 @@ namespace QL_CuaHang_Vegetable.TabPage
         {
             // Vẽ khung xám
             ControlPaint.DrawBorder(e.Graphics, FLP_Products.ClientRectangle, Color.Gainsboro, ButtonBorderStyle.Solid);
+        }
+
+        private void btn_Add_Product_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Left)
+            {
+                AddProduct_Form addProduct_Form = new AddProduct_Form();
+                addProduct_Form.Show();
+            }
         }
     }
 }

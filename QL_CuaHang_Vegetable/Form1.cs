@@ -116,6 +116,7 @@ namespace QL_CuaHang_Vegetable
             if (e.Button == MouseButtons.Left)
             {
                 SwitchTab(QL_CuaHang_Vegetable.TabPage.Tab_Report.Instance);
+                QL_CuaHang_Vegetable.TabPage.Tab_Report.Instance.ReloadData();
             }
         }
 

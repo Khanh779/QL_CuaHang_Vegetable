@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace QL_CuaHang_Vegetable.PhanXuLy
 {
     [Serializable]
     public class ThongTinDonHang
     {
-        public int MaDonHang { get; set; }
+        public string MaDonHang { get; set; }
         public string TenKhachHang { get; set; }
         public string DiaChi { get; set; }
         public string SoDienThoai { get; set; }
@@ -14,10 +15,11 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
         public double TongTien { get; set; }
         public TrangThai_DonHang TrangThai { get; set; }
         public LoaiDonHang LoaiDonHang { get; set; }
-
+        public List<ThongTinSanPham> SanPhams { get; set; } // Danh sách sản phẩm trong đơn hàng
 
         public ThongTinDonHang()
         {
+            SanPhams = new List<ThongTinSanPham>(); // Khởi tạo danh sách
         }
     }
 

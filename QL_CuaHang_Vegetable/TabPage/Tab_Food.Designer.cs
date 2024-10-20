@@ -35,10 +35,10 @@
             this.LB_ItemCount = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.dkTextBox1 = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
-            this.dkImageButton1 = new DinhKhanh_Controls_UI.Buttons.DKImageButton();
             this.btn_Add_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Edit_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Del_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.dkImageButton1 = new DinhKhanh_Controls_UI.Buttons.DKImageButton();
             this.dkButton3 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton1 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton2 = new DinhKhanh_Controls_UI.Buttons.DKButton();
@@ -121,20 +121,6 @@
             this.dkTextBox1.WatermarkForeColor = System.Drawing.Color.Gray;
             this.dkTextBox1.WordWrap = true;
             // 
-            // dkImageButton1
-            // 
-            this.dkImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dkImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dkImageButton1.ImageButton = ((System.Drawing.Image)(resources.GetObject("dkImageButton1.ImageButton")));
-            this.dkImageButton1.ImageHoverSize = new System.Drawing.Size(30, 30);
-            this.dkImageButton1.ImageNormalSize = new System.Drawing.Size(25, 25);
-            this.dkImageButton1.Location = new System.Drawing.Point(324, 30);
-            this.dkImageButton1.Name = "dkImageButton1";
-            this.dkImageButton1.Size = new System.Drawing.Size(39, 36);
-            this.dkImageButton1.TabIndex = 44;
-            this.dkImageButton1.Text = "dkImageButton1";
-            this.toolTip1.SetToolTip(this.dkImageButton1, "Cập nhật lại");
-            // 
             // btn_Add_Product
             // 
             this.btn_Add_Product.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -172,6 +158,7 @@
             this.btn_Add_Product.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_Add_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.btn_Add_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btn_Add_Product.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Add_Product_MouseClick);
             // 
             // btn_Edit_Product
             // 
@@ -248,6 +235,20 @@
             this.btn_Del_Product.TextPadding = new System.Windows.Forms.Padding(0);
             this.btn_Del_Product.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.btn_Del_Product.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // dkImageButton1
+            // 
+            this.dkImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dkImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dkImageButton1.ImageButton = global::QL_CuaHang_Vegetable.Properties.Resources.icons8_refresh_96;
+            this.dkImageButton1.ImageHoverSize = new System.Drawing.Size(30, 30);
+            this.dkImageButton1.ImageNormalSize = new System.Drawing.Size(25, 25);
+            this.dkImageButton1.Location = new System.Drawing.Point(324, 30);
+            this.dkImageButton1.Name = "dkImageButton1";
+            this.dkImageButton1.Size = new System.Drawing.Size(39, 36);
+            this.dkImageButton1.TabIndex = 44;
+            this.dkImageButton1.Text = "dkImageButton1";
+            this.toolTip1.SetToolTip(this.dkImageButton1, "Cập nhật lại");
             // 
             // dkButton3
             // 
