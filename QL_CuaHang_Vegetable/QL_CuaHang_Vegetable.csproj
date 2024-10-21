@@ -63,11 +63,11 @@
     <Compile Include="ExContro\FoodCard.Designer.cs">
       <DependentUpon>FoodCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="QuanTri_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="QuanTri_Main.Designer.cs">
+      <DependentUpon>QuanTri_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AddProduct_Form.cs">
       <SubType>Form</SubType>
@@ -130,8 +130,8 @@
     <EmbeddedResource Include="ExContro\FoodCard.resx">
       <DependentUpon>FoodCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="QuanTri_Main.resx">
+      <DependentUpon>QuanTri_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddProduct_Form.resx">
       <DependentUpon>AddProduct_Form.cs</DependentUpon>

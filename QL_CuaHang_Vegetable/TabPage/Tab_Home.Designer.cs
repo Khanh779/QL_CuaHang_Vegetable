@@ -46,7 +46,7 @@
             this.dkCard1.ShadowAlpha = 255;
             this.dkCard1.ShadowColor = System.Drawing.Color.Black;
             this.dkCard1.ShadowPadding = new System.Windows.Forms.Padding(4, 4, 4, 6);
-            this.dkCard1.Size = new System.Drawing.Size(167, 152);
+            this.dkCard1.Size = new System.Drawing.Size(332, 233);
             this.dkCard1.TabIndex = 1;
             this.dkCard1.Text = "dkCard1";
             // 

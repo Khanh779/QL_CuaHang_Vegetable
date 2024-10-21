@@ -8,23 +8,23 @@ using System.Windows.Forms;
 
 namespace QL_CuaHang_Vegetable
 {
-    public partial class Form1 : TemplateForm
+    public partial class QuanTri_Main : TemplateForm
     {
 
-        static Form1 _obj;
-        public static Form1 Instance
+        static QuanTri_Main _obj;
+        public static QuanTri_Main Instance
         {
             get
             {
                 if (_obj == null || _obj.IsDisposed)
                 {
-                    _obj = new Form1();
+                    _obj = new QuanTri_Main();
                 }
                 return _obj;
             }
         }
 
-        public Form1()
+        public QuanTri_Main()
         {
             InitializeComponent();
             _obj = this;

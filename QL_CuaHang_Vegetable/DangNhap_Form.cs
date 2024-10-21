@@ -1,4 +1,5 @@
 ﻿using DinhKhanh_Controls_UI.Forms;
+using QL_CuaHang_Vegetable.PhanXuLy;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,15 +40,32 @@ namespace QL_CuaHang_Vegetable
             txt_Pass.UseSystemPasswordChar = !dkCheckBox1.Checked;
         }
 
-        private void dkButton2_MouseClick(object sender, MouseEventArgs e)
+        private void btn_Close_MouseClick(object sender, MouseEventArgs e)
         {
-            if(txt_UserName.Text == "admin" && txt_Pass.Text == "admin")
+            if(MessageBox.Show("Bạn có muốn đóng ko?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question)== DialogResult.Yes)
             {
-                MessageBox.Show("Đăng nhập thành công");
+                Application.Exit();
+            }
+        }
+
+        private void btn_Login_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(txt_UserName.Text == "" || txt_Pass.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
             else
             {
-                MessageBox.Show("Đăng nhập thất bại");
+                if(txt_UserName.Text =="admin" && txt_Pass.Text=="admin")
+                {
+                    MessageBox.Show("Đăng nhập thành công", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+
+                    QuanTri_Main.Instance.Show();
+
+                  
+                }    
             }
         }
     }
