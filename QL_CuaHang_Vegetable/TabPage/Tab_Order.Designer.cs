@@ -18,17 +18,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listViewOrders = new System.Windows.Forms.ListView();
             this.CH_CodeOrder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_ProductName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Number = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Coin = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Loai = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.LB_ItemCount = new System.Windows.Forms.Label();
             this.btn_Add_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Edit_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Del_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkTextBox1 = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
-            this.CH_Loai = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_KH_DT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_User = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -49,12 +48,11 @@
             this.listViewOrders.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listViewOrders.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.CH_CodeOrder,
-            this.CH_ProductName,
-            this.CH_Number,
-            this.CH_Coin,
-            this.CH_Date,
+            this.CH_KH_DT,
+            this.CH_User,
+            this.CH_Loai,
             this.CH_Status,
-            this.CH_Loai});
+            this.CH_Date});
             this.listViewOrders.FullRowSelect = true;
             this.listViewOrders.HideSelection = false;
             this.listViewOrders.Location = new System.Drawing.Point(22, 80);
@@ -67,32 +65,17 @@
             // CH_CodeOrder
             // 
             this.CH_CodeOrder.Text = "Mã đơn hàng";
-            this.CH_CodeOrder.Width = 112;
-            // 
-            // CH_ProductName
-            // 
-            this.CH_ProductName.Text = "Tên sản phẩm";
-            this.CH_ProductName.Width = 140;
-            // 
-            // CH_Number
-            // 
-            this.CH_Number.Text = "Số lượng";
-            this.CH_Number.Width = 83;
-            // 
-            // CH_Coin
-            // 
-            this.CH_Coin.Text = "Giá";
-            this.CH_Coin.Width = 81;
-            // 
-            // CH_Date
-            // 
-            this.CH_Date.Text = "Ngày đặt";
-            this.CH_Date.Width = 113;
+            this.CH_CodeOrder.Width = 130;
             // 
             // CH_Status
             // 
             this.CH_Status.Text = "Trạng thái";
             this.CH_Status.Width = 105;
+            // 
+            // CH_Loai
+            // 
+            this.CH_Loai.Text = "Loại đơn hàng";
+            this.CH_Loai.Width = 110;
             // 
             // LB_ItemCount
             // 
@@ -249,14 +232,22 @@
             this.dkTextBox1.UnderlineStyle = true;
             this.dkTextBox1.UseAnimation = true;
             this.dkTextBox1.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dkTextBox1.Watermark = "Nhập mã hoặc tên đơn hàng";
+            this.dkTextBox1.Watermark = "Nhập mã đơn hàng";
             this.dkTextBox1.WatermarkForeColor = System.Drawing.Color.Gray;
             this.dkTextBox1.WordWrap = true;
             // 
-            // CH_Loai
+            // CH_KH_DT
             // 
-            this.CH_Loai.Text = "Loại đơn hàng";
-            this.CH_Loai.Width = 82;
+            this.CH_KH_DT.Text = "Khách hàng/ đối tác";
+            this.CH_KH_DT.Width = 165;
+            // 
+            // CH_User
+            // 
+            this.CH_User.Text = "User";
+            // 
+            // CH_Date
+            // 
+            this.CH_Date.Text = "Thời gian";
             // 
             // Tab_Order
             // 
@@ -279,10 +270,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listViewOrders;
         private System.Windows.Forms.ColumnHeader CH_CodeOrder;
-        private System.Windows.Forms.ColumnHeader CH_ProductName;
-        private System.Windows.Forms.ColumnHeader CH_Number;
-        private System.Windows.Forms.ColumnHeader CH_Coin;
-        private System.Windows.Forms.ColumnHeader CH_Date;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Add_Order;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Edit_Order;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Del_Order;
@@ -290,5 +277,8 @@
         private System.Windows.Forms.Label LB_ItemCount;
         private DinhKhanh_Controls_UI.TextControls.DKTextBox dkTextBox1;
         private System.Windows.Forms.ColumnHeader CH_Loai;
+        private System.Windows.Forms.ColumnHeader CH_KH_DT;
+        private System.Windows.Forms.ColumnHeader CH_User;
+        private System.Windows.Forms.ColumnHeader CH_Date;
     }
 }

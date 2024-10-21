@@ -48,7 +48,7 @@
             // 
             this.txt_UserName.AcceptReturn = false;
             this.txt_UserName.AcceptTab = false;
-            this.txt_UserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.txt_UserName.BackColor = System.Drawing.Color.White;
             this.txt_UserName.BorderColor = System.Drawing.Color.Gray;
             this.txt_UserName.BorderWidth = 1;
             this.txt_UserName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -68,7 +68,7 @@
             this.txt_UserName.PasswordChar = '\0';
             this.txt_UserName.ReadOnly = false;
             this.txt_UserName.ShortCutKeysEnabled = true;
-            this.txt_UserName.Size = new System.Drawing.Size(212, 32);
+            this.txt_UserName.Size = new System.Drawing.Size(190, 32);
             this.txt_UserName.TabIndex = 46;
             this.txt_UserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_UserName.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
@@ -102,15 +102,15 @@
             this.dkPanel1.Controls.Add(this.label2);
             this.dkPanel1.Controls.Add(this.txt_UserName);
             this.dkPanel1.LinearGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.dkPanel1.Location = new System.Drawing.Point(195, 14);
+            this.dkPanel1.Location = new System.Drawing.Point(180, 14);
             this.dkPanel1.Name = "dkPanel1";
-            this.dkPanel1.PanelColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.dkPanel1.PanelColor1 = System.Drawing.Color.White;
             this.dkPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.dkPanel1.Radius = 12;
             this.dkPanel1.ShadowAlpha = 255;
             this.dkPanel1.ShadowColor = System.Drawing.Color.Black;
             this.dkPanel1.ShadowPadding = new System.Windows.Forms.Padding(5, 5, 5, 6);
-            this.dkPanel1.Size = new System.Drawing.Size(372, 179);
+            this.dkPanel1.Size = new System.Drawing.Size(348, 179);
             this.dkPanel1.TabIndex = 66;
             // 
             // dkCheckBox1
@@ -157,7 +157,7 @@
             // 
             this.txt_Pass.AcceptReturn = false;
             this.txt_Pass.AcceptTab = false;
-            this.txt_Pass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.txt_Pass.BackColor = System.Drawing.Color.White;
             this.txt_Pass.BorderColor = System.Drawing.Color.Gray;
             this.txt_Pass.BorderWidth = 1;
             this.txt_Pass.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -177,7 +177,7 @@
             this.txt_Pass.PasswordChar = '\0';
             this.txt_Pass.ReadOnly = false;
             this.txt_Pass.ShortCutKeysEnabled = true;
-            this.txt_Pass.Size = new System.Drawing.Size(212, 32);
+            this.txt_Pass.Size = new System.Drawing.Size(190, 32);
             this.txt_Pass.TabIndex = 66;
             this.txt_Pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_Pass.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
@@ -194,7 +194,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 205);
+            this.pictureBox1.Size = new System.Drawing.Size(171, 190);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 67;
             this.pictureBox1.TabStop = false;
@@ -203,14 +203,13 @@
             // 
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.dkPanel1);
-            this.panel1.Location = new System.Drawing.Point(23, 69);
+            this.panel1.Location = new System.Drawing.Point(11, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(570, 219);
+            this.panel1.Size = new System.Drawing.Size(537, 198);
             this.panel1.TabIndex = 68;
             // 
             // btn_Login
             // 
-            this.btn_Login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Login.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
             this.btn_Login.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
             this.btn_Login.BorderThickness = 0;
@@ -225,7 +224,7 @@
             this.btn_Login.ImageOffsetY = 0;
             this.btn_Login.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Login.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Login.Location = new System.Drawing.Point(402, 293);
+            this.btn_Login.Location = new System.Drawing.Point(354, 259);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
             this.btn_Login.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
@@ -249,7 +248,6 @@
             // 
             // btn_Close
             // 
-            this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Close.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
             this.btn_Close.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
             this.btn_Close.BorderThickness = 0;
@@ -264,7 +262,7 @@
             this.btn_Close.ImageOffsetY = 0;
             this.btn_Close.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Close.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Close.Location = new System.Drawing.Point(506, 293);
+            this.btn_Close.Location = new System.Drawing.Point(450, 259);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.btn_Close.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
@@ -291,7 +289,7 @@
             this.AllowResize = false;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(615, 337);
+            this.ClientSize = new System.Drawing.Size(559, 305);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.panel1);

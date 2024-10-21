@@ -63,6 +63,12 @@
     <Compile Include="ExContro\FoodCard.Designer.cs">
       <DependentUpon>FoodCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Add_Employee_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_Employee_Form.Designer.cs">
+      <DependentUpon>Add_Employee_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanTri_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     <EmbeddedResource Include="ExContro\FoodCard.resx">
       <DependentUpon>FoodCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Add_Employee_Form.resx">
+      <DependentUpon>Add_Employee_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanTri_Main.resx">
       <DependentUpon>QuanTri_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +203,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\7f916ded027eef14543550b385a4306cqua-cam-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-100.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
