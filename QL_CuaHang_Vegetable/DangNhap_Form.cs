@@ -42,7 +42,7 @@ namespace QL_CuaHang_Vegetable
 
         private void btn_Close_MouseClick(object sender, MouseEventArgs e)
         {
-            if(MessageBox.Show("Bạn có muốn đóng ko?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question)== DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn đóng ko?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -50,22 +50,26 @@ namespace QL_CuaHang_Vegetable
 
         private void btn_Login_MouseClick(object sender, MouseEventArgs e)
         {
-            if(txt_UserName.Text == "" || txt_Pass.Text == "")
+            if (txt_UserName.Text == "" || txt_Pass.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
             {
-                if(txt_UserName.Text =="admin" && txt_Pass.Text=="admin")
+                if (txt_UserName.Text == "admin" && txt_Pass.Text == "admin")
                 {
                     MessageBox.Show("Đăng nhập thành công", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                 
+
                     QuanTri_Main.Instance.Show();
 
                     this.Hide();
-                  
-                }    
+
+                }
+                else
+                {
+                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
     }
