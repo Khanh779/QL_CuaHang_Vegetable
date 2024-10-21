@@ -551,6 +551,7 @@
             this.dkButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
             this.dkButton1.BorderThickness = 0;
             this.dkButton1.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dkButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dkButton1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dkButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.dkButton1.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
@@ -655,8 +656,10 @@
             this.Controls.Add(this.PB_Product);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddProduct_Form";
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm sản phẩm";
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.PB_Product, 0);

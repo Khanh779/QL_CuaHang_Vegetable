@@ -149,7 +149,8 @@ namespace QL_CuaHang_Vegetable
 
                 //AntiFlicker(newControl);
 
-                // Nếu có control hiện tại, thực hiện hoạt ảnh trượt
+                //Nếu có control hiện tại, thực hiện hoạt ảnh trượt
+                
                 //if (currentControl != null)
                 //{
                 //    DoSlideAnimate(currentControl, newControl, currentControl.TabIndex < newControl.TabIndex ? false : true);
@@ -200,7 +201,7 @@ namespace QL_CuaHang_Vegetable
             }
 
             AnimationManager _slideAnimator = new AnimationManager(); // Tạo một AnimationManager mới
-            _slideAnimator.Increment = 0.2; // Đặt tốc độ hoạt ảnh
+            _slideAnimator.Increment = 0.1; // Đặt tốc độ hoạt ảnh
 
             // Cập nhật hàm vẽ khi hoạt ảnh diễn ra
             _slideAnimator.AnimationProgress += (alpha) =>

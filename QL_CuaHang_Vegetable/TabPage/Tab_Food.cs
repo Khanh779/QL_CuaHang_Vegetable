@@ -38,7 +38,7 @@ namespace QL_CuaHang_Vegetable.TabPage
             if(e.Button == MouseButtons.Left)
             {
                 AddProduct_Form addProduct_Form = new AddProduct_Form();
-                addProduct_Form.Show();
+                addProduct_Form.ShowDialog();
             }
         }
     }

@@ -63,6 +63,17 @@ namespace DinhKhanh_Controls_UI.Forms
             }
         }
 
+        public new bool MinimizeBox
+        {
+            get => base.MinimizeBox;
+            set
+            {
+                base.MinimizeBox = value;
+                dkControlBoxForm3.Visible = value;
+                Invalidate();
+            }
+        }
+
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);

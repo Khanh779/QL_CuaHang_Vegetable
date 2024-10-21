@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using QL_CuaHang_Vegetable.Forms;
+using System.Windows.Forms;
 
 namespace QL_CuaHang_Vegetable.TabPage
 {
@@ -22,6 +23,15 @@ namespace QL_CuaHang_Vegetable.TabPage
         {
             InitializeComponent();
             _obj = this;
+        }
+
+        private void btn_Add_Employ_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button== MouseButtons.Left)
+            {
+                Add_Employee_Form add_Employee_Form = new Add_Employee_Form();
+                add_Employee_Form.Show();
+            }    
         }
     }
 }

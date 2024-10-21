@@ -223,7 +223,7 @@
             // dkCard4
             // 
             this.dkCard4.BarAlignment = DinhKhanh_Controls_UI.Enums.ContentLayoutAlign.Top;
-            this.dkCard4.BarColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.dkCard4.BarColor1 = System.Drawing.Color.Gold;
             this.dkCard4.BarColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
             this.dkCard4.BarThickness = 3;
             this.dkCard4.BorderColor = System.Drawing.Color.Gainsboro;

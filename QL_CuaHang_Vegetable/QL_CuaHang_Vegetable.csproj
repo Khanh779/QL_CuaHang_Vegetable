@@ -207,5 +207,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-employee-100.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tasks.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-notification.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -780,14 +780,14 @@ namespace DinhKhanh_Controls_UI.TextControls
             Invalidate();
         }
 
-        int offx = 5;
+        int offx = 1;
 
         void UpdateInnerTextBoxPosition()
         {
 
             if (innerTextBox != null && innerTextBox.IsHandleCreated)
             {
-                innerTextBox.Location = new Point(2 + BorderWidth + (imageVisible && _image != null ? ImageSize.Width : 0) + offx, (Height - innerTextBox.Height) / 2);
+                innerTextBox.Location = new Point(BorderWidth + (imageVisible && _image != null ? ImageSize.Width : 0) + offx, (Height - innerTextBox.Height) / 2);
 
                 if (wm != null && wm.IsHandleCreated)
                 {

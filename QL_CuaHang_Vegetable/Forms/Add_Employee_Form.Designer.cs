@@ -56,10 +56,10 @@
             this.FLP_Products.Controls.Add(this.dkButton4);
             this.FLP_Products.Controls.Add(this.dkButton5);
             this.FLP_Products.Controls.Add(this.dkButton6);
-            this.FLP_Products.Location = new System.Drawing.Point(19, 71);
+            this.FLP_Products.Location = new System.Drawing.Point(19, 64);
             this.FLP_Products.Name = "FLP_Products";
             this.FLP_Products.Padding = new System.Windows.Forms.Padding(12);
-            this.FLP_Products.Size = new System.Drawing.Size(762, 378);
+            this.FLP_Products.Size = new System.Drawing.Size(762, 376);
             this.FLP_Products.TabIndex = 33;
             // 
             // dkButton3

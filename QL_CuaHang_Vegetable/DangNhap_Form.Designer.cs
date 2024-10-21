@@ -105,7 +105,7 @@
             this.dkPanel1.Location = new System.Drawing.Point(180, 14);
             this.dkPanel1.Name = "dkPanel1";
             this.dkPanel1.PanelColor1 = System.Drawing.Color.White;
-            this.dkPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.dkPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
             this.dkPanel1.Radius = 12;
             this.dkPanel1.ShadowAlpha = 255;
             this.dkPanel1.ShadowColor = System.Drawing.Color.Black;
@@ -129,11 +129,11 @@
             this.dkCheckBox1.EnabledTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.dkCheckBox1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
             this.dkCheckBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.dkCheckBox1.Location = new System.Drawing.Point(23, 127);
+            this.dkCheckBox1.Location = new System.Drawing.Point(17, 127);
             this.dkCheckBox1.Name = "dkCheckBox1";
             this.dkCheckBox1.RippleAlpha = 60;
             this.dkCheckBox1.RippleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(168)))), ((int)(((byte)(148)))));
-            this.dkCheckBox1.Size = new System.Drawing.Size(146, 28);
+            this.dkCheckBox1.Size = new System.Drawing.Size(154, 28);
             this.dkCheckBox1.TabIndex = 69;
             this.dkCheckBox1.Text = "Hiện thị mật khẩu";
             this.dkCheckBox1.TextRenderHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
