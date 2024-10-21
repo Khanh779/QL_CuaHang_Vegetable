@@ -40,6 +40,7 @@
             this.btn_Edit_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Del_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.LB_ItemCount = new System.Windows.Forms.Label();
+            this.LB_ViewAdvan = new System.Windows.Forms.LinkLabel();
             this.FLP_Products.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@
             this.FLP_Products.Controls.Add(this.dkButton4);
             this.FLP_Products.Controls.Add(this.dkButton5);
             this.FLP_Products.Controls.Add(this.dkButton6);
-            this.FLP_Products.Location = new System.Drawing.Point(19, 64);
+            this.FLP_Products.Location = new System.Drawing.Point(19, 74);
             this.FLP_Products.Name = "FLP_Products";
             this.FLP_Products.Padding = new System.Windows.Forms.Padding(12);
             this.FLP_Products.Size = new System.Drawing.Size(762, 376);
@@ -295,7 +296,7 @@
             this.btn_Add_Order.ImageOffsetY = 0;
             this.btn_Add_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Add_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add_Order.Location = new System.Drawing.Point(469, 458);
+            this.btn_Add_Order.Location = new System.Drawing.Point(469, 462);
             this.btn_Add_Order.Name = "btn_Add_Order";
             this.btn_Add_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
             this.btn_Add_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
@@ -333,7 +334,7 @@
             this.btn_Edit_Order.ImageOffsetY = 0;
             this.btn_Edit_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Edit_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Edit_Order.Location = new System.Drawing.Point(575, 458);
+            this.btn_Edit_Order.Location = new System.Drawing.Point(575, 462);
             this.btn_Edit_Order.Name = "btn_Edit_Order";
             this.btn_Edit_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
             this.btn_Edit_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
@@ -371,7 +372,7 @@
             this.btn_Del_Order.ImageOffsetY = 0;
             this.btn_Del_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Del_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Del_Order.Location = new System.Drawing.Point(681, 458);
+            this.btn_Del_Order.Location = new System.Drawing.Point(681, 462);
             this.btn_Del_Order.Name = "btn_Del_Order";
             this.btn_Del_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_Del_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
@@ -397,17 +398,31 @@
             this.LB_ItemCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LB_ItemCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.LB_ItemCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.LB_ItemCount.Location = new System.Drawing.Point(15, 458);
+            this.LB_ItemCount.Location = new System.Drawing.Point(15, 462);
             this.LB_ItemCount.Name = "LB_ItemCount";
-            this.LB_ItemCount.Size = new System.Drawing.Size(172, 36);
+            this.LB_ItemCount.Size = new System.Drawing.Size(172, 35);
             this.LB_ItemCount.TabIndex = 50;
             this.LB_ItemCount.Text = "Số nhân viên: 6";
+            // 
+            // LB_ViewAdvan
+            // 
+            this.LB_ViewAdvan.BackColor = System.Drawing.Color.Transparent;
+            this.LB_ViewAdvan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_ViewAdvan.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.LB_ViewAdvan.Location = new System.Drawing.Point(524, 44);
+            this.LB_ViewAdvan.Name = "LB_ViewAdvan";
+            this.LB_ViewAdvan.Size = new System.Drawing.Size(257, 27);
+            this.LB_ViewAdvan.TabIndex = 71;
+            this.LB_ViewAdvan.TabStop = true;
+            this.LB_ViewAdvan.Text = "Xem chế độ nâng cao";
+            this.LB_ViewAdvan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Add_Employee_Form
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(800, 511);
+            this.Controls.Add(this.LB_ViewAdvan);
             this.Controls.Add(this.LB_ItemCount);
             this.Controls.Add(this.btn_Add_Order);
             this.Controls.Add(this.btn_Edit_Order);
@@ -421,6 +436,7 @@
             this.Controls.SetChildIndex(this.btn_Edit_Order, 0);
             this.Controls.SetChildIndex(this.btn_Add_Order, 0);
             this.Controls.SetChildIndex(this.LB_ItemCount, 0);
+            this.Controls.SetChildIndex(this.LB_ViewAdvan, 0);
             this.FLP_Products.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -439,5 +455,6 @@
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Edit_Order;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Del_Order;
         private System.Windows.Forms.Label LB_ItemCount;
+        private System.Windows.Forms.LinkLabel LB_ViewAdvan;
     }
 }

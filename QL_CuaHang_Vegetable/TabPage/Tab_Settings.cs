@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Drawing;
+using System.Windows.Forms;
 
 namespace QL_CuaHang_Vegetable.TabPage
 {
@@ -20,6 +21,16 @@ namespace QL_CuaHang_Vegetable.TabPage
         {
             InitializeComponent();
             _obj = this;
+        }
+
+        private void Tab_Settings_Load(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void PN_Settings_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, PN_Settings.ClientRectangle, Color.Gainsboro, ButtonBorderStyle.Solid);
         }
     }
 }

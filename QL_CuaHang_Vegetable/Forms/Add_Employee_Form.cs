@@ -13,9 +13,11 @@ namespace QL_CuaHang_Vegetable.Forms
 {
     public partial class Add_Employee_Form : TemplateForm
     {
+        
         public Add_Employee_Form()
         {
             InitializeComponent();
+            
         }
     }
 }

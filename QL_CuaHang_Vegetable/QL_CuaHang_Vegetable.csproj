@@ -217,5 +217,9 @@
   <ItemGroup>
     <None Include="Resources\icons8-to-do.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms_Guest\" />
+    <Folder Include="TabPage_Guest\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,8 +37,8 @@
             this.txt_Pass = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Login = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Close = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.btn_Login = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -205,8 +205,46 @@
             this.panel1.Controls.Add(this.dkPanel1);
             this.panel1.Location = new System.Drawing.Point(11, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(537, 198);
+            this.panel1.Size = new System.Drawing.Size(528, 198);
             this.panel1.TabIndex = 68;
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.btn_Close.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.btn_Close.BorderThickness = 0;
+            this.btn_Close.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Close.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btn_Close.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btn_Close.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.btn_Close.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.btn_Close.Image = null;
+            this.btn_Close.ImageOffsetX = 0;
+            this.btn_Close.ImageOffsetY = 0;
+            this.btn_Close.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Close.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Close.Location = new System.Drawing.Point(449, 259);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.btn_Close.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.btn_Close.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.btn_Close.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.btn_Close.Radius = 5;
+            this.btn_Close.ShadowAlpha = 120;
+            this.btn_Close.ShadowColor = System.Drawing.Color.Black;
+            this.btn_Close.ShadowPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Close.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.btn_Close.Size = new System.Drawing.Size(89, 30);
+            this.btn_Close.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.btn_Close.TabIndex = 70;
+            this.btn_Close.Text = "Đóng";
+            this.btn_Close.TextHoverColor = System.Drawing.Color.White;
+            this.btn_Close.TextNormalColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Close.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btn_Close.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.btn_Close.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.btn_Close.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Close_MouseClick);
             // 
             // btn_Login
             // 
@@ -246,50 +284,12 @@
             this.btn_Login.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.btn_Login.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Login_MouseClick);
             // 
-            // btn_Close
-            // 
-            this.btn_Close.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
-            this.btn_Close.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
-            this.btn_Close.BorderThickness = 0;
-            this.btn_Close.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Close.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btn_Close.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.btn_Close.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.btn_Close.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.btn_Close.Image = null;
-            this.btn_Close.ImageOffsetX = 0;
-            this.btn_Close.ImageOffsetY = 0;
-            this.btn_Close.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Close.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Close.Location = new System.Drawing.Point(450, 259);
-            this.btn_Close.Name = "btn_Close";
-            this.btn_Close.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
-            this.btn_Close.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.btn_Close.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
-            this.btn_Close.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.btn_Close.Radius = 5;
-            this.btn_Close.ShadowAlpha = 120;
-            this.btn_Close.ShadowColor = System.Drawing.Color.Black;
-            this.btn_Close.ShadowPadding = new System.Windows.Forms.Padding(0);
-            this.btn_Close.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
-            this.btn_Close.Size = new System.Drawing.Size(89, 30);
-            this.btn_Close.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            this.btn_Close.TabIndex = 70;
-            this.btn_Close.Text = "Đóng";
-            this.btn_Close.TextHoverColor = System.Drawing.Color.White;
-            this.btn_Close.TextNormalColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Close.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btn_Close.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.btn_Close.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.btn_Close.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_Close_MouseClick);
-            // 
             // DangNhap_Form
             // 
             this.AllowResize = false;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(559, 305);
+            this.ClientSize = new System.Drawing.Size(549, 305);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.panel1);
@@ -316,7 +316,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private HeCopUI_Framework.Controls.Button.DKCheckBox dkCheckBox1;
-        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Login;
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Close;
+        private DinhKhanh_Controls_UI.Buttons.DKButton btn_Login;
     }
 }

@@ -54,6 +54,7 @@ namespace QL_CuaHang_Vegetable
 
         }
 
+     
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);

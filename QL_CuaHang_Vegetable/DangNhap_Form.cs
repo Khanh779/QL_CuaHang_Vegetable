@@ -52,7 +52,7 @@ namespace QL_CuaHang_Vegetable
         {
             if (txt_UserName.Text == "" || txt_Pass.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin\nTên người dùng hoặc mật khẩu không được để trống!", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             else
@@ -72,5 +72,6 @@ namespace QL_CuaHang_Vegetable
                 }
             }
         }
+
     }
 }
