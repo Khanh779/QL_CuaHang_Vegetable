@@ -71,6 +71,12 @@ namespace QL_CuaHang_Vegetable
 
         }
 
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            base.OnFormClosed(e);
+            DangNhap_Form.Instance.Show();
+        }
+
         protected override void OnSizeChanged(EventArgs e)
         {
             base.OnSizeChanged(e);

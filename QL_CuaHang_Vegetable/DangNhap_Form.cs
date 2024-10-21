@@ -60,10 +60,10 @@ namespace QL_CuaHang_Vegetable
                 if(txt_UserName.Text =="admin" && txt_Pass.Text=="admin")
                 {
                     MessageBox.Show("Đăng nhập thành công", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
-
+                 
                     QuanTri_Main.Instance.Show();
 
+                    this.Hide();
                   
                 }    
             }
