@@ -92,6 +92,12 @@
     <Compile Include="TextControls\DKTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Toggle\DKCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Toggle\DKRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\TemplateForm.resx">

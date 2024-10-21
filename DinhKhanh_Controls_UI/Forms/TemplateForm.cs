@@ -52,7 +52,7 @@ namespace DinhKhanh_Controls_UI.Forms
             }
         }
 
-       public new bool MaximizeBox
+        public new bool MaximizeBox
         {
             get => base.MaximizeBox;
             set
@@ -96,6 +96,17 @@ namespace DinhKhanh_Controls_UI.Forms
             }
         }
 
+        bool allowResize = true;
+        public bool AllowResize
+        {
+            get { return allowResize; }
+            set
+            {
+                allowResize = value;
+                Invalidate();
+            }
+        }
+
         ReSize resize = new ReSize();
         protected override void WndProc(ref Message m)
         {
@@ -105,19 +116,20 @@ namespace DinhKhanh_Controls_UI.Forms
 
             if (m.Msg == 0x84)
             {
-                switch (resize.getMosuePosition(pt, this))
-                {
-                    case "l": m.Result = (IntPtr)10; return;  // the Mouse on Left Form
-                    case "r": m.Result = (IntPtr)11; return;  // the Mouse on Right Form
-                    case "a": m.Result = (IntPtr)12; return;
-                    case "la": m.Result = (IntPtr)13; return;
-                    case "ra": m.Result = (IntPtr)14; return;
-                    case "u": m.Result = (IntPtr)15; return;
-                    case "lu": m.Result = (IntPtr)16; return;
-                    case "ru": m.Result = (IntPtr)17; return; // the Mouse on Right_Under Form
-                    case "": m.Result = pt.Y < 32 /*mouse on title Bar*/ ? (IntPtr)2 : (IntPtr)1; return;
+                if (allowResize)
+                    switch (resize.getMosuePosition(pt, this))
+                    {
+                        case "l": m.Result = (IntPtr)10; return;  // the Mouse on Left Form
+                        case "r": m.Result = (IntPtr)11; return;  // the Mouse on Right Form
+                        case "a": m.Result = (IntPtr)12; return;
+                        case "la": m.Result = (IntPtr)13; return;
+                        case "ra": m.Result = (IntPtr)14; return;
+                        case "u": m.Result = (IntPtr)15; return;
+                        case "lu": m.Result = (IntPtr)16; return;
+                        case "ru": m.Result = (IntPtr)17; return; // the Mouse on Right_Under Form
+                        case "": m.Result = pt.Y < 32 /*mouse on title Bar*/ ? (IntPtr)2 : (IntPtr)1; return;
 
-                }
+                    }
             }
 
             base.WndProc(ref m);

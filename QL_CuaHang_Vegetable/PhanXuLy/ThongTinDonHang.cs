@@ -15,11 +15,13 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
         public double TongTien { get; set; }
         public TrangThai_DonHang TrangThai { get; set; }
         public LoaiDonHang LoaiDonHang { get; set; }
-        public List<ThongTinSanPham> SanPhams { get; set; } // Danh sách sản phẩm trong đơn hàng
+        public List<ThongTinSanPham> DanhSach_SanPham { get; set; } // Danh sách sản phẩm trong đơn hàng
+
+        public ThongTinUser NguoiTao { get; set; } // Người tạo đơn hàng
 
         public ThongTinDonHang()
         {
-            SanPhams = new List<ThongTinSanPham>(); // Khởi tạo danh sách
+            DanhSach_SanPham = new List<ThongTinSanPham>(); // Khởi tạo danh sách
         }
     }
 

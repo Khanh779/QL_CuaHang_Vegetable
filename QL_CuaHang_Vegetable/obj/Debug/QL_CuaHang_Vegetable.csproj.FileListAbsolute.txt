@@ -47,3 +47,5 @@ D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.exe
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.pdb
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.Forms.AddProduct_Form.resources
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.DangNhap_Form.resources
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.NhanVienBan_Form.resources

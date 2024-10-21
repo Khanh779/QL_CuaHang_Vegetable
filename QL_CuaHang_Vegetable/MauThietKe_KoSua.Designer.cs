@@ -45,6 +45,7 @@
             this.foodCard2 = new QL_CuaHang_Vegetable.ExContro.FoodCard();
             this.foodCard1 = new QL_CuaHang_Vegetable.ExContro.FoodCard();
             this.dkButton7 = new DinhKhanh_Controls_UI.Buttons.DKButton();
+            this.dkButton9 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkCollapsiblePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -511,11 +512,50 @@
             this.dkButton7.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
             this.dkButton7.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             // 
+            // dkButton9
+            // 
+            this.dkButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dkButton9.AnimationMode = DinhKhanh_Controls_UI.Enums.AnimationMode.Ripple;
+            this.dkButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(139)))), ((int)(((byte)(34)))));
+            this.dkButton9.BorderThickness = 0;
+            this.dkButton9.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dkButton9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dkButton9.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dkButton9.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkButton9.HoverColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.dkButton9.HoverColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.dkButton9.Image = null;
+            this.dkButton9.ImageOffsetX = 0;
+            this.dkButton9.ImageOffsetY = 0;
+            this.dkButton9.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dkButton9.ImageSize = new System.Drawing.Size(20, 20);
+            this.dkButton9.Location = new System.Drawing.Point(441, 467);
+            this.dkButton9.Name = "dkButton9";
+            this.dkButton9.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
+            this.dkButton9.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.dkButton9.PressColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
+            this.dkButton9.PressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.dkButton9.Radius = 5;
+            this.dkButton9.ShadowAlpha = 120;
+            this.dkButton9.ShadowColor = System.Drawing.Color.Black;
+            this.dkButton9.ShadowPadding = new System.Windows.Forms.Padding(0);
+            this.dkButton9.ShapeType = DinhKhanh_Controls_UI.Enums.ShapeType.RoundedRectangle;
+            this.dkButton9.Size = new System.Drawing.Size(100, 35);
+            this.dkButton9.StringTrimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            this.dkButton9.TabIndex = 71;
+            this.dkButton9.Text = "Đóng";
+            this.dkButton9.TextHoverColor = System.Drawing.Color.White;
+            this.dkButton9.TextNormalColor = System.Drawing.Color.WhiteSmoke;
+            this.dkButton9.TextPadding = new System.Windows.Forms.Padding(0);
+            this.dkButton9.TextPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dkButton9.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
             // MauThietKe_KoSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 683);
+            this.Controls.Add(this.dkButton9);
             this.Controls.Add(this.dkButton7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_Add_Product);
@@ -557,5 +597,6 @@
         private DinhKhanh_Controls_UI.Buttons.DKButton btn_Del_Product;
         private System.Windows.Forms.Panel panel1;
         private DinhKhanh_Controls_UI.Buttons.DKButton dkButton7;
+        private DinhKhanh_Controls_UI.Buttons.DKButton dkButton9;
     }
 }

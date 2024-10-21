@@ -152,7 +152,8 @@ namespace DinhKhanh_Controls_UI.Charts
                 {
                     sweepAngle = (float)(Items[i].Value / total) * 360 * (float)(useAnimation ? animationManager.GetProgress() : 1);
                     using (SolidBrush brush = new SolidBrush(Items[i].Color))
-                    using (var pen = new Pen(Items[i].Color, ArcWidth) { Alignment = System.Drawing.Drawing2D.PenAlignment.Inset })
+                    using (var pen = new Pen(Items[i].Color, ArcWidth) { Alignment = System.Drawing.Drawing2D.PenAlignment.Inset, EndCap= System.Drawing.Drawing2D.LineCap.Round,
+                     StartCap= System.Drawing.Drawing2D.LineCap.Round})
                     {
                         g.DrawArc(pen, rect, startAngle, sweepAngle);
                     }

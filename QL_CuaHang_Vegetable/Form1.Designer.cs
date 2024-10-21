@@ -228,6 +228,7 @@
             // 
             // PN_Tabs
             // 
+            this.PN_Tabs.BackColor = System.Drawing.Color.Transparent;
             this.PN_Tabs.BorderColor = System.Drawing.Color.Black;
             this.PN_Tabs.BorderThickness = 0;
             this.PN_Tabs.Dock = System.Windows.Forms.DockStyle.Fill;

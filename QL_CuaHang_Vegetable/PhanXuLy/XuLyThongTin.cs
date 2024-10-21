@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace QL_CuaHang_Vegetable.PhanXuLy
@@ -7,14 +8,11 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
     public class XuLyThongTin
     {
 
-        public static HashSet<ThongTinSanPham> DanhSachSanPham { get; set; }
-        public static HashSet<ThongTinDonHang> DanhSachDonHang { get; set; }
+        Dictionary<string, ThongTinUser> DanhSachNguoiDung { get; set; }
 
         public XuLyThongTin()
         {
-            DanhSachSanPham = new HashSet<ThongTinSanPham>();
-
-            DanhSachDonHang = new HashSet<ThongTinDonHang>();
+            DanhSachNguoiDung = new Dictionary<string, ThongTinUser>();
 
         }
     }

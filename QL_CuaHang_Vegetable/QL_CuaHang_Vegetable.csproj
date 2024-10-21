@@ -51,6 +51,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DangNhap_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap_Form.Designer.cs">
+      <DependentUpon>DangNhap_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExContro\FoodCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -75,8 +81,15 @@
     <Compile Include="MauThietKe_KoSua.Designer.cs">
       <DependentUpon>MauThietKe_KoSua.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhanVienBan_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienBan_Form.Designer.cs">
+      <DependentUpon>NhanVienBan_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhanXuLy\ThongTinDonHang.cs" />
     <Compile Include="PhanXuLy\ThongTinSanPham.cs" />
+    <Compile Include="PhanXuLy\ThongTinUser.cs" />
     <Compile Include="PhanXuLy\TrungTamXuLy.cs" />
     <Compile Include="PhanXuLy\XuLyThongTin.cs" />
     <Compile Include="Program.cs" />
@@ -111,6 +124,9 @@
     <Compile Include="TabPage\Tab_Home.Designer.cs">
       <DependentUpon>Tab_Home.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DangNhap_Form.resx">
+      <DependentUpon>DangNhap_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExContro\FoodCard.resx">
       <DependentUpon>FoodCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MauThietKe_KoSua.resx">
       <DependentUpon>MauThietKe_KoSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienBan_Form.resx">
+      <DependentUpon>NhanVienBan_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

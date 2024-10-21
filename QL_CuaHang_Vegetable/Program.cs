@@ -13,7 +13,7 @@ namespace QL_CuaHang_Vegetable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(Form1.Instance);
+            Application.Run(DangNhap_Form.Instance);
             //Application.Run(new MauThietKe_KoSua());
         }
     }
