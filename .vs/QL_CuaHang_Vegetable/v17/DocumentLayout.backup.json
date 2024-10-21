@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\quantri_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\quantri_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\dangnhap_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\dangnhap_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\ql_cuahang_vegetable\\dangnhap_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QuanTri_Main.cs",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\QuanTri_Main.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\QuanTri_Main.cs",
               "ToolTip": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\QuanTri_Main.cs",
               "RelativeToolTip": "QL_CuaHang_Vegetable\\QuanTri_Main.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAYwEwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwEsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T13:35:24.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Tab_Report.cs [Design]",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Report.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\TabPage\\Tab_Report.cs",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DangNhap_Form.cs",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\DangNhap_Form.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\DangNhap_Form.cs",
