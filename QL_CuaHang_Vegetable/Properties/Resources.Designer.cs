@@ -113,6 +113,16 @@ namespace QL_CuaHang_Vegetable.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_to_do {
+            get {
+                object obj = ResourceManager.GetObject("icons8_to_do", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_used_product_80 {
             get {
                 object obj = ResourceManager.GetObject("icons8_used_product_80", resourceCulture);

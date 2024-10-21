@@ -8,8 +8,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QL_CuaHang_Vegetable")]
-[assembly: AssemblyCopyright("Copyright ©  2024")]
+[assembly: AssemblyProduct("Quản Lý Cửa Hàng Vegetable")]
+[assembly: AssemblyCopyright("Copyright ©  2024 - Nhóm 5 - Khánh & Đỉnh")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

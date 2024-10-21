@@ -27,10 +27,10 @@
             this.btn_Add_Employ = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkCard3 = new DinhKhanh_Controls_UI.Other.DKCard();
             this.dkCard1 = new DinhKhanh_Controls_UI.Other.DKCard();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -220,16 +220,6 @@
             this.dkCard1.TabIndex = 1;
             this.dkCard1.Text = "dkCard1";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QL_CuaHang_Vegetable.Properties.Resources.icons8_tasks;
-            this.pictureBox1.Location = new System.Drawing.Point(136, 318);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 76;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::QL_CuaHang_Vegetable.Properties.Resources.icons8_notification;
@@ -239,6 +229,16 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 77;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QL_CuaHang_Vegetable.Properties.Resources.icons8_to_do;
+            this.pictureBox1.Location = new System.Drawing.Point(136, 318);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 76;
+            this.pictureBox1.TabStop = false;
             // 
             // Tab_Home
             // 
@@ -260,8 +260,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Tab_Home";
             this.Size = new System.Drawing.Size(797, 554);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
