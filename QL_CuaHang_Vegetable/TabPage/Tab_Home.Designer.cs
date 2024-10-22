@@ -140,7 +140,7 @@
             this.PN_StackChartLegend.Controls.Add(this.dkLabel2);
             this.PN_StackChartLegend.Controls.Add(this.panel2);
             this.PN_StackChartLegend.Controls.Add(this.panel3);
-            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 333);
+            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 336);
             this.PN_StackChartLegend.Name = "PN_StackChartLegend";
             this.PN_StackChartLegend.Size = new System.Drawing.Size(145, 97);
             this.PN_StackChartLegend.TabIndex = 79;
@@ -151,7 +151,7 @@
             this.lbl_RefreshDataStatus.BackColor = System.Drawing.Color.White;
             this.lbl_RefreshDataStatus.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RefreshDataStatus.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_RefreshDataStatus.Location = new System.Drawing.Point(45, 333);
+            this.lbl_RefreshDataStatus.Location = new System.Drawing.Point(45, 336);
             this.lbl_RefreshDataStatus.Name = "lbl_RefreshDataStatus";
             this.lbl_RefreshDataStatus.Size = new System.Drawing.Size(334, 15);
             this.lbl_RefreshDataStatus.TabIndex = 80;
@@ -298,7 +298,7 @@
             this.dkStackBarChart1.Location = new System.Drawing.Point(44, 302);
             this.dkStackBarChart1.Name = "dkStackBarChart1";
             this.dkStackBarChart1.Radius = 5;
-            this.dkStackBarChart1.Size = new System.Drawing.Size(722, 22);
+            this.dkStackBarChart1.Size = new System.Drawing.Size(722, 25);
             this.dkStackBarChart1.TabIndex = 77;
             this.dkStackBarChart1.Text = "dkStackBarChart1";
             this.dkStackBarChart1.UseTransparent = true;
@@ -338,7 +338,7 @@
             this.dkCard4.ShadowAlpha = 255;
             this.dkCard4.ShadowColor = System.Drawing.Color.Black;
             this.dkCard4.ShadowPadding = new System.Windows.Forms.Padding(4, 4, 4, 6);
-            this.dkCard4.Size = new System.Drawing.Size(762, 281);
+            this.dkCard4.Size = new System.Drawing.Size(762, 260);
             this.dkCard4.TabIndex = 74;
             this.dkCard4.Text = "dkCard4";
             // 

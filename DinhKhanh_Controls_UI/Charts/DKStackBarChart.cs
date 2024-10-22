@@ -18,7 +18,7 @@ namespace DinhKhanh_Controls_UI.Progresses
 
             animationManager = new AnimationManager
             {
-                Increment = 0.07
+                Increment = 0.05
             };
             animationManager.AnimationProgress += sender => Invalidate();
 
