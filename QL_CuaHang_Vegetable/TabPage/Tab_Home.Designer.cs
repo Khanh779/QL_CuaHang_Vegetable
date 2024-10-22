@@ -122,11 +122,11 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(41, 270);
+            this.label5.Location = new System.Drawing.Point(41, 268);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 20);
+            this.label5.Size = new System.Drawing.Size(257, 22);
             this.label5.TabIndex = 75;
-            this.label5.Text = "Tình trạng hiện tại:";
+            this.label5.Text = "Tình trạng hiện tại trong ngày:";
             // 
             // btn_ReloadData
             // 
@@ -135,7 +135,7 @@
             this.btn_ReloadData.ImageButton = global::QL_CuaHang_Vegetable.Properties.Resources.icons8_refresh_96;
             this.btn_ReloadData.ImageHoverSize = new System.Drawing.Size(25, 25);
             this.btn_ReloadData.ImageNormalSize = new System.Drawing.Size(20, 20);
-            this.btn_ReloadData.Location = new System.Drawing.Point(600, 295);
+            this.btn_ReloadData.Location = new System.Drawing.Point(741, 269);
             this.btn_ReloadData.Name = "btn_ReloadData";
             this.btn_ReloadData.Size = new System.Drawing.Size(25, 25);
             this.btn_ReloadData.TabIndex = 78;
@@ -150,10 +150,10 @@
             this.dkStackBarChart1.BorderColor = System.Drawing.Color.Gray;
             this.dkStackBarChart1.BorderThickness = 0;
             this.dkStackBarChart1.ItemRadius = 4;
-            this.dkStackBarChart1.Location = new System.Drawing.Point(188, 276);
+            this.dkStackBarChart1.Location = new System.Drawing.Point(44, 302);
             this.dkStackBarChart1.Name = "dkStackBarChart1";
             this.dkStackBarChart1.Radius = 5;
-            this.dkStackBarChart1.Size = new System.Drawing.Size(436, 12);
+            this.dkStackBarChart1.Size = new System.Drawing.Size(722, 19);
             this.dkStackBarChart1.TabIndex = 77;
             this.dkStackBarChart1.Text = "dkStackBarChart1";
             this.dkStackBarChart1.UseTransparent = true;
@@ -288,9 +288,9 @@
             this.PN_StackChartLegend.Controls.Add(this.dkLabel2);
             this.PN_StackChartLegend.Controls.Add(this.panel2);
             this.PN_StackChartLegend.Controls.Add(this.panel3);
-            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 265);
+            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 330);
             this.PN_StackChartLegend.Name = "PN_StackChartLegend";
-            this.PN_StackChartLegend.Size = new System.Drawing.Size(145, 96);
+            this.PN_StackChartLegend.Size = new System.Drawing.Size(145, 97);
             this.PN_StackChartLegend.TabIndex = 79;
             this.PN_StackChartLegend.Paint += new System.Windows.Forms.PaintEventHandler(this.PN_StackChartLegend_Paint);
             // 
@@ -299,7 +299,7 @@
             this.lbl_RefreshDataStatus.BackColor = System.Drawing.Color.White;
             this.lbl_RefreshDataStatus.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RefreshDataStatus.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_RefreshDataStatus.Location = new System.Drawing.Point(45, 297);
+            this.lbl_RefreshDataStatus.Location = new System.Drawing.Point(45, 330);
             this.lbl_RefreshDataStatus.Name = "lbl_RefreshDataStatus";
             this.lbl_RefreshDataStatus.Size = new System.Drawing.Size(334, 15);
             this.lbl_RefreshDataStatus.TabIndex = 80;
