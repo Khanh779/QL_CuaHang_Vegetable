@@ -24,6 +24,18 @@
             this.LLB_EmplMan = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.PN_StackChartLegend = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.lbl_RefreshDataStatus = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.llbl_DenTP = new System.Windows.Forms.LinkLabel();
+            this.dkLabel5 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
+            this.dkLabel4 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
+            this.dkLabel3 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
+            this.dkLabel2 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
             this.btn_ReloadData = new DinhKhanh_Controls_UI.Buttons.DKImageButton();
             this.dkStackBarChart1 = new DinhKhanh_Controls_UI.Progresses.DKStackBarChart();
             this.dkLabel1 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
@@ -31,18 +43,6 @@
             this.btn_Add_Employ = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkCard3 = new DinhKhanh_Controls_UI.Other.DKCard();
             this.dkCard1 = new DinhKhanh_Controls_UI.Other.DKCard();
-            this.PN_StackChartLegend = new System.Windows.Forms.Panel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.lbl_RefreshDataStatus = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dkLabel2 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
-            this.dkLabel3 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dkLabel4 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.dkLabel5 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.llbl_DenTP = new System.Windows.Forms.LinkLabel();
             this.PN_StackChartLegend.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +128,149 @@
             this.label5.TabIndex = 75;
             this.label5.Text = "Tình trạng hiện tại trong ngày:";
             // 
+            // PN_StackChartLegend
+            // 
+            this.PN_StackChartLegend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PN_StackChartLegend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.PN_StackChartLegend.Controls.Add(this.dkLabel5);
+            this.PN_StackChartLegend.Controls.Add(this.panel5);
+            this.PN_StackChartLegend.Controls.Add(this.dkLabel4);
+            this.PN_StackChartLegend.Controls.Add(this.dkLabel3);
+            this.PN_StackChartLegend.Controls.Add(this.panel4);
+            this.PN_StackChartLegend.Controls.Add(this.dkLabel2);
+            this.PN_StackChartLegend.Controls.Add(this.panel2);
+            this.PN_StackChartLegend.Controls.Add(this.panel3);
+            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 333);
+            this.PN_StackChartLegend.Name = "PN_StackChartLegend";
+            this.PN_StackChartLegend.Size = new System.Drawing.Size(145, 97);
+            this.PN_StackChartLegend.TabIndex = 79;
+            this.PN_StackChartLegend.Paint += new System.Windows.Forms.PaintEventHandler(this.PN_StackChartLegend_Paint);
+            // 
+            // lbl_RefreshDataStatus
+            // 
+            this.lbl_RefreshDataStatus.BackColor = System.Drawing.Color.White;
+            this.lbl_RefreshDataStatus.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RefreshDataStatus.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_RefreshDataStatus.Location = new System.Drawing.Point(45, 333);
+            this.lbl_RefreshDataStatus.Name = "lbl_RefreshDataStatus";
+            this.lbl_RefreshDataStatus.Size = new System.Drawing.Size(334, 15);
+            this.lbl_RefreshDataStatus.TabIndex = 80;
+            this.lbl_RefreshDataStatus.Text = "Dữ liệu được cập nhật lúc 20:13";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.panel3.Location = new System.Drawing.Point(5, 11);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(12, 12);
+            this.panel3.TabIndex = 81;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.Location = new System.Drawing.Point(5, 32);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(12, 12);
+            this.panel2.TabIndex = 83;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gold;
+            this.panel4.Location = new System.Drawing.Point(5, 53);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(12, 12);
+            this.panel4.TabIndex = 85;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(1)))), ((int)(((byte)(73)))));
+            this.panel5.Location = new System.Drawing.Point(5, 74);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(12, 12);
+            this.panel5.TabIndex = 87;
+            // 
+            // llbl_DenTP
+            // 
+            this.llbl_DenTP.BackColor = System.Drawing.Color.White;
+            this.llbl_DenTP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbl_DenTP.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.llbl_DenTP.Location = new System.Drawing.Point(41, 182);
+            this.llbl_DenTP.Name = "llbl_DenTP";
+            this.llbl_DenTP.Size = new System.Drawing.Size(117, 30);
+            this.llbl_DenTP.TabIndex = 81;
+            this.llbl_DenTP.TabStop = true;
+            this.llbl_DenTP.Text = "Đi đến thực phẩm";
+            this.llbl_DenTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.llbl_DenTP.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbl_DenTP_LinkClicked);
+            // 
+            // dkLabel5
+            // 
+            this.dkLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dkLabel5.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dkLabel5.ForeColor1 = System.Drawing.Color.Black;
+            this.dkLabel5.ForeColor2 = System.Drawing.Color.Black;
+            this.dkLabel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkLabel5.Location = new System.Drawing.Point(22, 70);
+            this.dkLabel5.Name = "dkLabel5";
+            this.dkLabel5.Size = new System.Drawing.Size(119, 20);
+            this.dkLabel5.StringTrimming = System.Drawing.StringTrimming.Character;
+            this.dkLabel5.TabIndex = 86;
+            this.dkLabel5.Text = "Đã hết hạn";
+            this.dkLabel5.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.dkLabel5.UseTransparent = true;
+            // 
+            // dkLabel4
+            // 
+            this.dkLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dkLabel4.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dkLabel4.ForeColor1 = System.Drawing.Color.Black;
+            this.dkLabel4.ForeColor2 = System.Drawing.Color.Black;
+            this.dkLabel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkLabel4.Location = new System.Drawing.Point(22, 49);
+            this.dkLabel4.Name = "dkLabel4";
+            this.dkLabel4.Size = new System.Drawing.Size(119, 20);
+            this.dkLabel4.StringTrimming = System.Drawing.StringTrimming.Character;
+            this.dkLabel4.TabIndex = 84;
+            this.dkLabel4.Text = "Sắp hết hạn";
+            this.dkLabel4.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.dkLabel4.UseTransparent = true;
+            // 
+            // dkLabel3
+            // 
+            this.dkLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dkLabel3.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dkLabel3.ForeColor1 = System.Drawing.Color.Black;
+            this.dkLabel3.ForeColor2 = System.Drawing.Color.Black;
+            this.dkLabel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkLabel3.Location = new System.Drawing.Point(22, 28);
+            this.dkLabel3.Name = "dkLabel3";
+            this.dkLabel3.Size = new System.Drawing.Size(119, 20);
+            this.dkLabel3.StringTrimming = System.Drawing.StringTrimming.Character;
+            this.dkLabel3.TabIndex = 82;
+            this.dkLabel3.Text = "Đã bán";
+            this.dkLabel3.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.dkLabel3.UseTransparent = true;
+            // 
+            // dkLabel2
+            // 
+            this.dkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dkLabel2.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dkLabel2.ForeColor1 = System.Drawing.Color.Black;
+            this.dkLabel2.ForeColor2 = System.Drawing.Color.Black;
+            this.dkLabel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkLabel2.Location = new System.Drawing.Point(22, 7);
+            this.dkLabel2.Name = "dkLabel2";
+            this.dkLabel2.Size = new System.Drawing.Size(119, 20);
+            this.dkLabel2.StringTrimming = System.Drawing.StringTrimming.Character;
+            this.dkLabel2.TabIndex = 81;
+            this.dkLabel2.Text = "Còn tồn";
+            this.dkLabel2.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.dkLabel2.UseTransparent = true;
+            // 
             // btn_ReloadData
             // 
             this.btn_ReloadData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -155,7 +298,7 @@
             this.dkStackBarChart1.Location = new System.Drawing.Point(44, 302);
             this.dkStackBarChart1.Name = "dkStackBarChart1";
             this.dkStackBarChart1.Radius = 5;
-            this.dkStackBarChart1.Size = new System.Drawing.Size(722, 19);
+            this.dkStackBarChart1.Size = new System.Drawing.Size(722, 22);
             this.dkStackBarChart1.TabIndex = 77;
             this.dkStackBarChart1.Text = "dkStackBarChart1";
             this.dkStackBarChart1.UseTransparent = true;
@@ -278,149 +421,6 @@
             this.dkCard1.Size = new System.Drawing.Size(377, 162);
             this.dkCard1.TabIndex = 1;
             this.dkCard1.Text = "dkCard1";
-            // 
-            // PN_StackChartLegend
-            // 
-            this.PN_StackChartLegend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PN_StackChartLegend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            this.PN_StackChartLegend.Controls.Add(this.dkLabel5);
-            this.PN_StackChartLegend.Controls.Add(this.panel5);
-            this.PN_StackChartLegend.Controls.Add(this.dkLabel4);
-            this.PN_StackChartLegend.Controls.Add(this.dkLabel3);
-            this.PN_StackChartLegend.Controls.Add(this.panel4);
-            this.PN_StackChartLegend.Controls.Add(this.dkLabel2);
-            this.PN_StackChartLegend.Controls.Add(this.panel2);
-            this.PN_StackChartLegend.Controls.Add(this.panel3);
-            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 330);
-            this.PN_StackChartLegend.Name = "PN_StackChartLegend";
-            this.PN_StackChartLegend.Size = new System.Drawing.Size(145, 97);
-            this.PN_StackChartLegend.TabIndex = 79;
-            this.PN_StackChartLegend.Paint += new System.Windows.Forms.PaintEventHandler(this.PN_StackChartLegend_Paint);
-            // 
-            // lbl_RefreshDataStatus
-            // 
-            this.lbl_RefreshDataStatus.BackColor = System.Drawing.Color.White;
-            this.lbl_RefreshDataStatus.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RefreshDataStatus.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_RefreshDataStatus.Location = new System.Drawing.Point(45, 330);
-            this.lbl_RefreshDataStatus.Name = "lbl_RefreshDataStatus";
-            this.lbl_RefreshDataStatus.Size = new System.Drawing.Size(334, 15);
-            this.lbl_RefreshDataStatus.TabIndex = 80;
-            this.lbl_RefreshDataStatus.Text = "Dữ liệu được cập nhật lúc 20:13";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.panel3.Location = new System.Drawing.Point(5, 11);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 12);
-            this.panel3.TabIndex = 81;
-            // 
-            // dkLabel2
-            // 
-            this.dkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dkLabel2.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dkLabel2.ForeColor1 = System.Drawing.Color.Black;
-            this.dkLabel2.ForeColor2 = System.Drawing.Color.Black;
-            this.dkLabel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel2.Location = new System.Drawing.Point(22, 7);
-            this.dkLabel2.Name = "dkLabel2";
-            this.dkLabel2.Size = new System.Drawing.Size(119, 20);
-            this.dkLabel2.StringTrimming = System.Drawing.StringTrimming.Character;
-            this.dkLabel2.TabIndex = 81;
-            this.dkLabel2.Text = "Còn tồn";
-            this.dkLabel2.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.dkLabel2.UseTransparent = true;
-            // 
-            // dkLabel3
-            // 
-            this.dkLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dkLabel3.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dkLabel3.ForeColor1 = System.Drawing.Color.Black;
-            this.dkLabel3.ForeColor2 = System.Drawing.Color.Black;
-            this.dkLabel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel3.Location = new System.Drawing.Point(22, 28);
-            this.dkLabel3.Name = "dkLabel3";
-            this.dkLabel3.Size = new System.Drawing.Size(119, 20);
-            this.dkLabel3.StringTrimming = System.Drawing.StringTrimming.Character;
-            this.dkLabel3.TabIndex = 82;
-            this.dkLabel3.Text = "Đã bán";
-            this.dkLabel3.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.dkLabel3.UseTransparent = true;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel2.Location = new System.Drawing.Point(5, 32);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(12, 12);
-            this.panel2.TabIndex = 83;
-            // 
-            // dkLabel4
-            // 
-            this.dkLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dkLabel4.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dkLabel4.ForeColor1 = System.Drawing.Color.Black;
-            this.dkLabel4.ForeColor2 = System.Drawing.Color.Black;
-            this.dkLabel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel4.Location = new System.Drawing.Point(22, 49);
-            this.dkLabel4.Name = "dkLabel4";
-            this.dkLabel4.Size = new System.Drawing.Size(119, 20);
-            this.dkLabel4.StringTrimming = System.Drawing.StringTrimming.Character;
-            this.dkLabel4.TabIndex = 84;
-            this.dkLabel4.Text = "Sắp hết hạn";
-            this.dkLabel4.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.dkLabel4.UseTransparent = true;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gold;
-            this.panel4.Location = new System.Drawing.Point(5, 53);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(12, 12);
-            this.panel4.TabIndex = 85;
-            // 
-            // dkLabel5
-            // 
-            this.dkLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dkLabel5.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dkLabel5.ForeColor1 = System.Drawing.Color.Black;
-            this.dkLabel5.ForeColor2 = System.Drawing.Color.Black;
-            this.dkLabel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel5.Location = new System.Drawing.Point(22, 70);
-            this.dkLabel5.Name = "dkLabel5";
-            this.dkLabel5.Size = new System.Drawing.Size(119, 20);
-            this.dkLabel5.StringTrimming = System.Drawing.StringTrimming.Character;
-            this.dkLabel5.TabIndex = 86;
-            this.dkLabel5.Text = "Đã hết hạn";
-            this.dkLabel5.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.dkLabel5.UseTransparent = true;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(1)))), ((int)(((byte)(73)))));
-            this.panel5.Location = new System.Drawing.Point(5, 74);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(12, 12);
-            this.panel5.TabIndex = 87;
-            // 
-            // llbl_DenTP
-            // 
-            this.llbl_DenTP.BackColor = System.Drawing.Color.White;
-            this.llbl_DenTP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llbl_DenTP.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.llbl_DenTP.Location = new System.Drawing.Point(41, 182);
-            this.llbl_DenTP.Name = "llbl_DenTP";
-            this.llbl_DenTP.Size = new System.Drawing.Size(117, 30);
-            this.llbl_DenTP.TabIndex = 81;
-            this.llbl_DenTP.TabStop = true;
-            this.llbl_DenTP.Text = "Đi đến thực phẩm";
-            this.llbl_DenTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.llbl_DenTP.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbl_DenTP_LinkClicked);
             // 
             // Tab_Home
             // 
