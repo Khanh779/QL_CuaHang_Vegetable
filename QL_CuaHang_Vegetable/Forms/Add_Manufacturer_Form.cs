@@ -30,18 +30,18 @@ namespace QL_CuaHang_Vegetable.Forms
             this.btn_Del_Product = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkButton1 = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_MaNCC = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_TenSP = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_SoLuong = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_Loai = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dkTextBox2 = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.dkTextBox1 = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dkTextBox2 = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_Loai = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_SoLuong = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_TenSP = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_MaNCC = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,201 +143,51 @@ namespace QL_CuaHang_Vegetable.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhà cung cấp";
             // 
-            // label2
+            // dkTextBox1
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(10, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 25);
-            this.label2.TabIndex = 64;
-            this.label2.Text = "Mã nhà cung cấp:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dkTextBox1.AcceptReturn = false;
+            this.dkTextBox1.AcceptTab = false;
+            this.dkTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
+            this.dkTextBox1.BorderColor = System.Drawing.Color.Gray;
+            this.dkTextBox1.BorderWidth = 1;
+            this.dkTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.dkTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.dkTextBox1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.dkTextBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.dkTextBox1.HideSelection = true;
+            this.dkTextBox1.Image = null;
+            this.dkTextBox1.ImageAlignRight = false;
+            this.dkTextBox1.ImageSize = new System.Drawing.Size(20, 20);
+            this.dkTextBox1.ImageVisible = false;
+            this.dkTextBox1.Lines = new string[0];
+            this.dkTextBox1.Location = new System.Drawing.Point(458, 117);
+            this.dkTextBox1.MaxLength = 32767;
+            this.dkTextBox1.Name = "dkTextBox1";
+            this.dkTextBox1.PasswordChar = '\0';
+            this.dkTextBox1.ReadOnly = false;
+            this.dkTextBox1.ShortCutKeysEnabled = true;
+            this.dkTextBox1.Size = new System.Drawing.Size(179, 25);
+            this.dkTextBox1.TabIndex = 75;
+            this.dkTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dkTextBox1.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.dkTextBox1.UnderlineStyle = true;
+            this.dkTextBox1.UseAnimation = true;
+            this.dkTextBox1.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dkTextBox1.Watermark = "Nhập ghi chú ...";
+            this.dkTextBox1.WatermarkForeColor = System.Drawing.Color.Gray;
+            this.dkTextBox1.WordWrap = true;
             // 
-            // txt_MaNCC
+            // label5
             // 
-            this.txt_MaNCC.AcceptReturn = false;
-            this.txt_MaNCC.AcceptTab = false;
-            this.txt_MaNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
-            this.txt_MaNCC.BorderColor = System.Drawing.Color.Gray;
-            this.txt_MaNCC.BorderWidth = 1;
-            this.txt_MaNCC.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_MaNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_MaNCC.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.txt_MaNCC.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_MaNCC.HideSelection = true;
-            this.txt_MaNCC.Image = null;
-            this.txt_MaNCC.ImageAlignRight = false;
-            this.txt_MaNCC.ImageSize = new System.Drawing.Size(20, 20);
-            this.txt_MaNCC.ImageVisible = false;
-            this.txt_MaNCC.Lines = new string[0];
-            this.txt_MaNCC.Location = new System.Drawing.Point(134, 42);
-            this.txt_MaNCC.MaxLength = 32767;
-            this.txt_MaNCC.Name = "txt_MaNCC";
-            this.txt_MaNCC.PasswordChar = '\0';
-            this.txt_MaNCC.ReadOnly = false;
-            this.txt_MaNCC.ShortCutKeysEnabled = true;
-            this.txt_MaNCC.Size = new System.Drawing.Size(179, 25);
-            this.txt_MaNCC.TabIndex = 65;
-            this.txt_MaNCC.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_MaNCC.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            this.txt_MaNCC.UnderlineStyle = true;
-            this.txt_MaNCC.UseAnimation = true;
-            this.txt_MaNCC.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaNCC.Watermark = "Nhập mã NCC";
-            this.txt_MaNCC.WatermarkForeColor = System.Drawing.Color.Gray;
-            this.txt_MaNCC.WordWrap = true;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(333, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 25);
-            this.label1.TabIndex = 66;
-            this.label1.Text = "Tên nhà cung cấp:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_TenSP
-            // 
-            this.txt_TenSP.AcceptReturn = false;
-            this.txt_TenSP.AcceptTab = false;
-            this.txt_TenSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
-            this.txt_TenSP.BorderColor = System.Drawing.Color.Gray;
-            this.txt_TenSP.BorderWidth = 1;
-            this.txt_TenSP.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_TenSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_TenSP.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.txt_TenSP.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_TenSP.HideSelection = true;
-            this.txt_TenSP.Image = null;
-            this.txt_TenSP.ImageAlignRight = false;
-            this.txt_TenSP.ImageSize = new System.Drawing.Size(20, 20);
-            this.txt_TenSP.ImageVisible = false;
-            this.txt_TenSP.Lines = new string[0];
-            this.txt_TenSP.Location = new System.Drawing.Point(458, 42);
-            this.txt_TenSP.MaxLength = 32767;
-            this.txt_TenSP.Name = "txt_TenSP";
-            this.txt_TenSP.PasswordChar = '\0';
-            this.txt_TenSP.ReadOnly = false;
-            this.txt_TenSP.ShortCutKeysEnabled = true;
-            this.txt_TenSP.Size = new System.Drawing.Size(179, 25);
-            this.txt_TenSP.TabIndex = 67;
-            this.txt_TenSP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_TenSP.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            this.txt_TenSP.UnderlineStyle = true;
-            this.txt_TenSP.UseAnimation = true;
-            this.txt_TenSP.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TenSP.Watermark = "Nhập tên NCC";
-            this.txt_TenSP.WatermarkForeColor = System.Drawing.Color.Gray;
-            this.txt_TenSP.WordWrap = true;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(10, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 25);
-            this.label3.TabIndex = 68;
-            this.label3.Text = "Email:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_SoLuong
-            // 
-            this.txt_SoLuong.AcceptReturn = false;
-            this.txt_SoLuong.AcceptTab = false;
-            this.txt_SoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
-            this.txt_SoLuong.BorderColor = System.Drawing.Color.Gray;
-            this.txt_SoLuong.BorderWidth = 1;
-            this.txt_SoLuong.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_SoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_SoLuong.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.txt_SoLuong.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_SoLuong.HideSelection = true;
-            this.txt_SoLuong.Image = null;
-            this.txt_SoLuong.ImageAlignRight = false;
-            this.txt_SoLuong.ImageSize = new System.Drawing.Size(20, 20);
-            this.txt_SoLuong.ImageVisible = false;
-            this.txt_SoLuong.Lines = new string[0];
-            this.txt_SoLuong.Location = new System.Drawing.Point(134, 79);
-            this.txt_SoLuong.MaxLength = 32767;
-            this.txt_SoLuong.Name = "txt_SoLuong";
-            this.txt_SoLuong.PasswordChar = '\0';
-            this.txt_SoLuong.ReadOnly = false;
-            this.txt_SoLuong.ShortCutKeysEnabled = true;
-            this.txt_SoLuong.Size = new System.Drawing.Size(179, 25);
-            this.txt_SoLuong.TabIndex = 69;
-            this.txt_SoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_SoLuong.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            this.txt_SoLuong.UnderlineStyle = true;
-            this.txt_SoLuong.UseAnimation = true;
-            this.txt_SoLuong.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SoLuong.Watermark = "Nhập email";
-            this.txt_SoLuong.WatermarkForeColor = System.Drawing.Color.Gray;
-            this.txt_SoLuong.WordWrap = true;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(333, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 25);
-            this.label4.TabIndex = 70;
-            this.label4.Text = "Số điện thoại:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_Loai
-            // 
-            this.txt_Loai.AcceptReturn = false;
-            this.txt_Loai.AcceptTab = false;
-            this.txt_Loai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
-            this.txt_Loai.BorderColor = System.Drawing.Color.Gray;
-            this.txt_Loai.BorderWidth = 1;
-            this.txt_Loai.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txt_Loai.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Loai.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.txt_Loai.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_Loai.HideSelection = true;
-            this.txt_Loai.Image = null;
-            this.txt_Loai.ImageAlignRight = false;
-            this.txt_Loai.ImageSize = new System.Drawing.Size(20, 20);
-            this.txt_Loai.ImageVisible = false;
-            this.txt_Loai.Lines = new string[0];
-            this.txt_Loai.Location = new System.Drawing.Point(458, 79);
-            this.txt_Loai.MaxLength = 32767;
-            this.txt_Loai.Name = "txt_Loai";
-            this.txt_Loai.PasswordChar = '\0';
-            this.txt_Loai.ReadOnly = false;
-            this.txt_Loai.ShortCutKeysEnabled = true;
-            this.txt_Loai.Size = new System.Drawing.Size(179, 25);
-            this.txt_Loai.TabIndex = 71;
-            this.txt_Loai.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_Loai.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            this.txt_Loai.UnderlineStyle = true;
-            this.txt_Loai.UseAnimation = true;
-            this.txt_Loai.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Loai.Watermark = "Nhập số điện thoại";
-            this.txt_Loai.WatermarkForeColor = System.Drawing.Color.Gray;
-            this.txt_Loai.WordWrap = true;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(10, 117);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 25);
-            this.label6.TabIndex = 72;
-            this.label6.Text = "Địa chỉ:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(335, 117);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 25);
+            this.label5.TabIndex = 74;
+            this.label5.Text = "Nhập ghi chú:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dkTextBox2
             // 
@@ -373,54 +223,205 @@ namespace QL_CuaHang_Vegetable.Forms
             this.dkTextBox2.WatermarkForeColor = System.Drawing.Color.Gray;
             this.dkTextBox2.WordWrap = true;
             // 
-            // label5
+            // label6
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(335, 117);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 25);
-            this.label5.TabIndex = 74;
-            this.label5.Text = "Nhập ghi chú:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label6.Location = new System.Drawing.Point(10, 117);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 25);
+            this.label6.TabIndex = 72;
+            this.label6.Text = "Địa chỉ:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // dkTextBox1
+            // txt_Loai
             // 
-            this.dkTextBox1.AcceptReturn = false;
-            this.dkTextBox1.AcceptTab = false;
-            this.dkTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
-            this.dkTextBox1.BorderColor = System.Drawing.Color.Gray;
-            this.dkTextBox1.BorderWidth = 1;
-            this.dkTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.dkTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dkTextBox1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.dkTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.dkTextBox1.HideSelection = true;
-            this.dkTextBox1.Image = null;
-            this.dkTextBox1.ImageAlignRight = false;
-            this.dkTextBox1.ImageSize = new System.Drawing.Size(20, 20);
-            this.dkTextBox1.ImageVisible = false;
-            this.dkTextBox1.Lines = new string[0];
-            this.dkTextBox1.Location = new System.Drawing.Point(458, 117);
-            this.dkTextBox1.MaxLength = 32767;
-            this.dkTextBox1.Name = "dkTextBox1";
-            this.dkTextBox1.PasswordChar = '\0';
-            this.dkTextBox1.ReadOnly = false;
-            this.dkTextBox1.ShortCutKeysEnabled = true;
-            this.dkTextBox1.Size = new System.Drawing.Size(179, 25);
-            this.dkTextBox1.TabIndex = 75;
-            this.dkTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.dkTextBox1.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-            this.dkTextBox1.UnderlineStyle = true;
-            this.dkTextBox1.UseAnimation = true;
-            this.dkTextBox1.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dkTextBox1.Watermark = "Nhập ghi chú ...";
-            this.dkTextBox1.WatermarkForeColor = System.Drawing.Color.Gray;
-            this.dkTextBox1.WordWrap = true;
+            this.txt_Loai.AcceptReturn = false;
+            this.txt_Loai.AcceptTab = false;
+            this.txt_Loai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
+            this.txt_Loai.BorderColor = System.Drawing.Color.Gray;
+            this.txt_Loai.BorderWidth = 1;
+            this.txt_Loai.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_Loai.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Loai.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.txt_Loai.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_Loai.HideSelection = true;
+            this.txt_Loai.Image = null;
+            this.txt_Loai.ImageAlignRight = false;
+            this.txt_Loai.ImageSize = new System.Drawing.Size(20, 20);
+            this.txt_Loai.ImageVisible = false;
+            this.txt_Loai.Lines = new string[0];
+            this.txt_Loai.Location = new System.Drawing.Point(458, 79);
+            this.txt_Loai.MaxLength = 32767;
+            this.txt_Loai.Name = "txt_Loai";
+            this.txt_Loai.PasswordChar = '\0';
+            this.txt_Loai.ReadOnly = false;
+            this.txt_Loai.ShortCutKeysEnabled = true;
+            this.txt_Loai.Size = new System.Drawing.Size(179, 25);
+            this.txt_Loai.TabIndex = 71;
+            this.txt_Loai.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_Loai.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.txt_Loai.UnderlineStyle = true;
+            this.txt_Loai.UseAnimation = true;
+            this.txt_Loai.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Loai.Watermark = "Nhập số điện thoại";
+            this.txt_Loai.WatermarkForeColor = System.Drawing.Color.Gray;
+            this.txt_Loai.WordWrap = true;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(333, 79);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 25);
+            this.label4.TabIndex = 70;
+            this.label4.Text = "Số điện thoại:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txt_SoLuong
+            // 
+            this.txt_SoLuong.AcceptReturn = false;
+            this.txt_SoLuong.AcceptTab = false;
+            this.txt_SoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
+            this.txt_SoLuong.BorderColor = System.Drawing.Color.Gray;
+            this.txt_SoLuong.BorderWidth = 1;
+            this.txt_SoLuong.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_SoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_SoLuong.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.txt_SoLuong.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_SoLuong.HideSelection = true;
+            this.txt_SoLuong.Image = null;
+            this.txt_SoLuong.ImageAlignRight = false;
+            this.txt_SoLuong.ImageSize = new System.Drawing.Size(20, 20);
+            this.txt_SoLuong.ImageVisible = false;
+            this.txt_SoLuong.Lines = new string[0];
+            this.txt_SoLuong.Location = new System.Drawing.Point(134, 79);
+            this.txt_SoLuong.MaxLength = 32767;
+            this.txt_SoLuong.Name = "txt_SoLuong";
+            this.txt_SoLuong.PasswordChar = '\0';
+            this.txt_SoLuong.ReadOnly = false;
+            this.txt_SoLuong.ShortCutKeysEnabled = true;
+            this.txt_SoLuong.Size = new System.Drawing.Size(179, 25);
+            this.txt_SoLuong.TabIndex = 69;
+            this.txt_SoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_SoLuong.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.txt_SoLuong.UnderlineStyle = true;
+            this.txt_SoLuong.UseAnimation = true;
+            this.txt_SoLuong.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SoLuong.Watermark = "Nhập email";
+            this.txt_SoLuong.WatermarkForeColor = System.Drawing.Color.Gray;
+            this.txt_SoLuong.WordWrap = true;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(10, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 25);
+            this.label3.TabIndex = 68;
+            this.label3.Text = "Email:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txt_TenSP
+            // 
+            this.txt_TenSP.AcceptReturn = false;
+            this.txt_TenSP.AcceptTab = false;
+            this.txt_TenSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
+            this.txt_TenSP.BorderColor = System.Drawing.Color.Gray;
+            this.txt_TenSP.BorderWidth = 1;
+            this.txt_TenSP.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_TenSP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_TenSP.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.txt_TenSP.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_TenSP.HideSelection = true;
+            this.txt_TenSP.Image = null;
+            this.txt_TenSP.ImageAlignRight = false;
+            this.txt_TenSP.ImageSize = new System.Drawing.Size(20, 20);
+            this.txt_TenSP.ImageVisible = false;
+            this.txt_TenSP.Lines = new string[0];
+            this.txt_TenSP.Location = new System.Drawing.Point(458, 42);
+            this.txt_TenSP.MaxLength = 32767;
+            this.txt_TenSP.Name = "txt_TenSP";
+            this.txt_TenSP.PasswordChar = '\0';
+            this.txt_TenSP.ReadOnly = false;
+            this.txt_TenSP.ShortCutKeysEnabled = true;
+            this.txt_TenSP.Size = new System.Drawing.Size(179, 25);
+            this.txt_TenSP.TabIndex = 67;
+            this.txt_TenSP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_TenSP.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.txt_TenSP.UnderlineStyle = true;
+            this.txt_TenSP.UseAnimation = true;
+            this.txt_TenSP.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TenSP.Watermark = "Nhập tên NCC";
+            this.txt_TenSP.WatermarkForeColor = System.Drawing.Color.Gray;
+            this.txt_TenSP.WordWrap = true;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(333, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.TabIndex = 66;
+            this.label1.Text = "Tên nhà cung cấp:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txt_MaNCC
+            // 
+            this.txt_MaNCC.AcceptReturn = false;
+            this.txt_MaNCC.AcceptTab = false;
+            this.txt_MaNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(250)))));
+            this.txt_MaNCC.BorderColor = System.Drawing.Color.Gray;
+            this.txt_MaNCC.BorderWidth = 1;
+            this.txt_MaNCC.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txt_MaNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_MaNCC.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.txt_MaNCC.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_MaNCC.HideSelection = true;
+            this.txt_MaNCC.Image = null;
+            this.txt_MaNCC.ImageAlignRight = false;
+            this.txt_MaNCC.ImageSize = new System.Drawing.Size(20, 20);
+            this.txt_MaNCC.ImageVisible = false;
+            this.txt_MaNCC.Lines = new string[0];
+            this.txt_MaNCC.Location = new System.Drawing.Point(134, 42);
+            this.txt_MaNCC.MaxLength = 32767;
+            this.txt_MaNCC.Name = "txt_MaNCC";
+            this.txt_MaNCC.PasswordChar = '\0';
+            this.txt_MaNCC.ReadOnly = false;
+            this.txt_MaNCC.ShortCutKeysEnabled = true;
+            this.txt_MaNCC.Size = new System.Drawing.Size(179, 25);
+            this.txt_MaNCC.TabIndex = 65;
+            this.txt_MaNCC.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_MaNCC.TextRenderHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            this.txt_MaNCC.UnderlineStyle = true;
+            this.txt_MaNCC.UseAnimation = true;
+            this.txt_MaNCC.WartermarkFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaNCC.Watermark = "Nhập mã NCC";
+            this.txt_MaNCC.WatermarkForeColor = System.Drawing.Color.Gray;
+            this.txt_MaNCC.WordWrap = true;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(10, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 25);
+            this.label2.TabIndex = 64;
+            this.label2.Text = "Mã nhà cung cấp:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Add_Manufacturer_Form
             // 
+            this.AllowResize = false;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(690, 280);
             this.Controls.Add(this.btn_Del_Product);
