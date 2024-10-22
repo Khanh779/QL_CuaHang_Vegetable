@@ -297,7 +297,7 @@
             // 
             this.lbl_RefreshDataStatus.BackColor = System.Drawing.Color.White;
             this.lbl_RefreshDataStatus.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RefreshDataStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_RefreshDataStatus.ForeColor = System.Drawing.Color.Gray;
             this.lbl_RefreshDataStatus.Location = new System.Drawing.Point(45, 297);
             this.lbl_RefreshDataStatus.Name = "lbl_RefreshDataStatus";
             this.lbl_RefreshDataStatus.Size = new System.Drawing.Size(334, 15);
