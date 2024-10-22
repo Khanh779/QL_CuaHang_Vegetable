@@ -18,7 +18,7 @@ namespace HeCopUI_Framework.Controls.Button
         Color enabledTextColor = ColorTranslator.FromHtml("#999999");
         Color disabledTextColor = ColorTranslator.FromHtml("#babbbd");
 
-        Color checkedBoxColor1= Color.FromArgb(0, 168, 148);
+        Color checkedBoxColor1 = Color.FromArgb(0, 168, 148);
         Color checkedBoxColor2 = Color.DodgerBlue;
         Color unCheckedBoxColor = Color.DimGray;
 
@@ -37,7 +37,7 @@ namespace HeCopUI_Framework.Controls.Button
             get { return unCheckedBoxColor; }
             set
             {
-                unCheckedBoxColor = value;Invalidate();
+                unCheckedBoxColor = value; Invalidate();
             }
         }
 
@@ -97,10 +97,10 @@ namespace HeCopUI_Framework.Controls.Button
 
         #endregion
 
-      
+
         public DKCheckBox()
         {
-            SetStyle(ControlStyles.SupportsTransparentBackColor| ControlStyles.OptimizedDoubleBuffer, true);
+            SetStyle(ControlStyles.SupportsTransparentBackColor | ControlStyles.OptimizedDoubleBuffer, true);
             AnimationTimer = new Timer() { Interval = 10 };
             AnimationTimer.Tick += new EventHandler(AnimationTick);
             RippleAnimate = new Timer() { Interval = 5 };

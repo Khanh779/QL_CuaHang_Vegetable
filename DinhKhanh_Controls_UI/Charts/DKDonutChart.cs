@@ -1,6 +1,5 @@
 ﻿using DinhKhanh_Controls_UI.Animation;
 using DinhKhanh_Controls_UI.Enums;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -191,5 +190,5 @@ namespace DinhKhanh_Controls_UI.Charts
         }
     }
 
-   
+
 }

@@ -35,7 +35,7 @@ namespace QL_CuaHang_Vegetable.TabPage
 
         private void btn_Add_Product_MouseClick(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 AddProduct_Form addProduct_Form = new AddProduct_Form();
                 addProduct_Form.ShowDialog();

@@ -2,13 +2,6 @@
 using QL_CuaHang_Vegetable.Forms.AddEmpls;
 using QL_CuaHang_Vegetable.PhanXuLy;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QL_CuaHang_Vegetable.Forms
@@ -52,7 +45,7 @@ namespace QL_CuaHang_Vegetable.Forms
                     panel1.Controls.Add(b);
                     b.Dock = DockStyle.Fill;
                     detailsView = true;
-                    LB_ViewAdvan.Text = "Xem chi tiết thông tin";
+                    LB_ViewAdvan.Text = "Xem nhanh thông tin";
                 }
                 else
                 {
@@ -62,7 +55,7 @@ namespace QL_CuaHang_Vegetable.Forms
                     panel1.Controls.Add(a);
                     a.Dock = DockStyle.Fill;
                     detailsView = false;
-                    LB_ViewAdvan.Text = "Xem nhanh thông tin";
+                    LB_ViewAdvan.Text = "Xem chi tiết thông tin";
                 }
             }
         }

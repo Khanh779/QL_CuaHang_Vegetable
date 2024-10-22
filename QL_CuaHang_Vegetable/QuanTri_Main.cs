@@ -55,7 +55,7 @@ namespace QL_CuaHang_Vegetable
 
         }
 
-     
+
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
@@ -152,7 +152,7 @@ namespace QL_CuaHang_Vegetable
                 //AntiFlicker(newControl);
 
                 //Nếu có control hiện tại, thực hiện hoạt ảnh trượt
-                
+
                 //if (currentControl != null)
                 //{
                 //    DoSlideAnimate(currentControl, newControl, currentControl.TabIndex < newControl.TabIndex ? false : true);

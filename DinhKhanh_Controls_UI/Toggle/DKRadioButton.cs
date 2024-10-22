@@ -232,7 +232,7 @@ namespace DinhKhanh_Controls_UI.Toggle
             g.TextRenderingHint = TextRenderHint;
             Rectangle BGEllipse = new Rectangle(6, 6, 16, 16);
             using (SolidBrush BG = new SolidBrush(Enabled ? Checked ? EnabledCheckedColor : EnabledUnCheckedColor : DisabledColor))
-            using (var pen= new Pen(new SolidBrush(BG.Color), 2))
+            using (var pen = new Pen(new SolidBrush(BG.Color), 2))
             {
                 g.DrawEllipse(pen, BGEllipse);
                 StringFormat SF = new StringFormat();
@@ -249,7 +249,7 @@ namespace DinhKhanh_Controls_UI.Toggle
                 //RadioButton Text
                 g.DrawString(Text, Font, new SolidBrush(Enabled ? EnabledTextColor : DisabledTextColor),
                     new RectangleF(28, 30 / 2 - g.MeasureString(Text, Font).Height / 2, Width - 28, Height - 6), SF);
-                if (DesignMode == false && foc==true)
+                if (DesignMode == false && foc == true)
                 {
                     g.SmoothingMode = SmoothingMode.None; g.PixelOffsetMode = PixelOffsetMode.Default;
                     var a = new Pen(new SolidBrush(fbc), 1f) { Alignment = PenAlignment.Inset, DashStyle = dashStyle };

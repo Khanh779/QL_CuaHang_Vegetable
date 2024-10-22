@@ -78,14 +78,14 @@ namespace QL_CuaHang_Vegetable.TabPage
 
             // Random số lượng thực phẩm
             Random rd = new Random();
-            
+
             dkStackBarChart1.Items[0].Value = rd.Next(1, 100);
             dkStackBarChart1.Items[1].Value = rd.Next(1, 100);
             dkStackBarChart1.Items[2].Value = rd.Next(1, 100);
             dkStackBarChart1.Items[3].Value = rd.Next(1, 100);
 
             // dklabel từ 2 đến 5 là trạng thái chú thích của biểu đồ thanh ngăn xếp stack
-            dkLabel2.Text="Còn tồn: "+ dkStackBarChart1.Items[0].Value.ToString();
+            dkLabel2.Text = "Còn tồn: " + dkStackBarChart1.Items[0].Value.ToString();
             dkLabel3.Text = "Đã bán: " + dkStackBarChart1.Items[1].Value.ToString();
             dkLabel4.Text = "Sắp hết hạn: " + dkStackBarChart1.Items[2].Value.ToString();
             dkLabel5.Text = "Đã hết hạn: " + dkStackBarChart1.Items[3].Value.ToString();
