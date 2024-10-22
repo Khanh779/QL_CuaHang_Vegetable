@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|solutionrelative:ql_cuahang_vegetable\\tabpage\\tab_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AC55265-DB6A-4F76-80BE-A0327CF53E5A}|QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable.csproj|d:\\data\\tailieu\\projects\\c#\\ql_cuahang_vegetable\\ql_cuahang_vegetable\\tabpage\\tab_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Tab_Report.cs",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Report.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\TabPage\\Tab_Report.cs",
@@ -67,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Tab_Home.cs",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Home.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\TabPage\\Tab_Home.cs",
               "ToolTip": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Home.cs",
               "RelativeToolTip": "QL_CuaHang_Vegetable\\TabPage\\Tab_Home.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAswG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAswGoAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T12:15:24.05Z",
               "EditorCaption": ""
@@ -92,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Tab_Settings.cs [Design]",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Settings.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\TabPage\\Tab_Settings.cs",
@@ -104,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Tab_Report.cs [Design]",
               "DocumentMoniker": "D:\\Data\\Tailieu\\Projects\\C#\\QL_CuaHang_Vegetable\\QL_CuaHang_Vegetable\\TabPage\\Tab_Report.cs",
               "RelativeDocumentMoniker": "QL_CuaHang_Vegetable\\TabPage\\Tab_Report.cs",

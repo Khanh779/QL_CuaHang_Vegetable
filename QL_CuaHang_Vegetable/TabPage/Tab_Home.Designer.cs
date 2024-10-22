@@ -42,6 +42,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.dkLabel5 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.llbl_DenTP = new System.Windows.Forms.LinkLabel();
             this.PN_StackChartLegend.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(41, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 32);
+            this.label2.Size = new System.Drawing.Size(139, 26);
             this.label2.TabIndex = 66;
             this.label2.Text = "Tổng sản phẩm:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -71,9 +72,9 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(41, 141);
+            this.label3.Location = new System.Drawing.Point(41, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 32);
+            this.label3.Size = new System.Drawing.Size(139, 26);
             this.label3.TabIndex = 68;
             this.label3.Text = "Số nhân viên:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -85,7 +86,7 @@
             this.LLB_NumProdu.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.LLB_NumProdu.Location = new System.Drawing.Point(283, 98);
             this.LLB_NumProdu.Name = "LLB_NumProdu";
-            this.LLB_NumProdu.Size = new System.Drawing.Size(96, 32);
+            this.LLB_NumProdu.Size = new System.Drawing.Size(96, 26);
             this.LLB_NumProdu.TabIndex = 70;
             this.LLB_NumProdu.TabStop = true;
             this.LLB_NumProdu.Text = "0";
@@ -96,9 +97,9 @@
             this.LLB_EmplMan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
             this.LLB_EmplMan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LLB_EmplMan.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.LLB_EmplMan.Location = new System.Drawing.Point(283, 141);
+            this.LLB_EmplMan.Location = new System.Drawing.Point(283, 135);
             this.LLB_EmplMan.Name = "LLB_EmplMan";
-            this.LLB_EmplMan.Size = new System.Drawing.Size(96, 32);
+            this.LLB_EmplMan.Size = new System.Drawing.Size(96, 26);
             this.LLB_EmplMan.TabIndex = 71;
             this.LLB_EmplMan.TabStop = true;
             this.LLB_EmplMan.Text = "0";
@@ -111,7 +112,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(428, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 32);
+            this.label4.Size = new System.Drawing.Size(80, 26);
             this.label4.TabIndex = 73;
             this.label4.Text = "Cảnh báo:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -163,9 +164,9 @@
             this.dkLabel1.ForeColor1 = System.Drawing.Color.Black;
             this.dkLabel1.ForeColor2 = System.Drawing.Color.Black;
             this.dkLabel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel1.Location = new System.Drawing.Point(454, 141);
+            this.dkLabel1.Location = new System.Drawing.Point(432, 131);
             this.dkLabel1.Name = "dkLabel1";
-            this.dkLabel1.Size = new System.Drawing.Size(125, 35);
+            this.dkLabel1.Size = new System.Drawing.Size(125, 25);
             this.dkLabel1.StringTrimming = System.Drawing.StringTrimming.Character;
             this.dkLabel1.TabIndex = 76;
             this.dkLabel1.Text = "dkLabel1";
@@ -287,7 +288,7 @@
             this.PN_StackChartLegend.Controls.Add(this.dkLabel2);
             this.PN_StackChartLegend.Controls.Add(this.panel2);
             this.PN_StackChartLegend.Controls.Add(this.panel3);
-            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 258);
+            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 265);
             this.PN_StackChartLegend.Name = "PN_StackChartLegend";
             this.PN_StackChartLegend.Size = new System.Drawing.Size(145, 96);
             this.PN_StackChartLegend.TabIndex = 79;
@@ -404,10 +405,25 @@
             this.panel5.Size = new System.Drawing.Size(12, 12);
             this.panel5.TabIndex = 87;
             // 
+            // llbl_DenTP
+            // 
+            this.llbl_DenTP.BackColor = System.Drawing.Color.White;
+            this.llbl_DenTP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbl_DenTP.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.llbl_DenTP.Location = new System.Drawing.Point(41, 182);
+            this.llbl_DenTP.Name = "llbl_DenTP";
+            this.llbl_DenTP.Size = new System.Drawing.Size(151, 30);
+            this.llbl_DenTP.TabIndex = 81;
+            this.llbl_DenTP.TabStop = true;
+            this.llbl_DenTP.Text = "Chuyển đến thực phẩm";
+            this.llbl_DenTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.llbl_DenTP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.llbl_DenTP_MouseClick);
+            // 
             // Tab_Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.llbl_DenTP);
             this.Controls.Add(this.lbl_RefreshDataStatus);
             this.Controls.Add(this.PN_StackChartLegend);
             this.Controls.Add(this.btn_ReloadData);
@@ -457,5 +473,6 @@
         private System.Windows.Forms.Panel panel5;
         private DinhKhanh_Controls_UI.TextControls.DKLabel dkLabel4;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.LinkLabel llbl_DenTP;
     }
 }

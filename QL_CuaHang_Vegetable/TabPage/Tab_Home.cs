@@ -108,5 +108,14 @@ namespace QL_CuaHang_Vegetable.TabPage
 
             e.Graphics.DrawRectangle(new System.Drawing.Pen(System.Drawing.Color.Silver, 1) { Alignment = System.Drawing.Drawing2D.PenAlignment.Inset, DashStyle = System.Drawing.Drawing2D.DashStyle.Dot }, PN_StackChartLegend.ClientRectangle);
         }
+
+        private void llbl_DenTP_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button== MouseButtons.Left)
+            {
+               QuanTri_Main.Instance.PN_Tabs.Controls.Clear();
+                QuanTri_Main.Instance.PN_Tabs.Controls.Add(Tab_Food.Instance);
+            }    
+        }
     }
 }
