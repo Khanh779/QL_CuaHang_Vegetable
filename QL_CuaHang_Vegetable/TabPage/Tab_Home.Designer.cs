@@ -287,7 +287,7 @@
             this.PN_StackChartLegend.Controls.Add(this.dkLabel2);
             this.PN_StackChartLegend.Controls.Add(this.panel2);
             this.PN_StackChartLegend.Controls.Add(this.panel3);
-            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 267);
+            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 258);
             this.PN_StackChartLegend.Name = "PN_StackChartLegend";
             this.PN_StackChartLegend.Size = new System.Drawing.Size(145, 96);
             this.PN_StackChartLegend.TabIndex = 79;
