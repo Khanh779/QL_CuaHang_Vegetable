@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DinhKhanh_Controls_UI.Helper;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -35,7 +36,19 @@ namespace DinhKhanh_Controls_UI.Buttons
 
         bool _isMouseOver = false;
 
-
+        bool useTransparentBackground = true;
+        public bool UseTransparent
+        {
+            get
+            {
+                return useTransparentBackground;
+            }
+            set
+            {
+                useTransparentBackground = value;
+                Invalidate();
+            }
+        }
 
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -44,6 +57,9 @@ namespace DinhKhanh_Controls_UI.Buttons
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             e.Graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
             e.Graphics.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+
+            if (useTransparentBackground)
+                GraphicsHelper.MakeTransparent(this, e.Graphics);
 
             // Vẽ hình ảnh dựa trên trạng thái nút
             if (ImageButton != null)
