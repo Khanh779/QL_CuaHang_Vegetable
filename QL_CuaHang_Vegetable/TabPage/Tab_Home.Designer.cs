@@ -412,10 +412,10 @@
             this.llbl_DenTP.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.llbl_DenTP.Location = new System.Drawing.Point(41, 182);
             this.llbl_DenTP.Name = "llbl_DenTP";
-            this.llbl_DenTP.Size = new System.Drawing.Size(151, 30);
+            this.llbl_DenTP.Size = new System.Drawing.Size(117, 30);
             this.llbl_DenTP.TabIndex = 81;
             this.llbl_DenTP.TabStop = true;
-            this.llbl_DenTP.Text = "Chuyển đến thực phẩm";
+            this.llbl_DenTP.Text = "Đi đến thực phẩm";
             this.llbl_DenTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.llbl_DenTP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.llbl_DenTP_MouseClick);
             // 
