@@ -52,8 +52,7 @@ namespace DinhKhanh_Controls_UI.Buttons
         {
             if (isMouseDown && e.Button == MouseButtons.Left && form != null)   // Kiểm tra xem nếu là chuột trái và form !=null (tương đương có form đã được gán) thì thực hiện
             {
-                form.Left = e.X + form.Left - x;
-                form.Top = e.Y + form.Top - y;
+                form.Location = new System.Drawing.Point(e.X + form.Location.X - x, e.Y + form.Location.Y - y);
             }
         }
 

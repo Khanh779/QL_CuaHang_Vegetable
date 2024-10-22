@@ -146,6 +146,8 @@
             // 
             // dkStackBarChart1
             // 
+            this.dkStackBarChart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dkStackBarChart1.BackColor = System.Drawing.Color.Transparent;
             this.dkStackBarChart1.BorderColor = System.Drawing.Color.Gray;
             this.dkStackBarChart1.BorderThickness = 0;
@@ -279,6 +281,7 @@
             // 
             // PN_StackChartLegend
             // 
+            this.PN_StackChartLegend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PN_StackChartLegend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
             this.PN_StackChartLegend.Controls.Add(this.dkLabel5);
             this.PN_StackChartLegend.Controls.Add(this.panel5);
