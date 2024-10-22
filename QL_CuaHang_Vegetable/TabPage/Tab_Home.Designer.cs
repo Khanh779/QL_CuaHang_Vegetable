@@ -417,7 +417,7 @@
             this.llbl_DenTP.TabStop = true;
             this.llbl_DenTP.Text = "Đi đến thực phẩm";
             this.llbl_DenTP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.llbl_DenTP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.llbl_DenTP_MouseClick);
+            this.llbl_DenTP.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbl_DenTP_LinkClicked);
             // 
             // Tab_Home
             // 
