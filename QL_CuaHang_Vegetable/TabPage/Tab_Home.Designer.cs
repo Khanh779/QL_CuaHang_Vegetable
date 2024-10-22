@@ -23,11 +23,12 @@
             this.LLB_EmplMan = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.dkStackBarChart1 = new DinhKhanh_Controls_UI.Progresses.DKStackBarChart();
+            this.dkLabel1 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
             this.dkCard4 = new DinhKhanh_Controls_UI.Other.DKCard();
             this.btn_Add_Employ = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkCard3 = new DinhKhanh_Controls_UI.Other.DKCard();
             this.dkCard1 = new DinhKhanh_Controls_UI.Other.DKCard();
-            this.dkLabel1 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -112,6 +113,35 @@
             this.label5.TabIndex = 75;
             this.label5.Text = "Hoạt động:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // dkStackBarChart1
+            // 
+            this.dkStackBarChart1.BackColor = System.Drawing.Color.Transparent;
+            this.dkStackBarChart1.BorderColor = System.Drawing.Color.Gray;
+            this.dkStackBarChart1.BorderThickness = 0;
+            this.dkStackBarChart1.ItemRadius = 5;
+            this.dkStackBarChart1.Location = new System.Drawing.Point(91, 390);
+            this.dkStackBarChart1.Name = "dkStackBarChart1";
+            this.dkStackBarChart1.Radius = 20;
+            this.dkStackBarChart1.Size = new System.Drawing.Size(376, 91);
+            this.dkStackBarChart1.TabIndex = 77;
+            this.dkStackBarChart1.Text = "dkStackBarChart1";
+            this.dkStackBarChart1.UseTransparent = true;
+            // 
+            // dkLabel1
+            // 
+            this.dkLabel1.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dkLabel1.ForeColor1 = System.Drawing.Color.Black;
+            this.dkLabel1.ForeColor2 = System.Drawing.Color.Black;
+            this.dkLabel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkLabel1.Location = new System.Drawing.Point(199, 313);
+            this.dkLabel1.Name = "dkLabel1";
+            this.dkLabel1.Size = new System.Drawing.Size(125, 35);
+            this.dkLabel1.StringTrimming = System.Drawing.StringTrimming.Character;
+            this.dkLabel1.TabIndex = 76;
+            this.dkLabel1.Text = "dkLabel1";
+            this.dkLabel1.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.dkLabel1.UseTransparent = true;
             // 
             // dkCard4
             // 
@@ -217,25 +247,11 @@
             this.dkCard1.TabIndex = 1;
             this.dkCard1.Text = "dkCard1";
             // 
-            // dkLabel1
-            // 
-            this.dkLabel1.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dkLabel1.ForeColor1 = System.Drawing.Color.Black;
-            this.dkLabel1.ForeColor2 = System.Drawing.Color.Black;
-            this.dkLabel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel1.Location = new System.Drawing.Point(242, 384);
-            this.dkLabel1.Name = "dkLabel1";
-            this.dkLabel1.Size = new System.Drawing.Size(125, 35);
-            this.dkLabel1.StringTrimming = System.Drawing.StringTrimming.Character;
-            this.dkLabel1.TabIndex = 76;
-            this.dkLabel1.Text = "dkLabel1";
-            this.dkLabel1.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.dkLabel1.UseTransparent = true;
-            // 
             // Tab_Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.dkStackBarChart1);
             this.Controls.Add(this.dkLabel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dkCard4);
@@ -267,5 +283,6 @@
         private DinhKhanh_Controls_UI.Other.DKCard dkCard4;
         private System.Windows.Forms.Label label5;
         private DinhKhanh_Controls_UI.TextControls.DKLabel dkLabel1;
+        private DinhKhanh_Controls_UI.Progresses.DKStackBarChart dkStackBarChart1;
     }
 }

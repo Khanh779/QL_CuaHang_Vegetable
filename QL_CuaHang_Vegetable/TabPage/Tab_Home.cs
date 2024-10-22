@@ -1,4 +1,5 @@
-﻿using QL_CuaHang_Vegetable.Forms;
+﻿using DinhKhanh_Controls_UI.Charts;
+using QL_CuaHang_Vegetable.Forms;
 using System;
 using System.Windows.Forms;
 
@@ -55,6 +56,16 @@ namespace QL_CuaHang_Vegetable.TabPage
         private void Tab_Home_Load(object sender, EventArgs e)
         {
             label1.Text = "Trang chủ - " + LayBuoi() + ", Admin!";
+
+
+            ChartItem item0 = new ChartItem { Name = "dKDonutChartItem0", Value = 25, Color = System.Drawing.Color.FromArgb(86, 169, 128), Index = 0 };
+            ChartItem item1 = new ChartItem { Name = "dKDonutChartItem1", Value = 25, Color = System.Drawing.Color.DodgerBlue, Index = 1 };
+            ChartItem item2 = new ChartItem { Name = "dKDonutChartItem2", Value = 25, Color = System.Drawing.Color.Gold, Index = 2 };
+
+            dkStackBarChart1.Items.Add(item0);
+            dkStackBarChart1.Items.Add(item1);
+            dkStackBarChart1.Items.Add(item2);
+
         }
     }
 }

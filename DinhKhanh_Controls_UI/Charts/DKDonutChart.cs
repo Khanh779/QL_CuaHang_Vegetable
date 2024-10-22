@@ -38,9 +38,9 @@ namespace DinhKhanh_Controls_UI.Charts
             }
         }
 
-        List<DKDonutChartItem> items { get; set; } = new List<DKDonutChartItem>();
+        List<ChartItem> items { get; set; } = new List<ChartItem>();
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public List<DKDonutChartItem> Items
+        public List<ChartItem> Items
         {
             get { return items; }
             set
@@ -191,12 +191,5 @@ namespace DinhKhanh_Controls_UI.Charts
         }
     }
 
-    public class DKDonutChartItem
-    {
-        public string Text { get; set; }
-        public int Index { get; set; }
-        public string Name { get; set; }
-        public double Value { get; set; }
-        public Color Color { get; set; }
-    }
+   
 }
