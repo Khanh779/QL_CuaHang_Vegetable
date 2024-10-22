@@ -31,7 +31,7 @@ namespace QL_CuaHang_Vegetable.TabPage
         {
             if (e.Button == MouseButtons.Left)
             {
-                Add_Employee_Form add_Employee_Form = new Add_Employee_Form();
+                Employee_Manager_Form add_Employee_Form = new Employee_Manager_Form();
                 add_Employee_Form.Show();
             }
         }
@@ -59,7 +59,7 @@ namespace QL_CuaHang_Vegetable.TabPage
 
 
             ChartItem item0 = new ChartItem { Name = "dKDonutChartItem0", Value = 25, Color = System.Drawing.Color.FromArgb(86, 169, 128), Index = 0 };
-            ChartItem item1 = new ChartItem { Name = "dKDonutChartItem1", Value = 25, Color = System.Drawing.Color.DodgerBlue, Index = 1 };
+            ChartItem item1 = new ChartItem { Name = "dKDonutChartItem1", Value = 25, Color = System.Drawing.Color.DeepSkyBlue, Index = 1 };
             ChartItem item2 = new ChartItem { Name = "dKDonutChartItem2", Value = 25, Color = System.Drawing.Color.Gold, Index = 2 };
             ChartItem item3 = new ChartItem { Name = "dKDonutChartItem2", Value = 25, Color = System.Drawing.Color.FromArgb(253, 1, 73), Index = 3 };
 
@@ -75,7 +75,23 @@ namespace QL_CuaHang_Vegetable.TabPage
         void LoadData_Foood()
         {
             dkStackBarChart1.ReloadData();
-            lbl_RefreshDataStatus.Text = "Dữ liệu được cập nhật vào lúc: " + DateTime.Now;
+
+            // Random số lượng thực phẩm
+            Random rd = new Random();
+            
+            dkStackBarChart1.Items[0].Value = rd.Next(1, 100);
+            dkStackBarChart1.Items[1].Value = rd.Next(1, 100);
+            dkStackBarChart1.Items[2].Value = rd.Next(1, 100);
+            dkStackBarChart1.Items[3].Value = rd.Next(1, 100);
+
+            // dklabel từ 2 đến 5 là trạng thái chú thích của biểu đồ thanh ngăn xếp stack
+            dkLabel2.Text="Còn tồn: "+ dkStackBarChart1.Items[0].Value.ToString();
+            dkLabel3.Text = "Đã bán: " + dkStackBarChart1.Items[1].Value.ToString();
+            dkLabel4.Text = "Sắp hết hạn: " + dkStackBarChart1.Items[2].Value.ToString();
+            dkLabel5.Text = "Đã hết hạn: " + dkStackBarChart1.Items[3].Value.ToString();
+
+
+            lbl_RefreshDataStatus.Text = "Dữ liệu được cập nhật vào lúc: " + DateTime.Now; // Thời gian cập nhật dữ liệu
         }
 
         private void btn_ReloadData_MouseClick(object sender, MouseEventArgs e)
@@ -90,7 +106,7 @@ namespace QL_CuaHang_Vegetable.TabPage
         {
             e.Graphics.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
 
-            e.Graphics.DrawRectangle(new System.Drawing.Pen(System.Drawing.Color.Silver, 1) { Alignment = System.Drawing.Drawing2D.PenAlignment.Inset, DashStyle = System.Drawing.Drawing2D.DashStyle.Dot }, 0, 0, PN_StackChartLegend.Width, PN_StackChartLegend.Height);
+            e.Graphics.DrawRectangle(new System.Drawing.Pen(System.Drawing.Color.Silver, 1) { Alignment = System.Drawing.Drawing2D.PenAlignment.Inset, DashStyle = System.Drawing.Drawing2D.DashStyle.Dot }, PN_StackChartLegend.ClientRectangle);
         }
     }
 }

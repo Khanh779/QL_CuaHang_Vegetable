@@ -49,7 +49,7 @@ D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.DangNhap_Form.resources
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.NhanVienBan_Form.resources
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.QuanTri_Main.resources
-D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.Forms.Add_Employee_Form.resources
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.Forms.Add_Manufacturer_Form.resources
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.Forms.AddEmpls.DetailsEmList_UC.resources
 D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.Forms.AddEmpls.QuickEmList_UC.resources
+D:\Data\Tailieu\Projects\C#\QL_CuaHang_Vegetable\QL_CuaHang_Vegetable\obj\Debug\QL_CuaHang_Vegetable.Forms.Employee_Manager_Form.resources

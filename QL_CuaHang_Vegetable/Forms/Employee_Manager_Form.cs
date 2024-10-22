@@ -13,10 +13,10 @@ using System.Windows.Forms;
 
 namespace QL_CuaHang_Vegetable.Forms
 {
-    public partial class Add_Employee_Form : TemplateForm
+    public partial class Employee_Manager_Form : TemplateForm
     {
 
-        public Add_Employee_Form()
+        public Employee_Manager_Form()
         {
             InitializeComponent();
 

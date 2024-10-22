@@ -76,11 +76,11 @@
     <Compile Include="Forms\AddEmpls\QuickEmList_UC.Designer.cs">
       <DependentUpon>QuickEmList_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Add_Employee_Form.cs">
+    <Compile Include="Forms\Employee_Manager_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Add_Employee_Form.Designer.cs">
-      <DependentUpon>Add_Employee_Form.cs</DependentUpon>
+    <Compile Include="Forms\Employee_Manager_Form.Designer.cs">
+      <DependentUpon>Employee_Manager_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Add_Manufacturer_Form.cs">
       <SubType>Form</SubType>
@@ -159,8 +159,8 @@
     <EmbeddedResource Include="Forms\AddEmpls\QuickEmList_UC.resx">
       <DependentUpon>QuickEmList_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Add_Employee_Form.resx">
-      <DependentUpon>Add_Employee_Form.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Employee_Manager_Form.resx">
+      <DependentUpon>Employee_Manager_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Add_Manufacturer_Form.resx">
       <DependentUpon>Add_Manufacturer_Form.cs</DependentUpon>

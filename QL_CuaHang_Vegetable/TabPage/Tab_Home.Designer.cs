@@ -134,7 +134,7 @@
             this.btn_ReloadData.ImageButton = global::QL_CuaHang_Vegetable.Properties.Resources.icons8_refresh_96;
             this.btn_ReloadData.ImageHoverSize = new System.Drawing.Size(25, 25);
             this.btn_ReloadData.ImageNormalSize = new System.Drawing.Size(20, 20);
-            this.btn_ReloadData.Location = new System.Drawing.Point(623, 270);
+            this.btn_ReloadData.Location = new System.Drawing.Point(600, 295);
             this.btn_ReloadData.Name = "btn_ReloadData";
             this.btn_ReloadData.Size = new System.Drawing.Size(25, 25);
             this.btn_ReloadData.TabIndex = 78;
@@ -148,11 +148,11 @@
             this.dkStackBarChart1.BackColor = System.Drawing.Color.Transparent;
             this.dkStackBarChart1.BorderColor = System.Drawing.Color.Gray;
             this.dkStackBarChart1.BorderThickness = 0;
-            this.dkStackBarChart1.ItemRadius = 6;
-            this.dkStackBarChart1.Location = new System.Drawing.Point(188, 277);
+            this.dkStackBarChart1.ItemRadius = 4;
+            this.dkStackBarChart1.Location = new System.Drawing.Point(188, 276);
             this.dkStackBarChart1.Name = "dkStackBarChart1";
-            this.dkStackBarChart1.Radius = 6;
-            this.dkStackBarChart1.Size = new System.Drawing.Size(430, 12);
+            this.dkStackBarChart1.Radius = 5;
+            this.dkStackBarChart1.Size = new System.Drawing.Size(436, 12);
             this.dkStackBarChart1.TabIndex = 77;
             this.dkStackBarChart1.Text = "dkStackBarChart1";
             this.dkStackBarChart1.UseTransparent = true;
@@ -287,9 +287,9 @@
             this.PN_StackChartLegend.Controls.Add(this.dkLabel2);
             this.PN_StackChartLegend.Controls.Add(this.panel2);
             this.PN_StackChartLegend.Controls.Add(this.panel3);
-            this.PN_StackChartLegend.Location = new System.Drawing.Point(654, 267);
+            this.PN_StackChartLegend.Location = new System.Drawing.Point(628, 267);
             this.PN_StackChartLegend.Name = "PN_StackChartLegend";
-            this.PN_StackChartLegend.Size = new System.Drawing.Size(112, 96);
+            this.PN_StackChartLegend.Size = new System.Drawing.Size(145, 96);
             this.PN_StackChartLegend.TabIndex = 79;
             this.PN_StackChartLegend.Paint += new System.Windows.Forms.PaintEventHandler(this.PN_StackChartLegend_Paint);
             // 
@@ -307,20 +307,22 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.panel3.Location = new System.Drawing.Point(8, 11);
+            this.panel3.Location = new System.Drawing.Point(5, 11);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(12, 12);
             this.panel3.TabIndex = 81;
             // 
             // dkLabel2
             // 
+            this.dkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dkLabel2.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.dkLabel2.ForeColor1 = System.Drawing.Color.Black;
             this.dkLabel2.ForeColor2 = System.Drawing.Color.Black;
             this.dkLabel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel2.Location = new System.Drawing.Point(26, 8);
+            this.dkLabel2.Location = new System.Drawing.Point(22, 7);
             this.dkLabel2.Name = "dkLabel2";
-            this.dkLabel2.Size = new System.Drawing.Size(80, 20);
+            this.dkLabel2.Size = new System.Drawing.Size(119, 20);
             this.dkLabel2.StringTrimming = System.Drawing.StringTrimming.Character;
             this.dkLabel2.TabIndex = 81;
             this.dkLabel2.Text = "Còn tồn";
@@ -329,13 +331,15 @@
             // 
             // dkLabel3
             // 
+            this.dkLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dkLabel3.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.dkLabel3.ForeColor1 = System.Drawing.Color.Black;
             this.dkLabel3.ForeColor2 = System.Drawing.Color.Black;
             this.dkLabel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel3.Location = new System.Drawing.Point(26, 29);
+            this.dkLabel3.Location = new System.Drawing.Point(22, 28);
             this.dkLabel3.Name = "dkLabel3";
-            this.dkLabel3.Size = new System.Drawing.Size(80, 20);
+            this.dkLabel3.Size = new System.Drawing.Size(119, 20);
             this.dkLabel3.StringTrimming = System.Drawing.StringTrimming.Character;
             this.dkLabel3.TabIndex = 82;
             this.dkLabel3.Text = "Đã bán";
@@ -344,21 +348,23 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel2.Location = new System.Drawing.Point(8, 32);
+            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.Location = new System.Drawing.Point(5, 32);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(12, 12);
             this.panel2.TabIndex = 83;
             // 
             // dkLabel4
             // 
+            this.dkLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dkLabel4.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.dkLabel4.ForeColor1 = System.Drawing.Color.Black;
             this.dkLabel4.ForeColor2 = System.Drawing.Color.Black;
             this.dkLabel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel4.Location = new System.Drawing.Point(26, 50);
+            this.dkLabel4.Location = new System.Drawing.Point(22, 49);
             this.dkLabel4.Name = "dkLabel4";
-            this.dkLabel4.Size = new System.Drawing.Size(80, 20);
+            this.dkLabel4.Size = new System.Drawing.Size(119, 20);
             this.dkLabel4.StringTrimming = System.Drawing.StringTrimming.Character;
             this.dkLabel4.TabIndex = 84;
             this.dkLabel4.Text = "Sắp hết hạn";
@@ -368,20 +374,22 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Gold;
-            this.panel4.Location = new System.Drawing.Point(8, 53);
+            this.panel4.Location = new System.Drawing.Point(5, 53);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(12, 12);
             this.panel4.TabIndex = 85;
             // 
             // dkLabel5
             // 
+            this.dkLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dkLabel5.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.dkLabel5.ForeColor1 = System.Drawing.Color.Black;
             this.dkLabel5.ForeColor2 = System.Drawing.Color.Black;
             this.dkLabel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.dkLabel5.Location = new System.Drawing.Point(26, 71);
+            this.dkLabel5.Location = new System.Drawing.Point(22, 70);
             this.dkLabel5.Name = "dkLabel5";
-            this.dkLabel5.Size = new System.Drawing.Size(80, 20);
+            this.dkLabel5.Size = new System.Drawing.Size(119, 20);
             this.dkLabel5.StringTrimming = System.Drawing.StringTrimming.Character;
             this.dkLabel5.TabIndex = 86;
             this.dkLabel5.Text = "Đã hết hạn";
@@ -391,7 +399,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(1)))), ((int)(((byte)(73)))));
-            this.panel5.Location = new System.Drawing.Point(8, 74);
+            this.panel5.Location = new System.Drawing.Point(5, 74);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(12, 12);
             this.panel5.TabIndex = 87;

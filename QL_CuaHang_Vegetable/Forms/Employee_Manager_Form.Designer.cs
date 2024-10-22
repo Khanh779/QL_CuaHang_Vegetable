@@ -1,6 +1,6 @@
 ﻿namespace QL_CuaHang_Vegetable.Forms
 {
-    partial class Add_Employee_Form
+    partial class Employee_Manager_Form
     {
         /// <summary>
         /// Required designer variable.
