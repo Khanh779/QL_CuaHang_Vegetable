@@ -143,7 +143,7 @@ namespace DinhKhanh_Controls_UI.Charts
                     return bmp;
 
                 float total = Items.Sum(x => (float)x.Value);
-                float startAngle = 0;
+                float startAngle = -90 + (float)animationManager.GetProgress() * 90;
                 float sweepAngle = 0;
 
                 Rectangle rect = new Rectangle(0, 0, chartSize - 1, chartSize - 1);
@@ -152,8 +152,12 @@ namespace DinhKhanh_Controls_UI.Charts
                 {
                     sweepAngle = (float)(Items[i].Value / total) * 360 * (float)(useAnimation ? animationManager.GetProgress() : 1);
                     using (SolidBrush brush = new SolidBrush(Items[i].Color))
-                    using (var pen = new Pen(Items[i].Color, ArcWidth) { Alignment = System.Drawing.Drawing2D.PenAlignment.Inset, EndCap= System.Drawing.Drawing2D.LineCap.Round,
-                     StartCap= System.Drawing.Drawing2D.LineCap.Round})
+                    using (var pen = new Pen(Items[i].Color, ArcWidth)
+                    {
+                        Alignment = System.Drawing.Drawing2D.PenAlignment.Inset,
+                        EndCap = System.Drawing.Drawing2D.LineCap.Round,
+                        StartCap = System.Drawing.Drawing2D.LineCap.Round
+                    })
                     {
                         g.DrawArc(pen, rect, startAngle, sweepAngle);
                     }

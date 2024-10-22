@@ -45,6 +45,7 @@ namespace QL_CuaHang_Vegetable
 
             SelectedTab = Tab_Home.Instance;
             PN_Tabs.Controls.Add(Tab_Home.Instance);
+            Tab_Home.Instance.Dock = DockStyle.Fill;
         }
 
         private void Form1_Load(object sender, EventArgs e)

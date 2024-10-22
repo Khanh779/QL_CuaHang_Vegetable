@@ -8,11 +8,12 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
     public class XuLyThongTin
     {
 
-        Dictionary<string, ThongTinUser> DanhSachNguoiDung { get; set; }
+         public static Dictionary<string, ThongTinUser> LocNguoiDung = new Dictionary<string, ThongTinUser>();
+        public static List<ThongTinUser> DanhSachNguoiDung = new List<ThongTinUser>();
 
         public XuLyThongTin()
         {
-            DanhSachNguoiDung = new Dictionary<string, ThongTinUser>();
+          
 
         }
     }

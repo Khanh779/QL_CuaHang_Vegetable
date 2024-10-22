@@ -79,6 +79,13 @@ namespace DinhKhanh_Controls_UI.Animation
             }
         }
 
+        public void StopAll()
+        {
+            _timer.Stop(); Complete?.Invoke();
+            _timer?.Dispose();
+
+        }
+
 
 
         private void _timer_Tick(object sender, EventArgs e)

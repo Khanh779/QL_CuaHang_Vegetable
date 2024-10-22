@@ -18,16 +18,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listViewOrders = new System.Windows.Forms.ListView();
             this.CH_CodeOrder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_KH_DT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_User = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CH_Loai = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CH_Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.LB_ItemCount = new System.Windows.Forms.Label();
             this.btn_Add_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Edit_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.btn_Del_Order = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkTextBox1 = new DinhKhanh_Controls_UI.TextControls.DKTextBox();
-            this.CH_KH_DT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_User = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CH_Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +57,7 @@
             this.listViewOrders.HideSelection = false;
             this.listViewOrders.Location = new System.Drawing.Point(22, 80);
             this.listViewOrders.Name = "listViewOrders";
-            this.listViewOrders.Size = new System.Drawing.Size(762, 391);
+            this.listViewOrders.Size = new System.Drawing.Size(762, 414);
             this.listViewOrders.TabIndex = 1;
             this.listViewOrders.UseCompatibleStateImageBehavior = false;
             this.listViewOrders.View = System.Windows.Forms.View.Details;
@@ -67,22 +67,35 @@
             this.CH_CodeOrder.Text = "Mã đơn hàng";
             this.CH_CodeOrder.Width = 130;
             // 
-            // CH_Status
+            // CH_KH_DT
             // 
-            this.CH_Status.Text = "Trạng thái";
-            this.CH_Status.Width = 105;
+            this.CH_KH_DT.Text = "Khách hàng/ đối tác";
+            this.CH_KH_DT.Width = 165;
+            // 
+            // CH_User
+            // 
+            this.CH_User.Text = "User";
             // 
             // CH_Loai
             // 
             this.CH_Loai.Text = "Loại đơn hàng";
             this.CH_Loai.Width = 110;
             // 
+            // CH_Status
+            // 
+            this.CH_Status.Text = "Trạng thái";
+            this.CH_Status.Width = 105;
+            // 
+            // CH_Date
+            // 
+            this.CH_Date.Text = "Thời gian";
+            // 
             // LB_ItemCount
             // 
             this.LB_ItemCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.LB_ItemCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.LB_ItemCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.LB_ItemCount.Location = new System.Drawing.Point(18, 491);
+            this.LB_ItemCount.Location = new System.Drawing.Point(18, 504);
             this.LB_ItemCount.Name = "LB_ItemCount";
             this.LB_ItemCount.Size = new System.Drawing.Size(218, 36);
             this.LB_ItemCount.TabIndex = 47;
@@ -105,7 +118,7 @@
             this.btn_Add_Order.ImageOffsetY = 0;
             this.btn_Add_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Add_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Add_Order.Location = new System.Drawing.Point(472, 491);
+            this.btn_Add_Order.Location = new System.Drawing.Point(472, 504);
             this.btn_Add_Order.Name = "btn_Add_Order";
             this.btn_Add_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(149)))), ((int)(((byte)(108)))));
             this.btn_Add_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
@@ -143,7 +156,7 @@
             this.btn_Edit_Order.ImageOffsetY = 0;
             this.btn_Edit_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Edit_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Edit_Order.Location = new System.Drawing.Point(578, 491);
+            this.btn_Edit_Order.Location = new System.Drawing.Point(578, 504);
             this.btn_Edit_Order.Name = "btn_Edit_Order";
             this.btn_Edit_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(101)))), ((int)(((byte)(36)))));
             this.btn_Edit_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(120)))), ((int)(((byte)(1)))));
@@ -181,7 +194,7 @@
             this.btn_Del_Order.ImageOffsetY = 0;
             this.btn_Del_Order.ImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Del_Order.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Del_Order.Location = new System.Drawing.Point(684, 491);
+            this.btn_Del_Order.Location = new System.Drawing.Point(684, 504);
             this.btn_Del_Order.Name = "btn_Del_Order";
             this.btn_Del_Order.NormalColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btn_Del_Order.NormalColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(86)))), ((int)(((byte)(72)))));
@@ -235,19 +248,6 @@
             this.dkTextBox1.Watermark = "Nhập mã đơn hàng";
             this.dkTextBox1.WatermarkForeColor = System.Drawing.Color.Gray;
             this.dkTextBox1.WordWrap = true;
-            // 
-            // CH_KH_DT
-            // 
-            this.CH_KH_DT.Text = "Khách hàng/ đối tác";
-            this.CH_KH_DT.Width = 165;
-            // 
-            // CH_User
-            // 
-            this.CH_User.Text = "User";
-            // 
-            // CH_Date
-            // 
-            this.CH_Date.Text = "Thời gian";
             // 
             // Tab_Order
             // 

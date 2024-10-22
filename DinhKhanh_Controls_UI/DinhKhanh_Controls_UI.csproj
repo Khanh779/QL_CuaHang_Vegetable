@@ -89,6 +89,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextControls\DKLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TextControls\DKTextBox.cs">
       <SubType>Component</SubType>
     </Compile>

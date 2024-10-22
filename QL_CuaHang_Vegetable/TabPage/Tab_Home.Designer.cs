@@ -27,10 +27,7 @@
             this.btn_Add_Employ = new DinhKhanh_Controls_UI.Buttons.DKButton();
             this.dkCard3 = new DinhKhanh_Controls_UI.Other.DKCard();
             this.dkCard1 = new DinhKhanh_Controls_UI.Other.DKCard();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.dkLabel1 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -136,7 +133,7 @@
             this.dkCard4.ShadowAlpha = 255;
             this.dkCard4.ShadowColor = System.Drawing.Color.Black;
             this.dkCard4.ShadowPadding = new System.Windows.Forms.Padding(4, 4, 4, 6);
-            this.dkCard4.Size = new System.Drawing.Size(762, 219);
+            this.dkCard4.Size = new System.Drawing.Size(762, 237);
             this.dkCard4.TabIndex = 74;
             this.dkCard4.Text = "dkCard4";
             // 
@@ -220,32 +217,26 @@
             this.dkCard1.TabIndex = 1;
             this.dkCard1.Text = "dkCard1";
             // 
-            // pictureBox2
+            // dkLabel1
             // 
-            this.pictureBox2.Image = global::QL_CuaHang_Vegetable.Properties.Resources.icons8_notification;
-            this.pictureBox2.Location = new System.Drawing.Point(515, 125);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 77;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QL_CuaHang_Vegetable.Properties.Resources.icons8_to_do;
-            this.pictureBox1.Location = new System.Drawing.Point(136, 318);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 76;
-            this.pictureBox1.TabStop = false;
+            this.dkLabel1.ContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dkLabel1.ForeColor1 = System.Drawing.Color.Black;
+            this.dkLabel1.ForeColor2 = System.Drawing.Color.Black;
+            this.dkLabel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.dkLabel1.Location = new System.Drawing.Point(242, 384);
+            this.dkLabel1.Name = "dkLabel1";
+            this.dkLabel1.Size = new System.Drawing.Size(125, 35);
+            this.dkLabel1.StringTrimming = System.Drawing.StringTrimming.Character;
+            this.dkLabel1.TabIndex = 76;
+            this.dkLabel1.Text = "dkLabel1";
+            this.dkLabel1.TextRendering = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.dkLabel1.UseTransparent = true;
             // 
             // Tab_Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dkLabel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dkCard4);
             this.Controls.Add(this.label4);
@@ -261,8 +252,6 @@
             this.Name = "Tab_Home";
             this.Size = new System.Drawing.Size(797, 554);
             this.Load += new System.EventHandler(this.Tab_Home_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -277,7 +266,6 @@
         private System.Windows.Forms.Label label4;
         private DinhKhanh_Controls_UI.Other.DKCard dkCard4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private DinhKhanh_Controls_UI.TextControls.DKLabel dkLabel1;
     }
 }

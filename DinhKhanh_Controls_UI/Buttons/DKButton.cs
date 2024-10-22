@@ -142,13 +142,14 @@ namespace DinhKhanh_Controls_UI.Buttons
         public DKButton()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor | ControlStyles.OptimizedDoubleBuffer, true);
-            animationManager = new AnimationManager(false)
+            animationManager = new AnimationManager(true)
             {
                 Increment = 0.07
             };
 
             animationManager.AnimationProgress += AnimationManager_AnimationProgress;
 
+            animationManager.StopAll();
         }
 
         private void AnimationManager_AnimationProgress(object obj)

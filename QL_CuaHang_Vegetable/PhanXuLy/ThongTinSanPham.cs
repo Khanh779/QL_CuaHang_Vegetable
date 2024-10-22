@@ -16,7 +16,7 @@ namespace QL_CuaHang_Vegetable.PhanXuLy
         public string MoTa { get; set; }
         public DateTime NgayHetHan { get; set; }
         public DateTime NgaySanXuat { get; set; }
-        public string NhaCungCap { get; set; }
+        public ThongTinNhaCungCap NhaCungCap { get; set; }
         public DateTime NgayTao { get; set; }
 
         public ThongTinSanPham() { }

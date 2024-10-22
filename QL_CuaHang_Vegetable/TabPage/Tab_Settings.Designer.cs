@@ -114,7 +114,7 @@
             this.PN_Settings.Location = new System.Drawing.Point(22, 80);
             this.PN_Settings.Name = "PN_Settings";
             this.PN_Settings.Padding = new System.Windows.Forms.Padding(12);
-            this.PN_Settings.Size = new System.Drawing.Size(762, 391);
+            this.PN_Settings.Size = new System.Drawing.Size(762, 414);
             this.PN_Settings.TabIndex = 34;
             this.PN_Settings.Paint += new System.Windows.Forms.PaintEventHandler(this.PN_Settings_Paint);
             // 

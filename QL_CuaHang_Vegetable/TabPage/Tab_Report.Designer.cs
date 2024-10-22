@@ -90,7 +90,7 @@
             this.PN_Report.Location = new System.Drawing.Point(22, 80);
             this.PN_Report.Name = "PN_Report";
             this.PN_Report.Padding = new System.Windows.Forms.Padding(12);
-            this.PN_Report.Size = new System.Drawing.Size(762, 391);
+            this.PN_Report.Size = new System.Drawing.Size(762, 414);
             this.PN_Report.TabIndex = 33;
             this.PN_Report.Paint += new System.Windows.Forms.PaintEventHandler(this.PN_Report_Paint);
             // 

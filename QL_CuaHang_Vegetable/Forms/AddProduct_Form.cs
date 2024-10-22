@@ -24,5 +24,14 @@ namespace QL_CuaHang_Vegetable.Forms
         {
             e.Graphics.DrawRectangle(new Pen(Color.Silver, 1) { DashStyle= System.Drawing.Drawing2D.DashStyle.Dot}, 0, 0, PB_Product.Width - 1, PB_Product.Height - 1);
         }
+
+        private void llb_Add_Provider_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button== MouseButtons.Left)
+            {
+                Add_Manufacturer_Form add_Manufacturer_Form = new Add_Manufacturer_Form();
+                add_Manufacturer_Form.ShowDialog();
+            }    
+        }
     }
 }
