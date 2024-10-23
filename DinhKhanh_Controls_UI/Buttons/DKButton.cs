@@ -408,13 +408,13 @@ namespace DinhKhanh_Controls_UI.Buttons
                                 case TextImageRelation.ImageBeforeText:
                                     // Hình ảnh ở trước văn bản
                                     imageBound = new RectangleF(
-                                        BorderThickness + textPadding.Left + imageOffsetX,
+                                        BorderThickness + 1 + imageOffsetX,
                                         contentRectangle.Top + (bmp.Height - _imageSize.Height) / 2,
                                         _imageSize.Width,
                                         _imageSize.Height
                                     );
                                     textBound = new RectangleF(
-                                        imageBound.Right + imageOffsetX,
+                                        imageBound.Right + textPadding.Left + imageOffsetX,
                                         BorderThickness + textPadding.Top,
                                         bmp.Width + shadowPadding.Right - BorderThickness * 2 - textPadding.Right - _imageSize.Width - imageOffsetX,
                                         bmp.Height + shadowPadding.Bottom - BorderThickness * 2 - textPadding.Bottom
