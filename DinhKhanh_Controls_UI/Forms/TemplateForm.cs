@@ -52,6 +52,37 @@ namespace DinhKhanh_Controls_UI.Forms
             }
         }
 
+        Color iconControlBoxHover = Color.FromArgb(168, 213, 186);
+        public Color IconControlBoxHoverColor
+        {
+            get { return iconControlBoxHover; }
+            set
+            {
+                iconControlBoxHover = value;
+                dkControlBoxForm1.IconHoverColor = value;
+                dkControlBoxForm2.IconHoverColor = value;
+                dkControlBoxForm3.IconHoverColor = value;
+                Invalidate();
+            }
+        }
+
+        Color iconControlBoxNormalColor = Color.Black;
+        public Color IconControlBoxNormalColor
+        {
+            get
+            {
+                return iconControlBoxNormalColor;
+            }
+            set
+            {
+                iconControlBoxNormalColor = value;
+                dkControlBoxForm1.IconNormalColor = value;
+                dkControlBoxForm2.IconNormalColor = value;
+                dkControlBoxForm3.IconNormalColor = value;
+                Invalidate();
+            }
+        }
+
         public new bool MaximizeBox
         {
             get => base.MaximizeBox;
@@ -79,6 +110,31 @@ namespace DinhKhanh_Controls_UI.Forms
             base.OnLoad(e);
             LB_TitleForm.Text = this.Text;
             PB_Icon.Image = this.Icon.ToBitmap();
+
+        }
+
+        Color titleBarColor = Color.Transparent;
+        public Color TitleBarColor
+        {
+            get { return titleBarColor; }
+            set
+            {
+                titleBarColor = value;
+                PN_Title.BackColor = value;
+                Invalidate();
+            }
+        }
+
+        Color titleForeColor= Color.Black;
+        public Color TitleForeColor
+        {
+            get { return titleForeColor; }
+            set
+            {
+                titleForeColor = value;
+                LB_TitleForm.ForeColor = value;
+                Invalidate();
+            }
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -103,6 +159,7 @@ namespace DinhKhanh_Controls_UI.Forms
             {
                 borderSize = value;
                 resize = new ReSize(borderSize + 1);
+                Padding = new Padding(value);
                 Invalidate();
             }
         }

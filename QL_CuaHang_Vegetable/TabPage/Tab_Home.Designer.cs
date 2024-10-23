@@ -25,12 +25,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.PN_StackChartLegend = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.lbl_RefreshDataStatus = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.llbl_DenTP = new System.Windows.Forms.LinkLabel();
             this.dkLabel5 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
             this.dkLabel4 = new DinhKhanh_Controls_UI.TextControls.DKLabel();
@@ -146,6 +146,38 @@
             this.PN_StackChartLegend.TabIndex = 79;
             this.PN_StackChartLegend.Paint += new System.Windows.Forms.PaintEventHandler(this.PN_StackChartLegend_Paint);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(1)))), ((int)(((byte)(73)))));
+            this.panel5.Location = new System.Drawing.Point(5, 74);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(12, 12);
+            this.panel5.TabIndex = 87;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gold;
+            this.panel4.Location = new System.Drawing.Point(5, 53);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(12, 12);
+            this.panel4.TabIndex = 85;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.Location = new System.Drawing.Point(5, 32);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(12, 12);
+            this.panel2.TabIndex = 83;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
+            this.panel3.Location = new System.Drawing.Point(5, 11);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(12, 12);
+            this.panel3.TabIndex = 81;
+            // 
             // lbl_RefreshDataStatus
             // 
             this.lbl_RefreshDataStatus.BackColor = System.Drawing.Color.White;
@@ -156,38 +188,6 @@
             this.lbl_RefreshDataStatus.Size = new System.Drawing.Size(334, 15);
             this.lbl_RefreshDataStatus.TabIndex = 80;
             this.lbl_RefreshDataStatus.Text = "Dữ liệu được cập nhật lúc 20:13";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
-            this.panel3.Location = new System.Drawing.Point(5, 11);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 12);
-            this.panel3.TabIndex = 81;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel2.Location = new System.Drawing.Point(5, 32);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(12, 12);
-            this.panel2.TabIndex = 83;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gold;
-            this.panel4.Location = new System.Drawing.Point(5, 53);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(12, 12);
-            this.panel4.TabIndex = 85;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(1)))), ((int)(((byte)(73)))));
-            this.panel5.Location = new System.Drawing.Point(5, 74);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(12, 12);
-            this.panel5.TabIndex = 87;
             // 
             // llbl_DenTP
             // 
@@ -294,10 +294,10 @@
             this.dkStackBarChart1.BackColor = System.Drawing.Color.Transparent;
             this.dkStackBarChart1.BorderColor = System.Drawing.Color.Gray;
             this.dkStackBarChart1.BorderThickness = 0;
-            this.dkStackBarChart1.ItemRadius = 4;
+            this.dkStackBarChart1.ItemRadius = 12;
             this.dkStackBarChart1.Location = new System.Drawing.Point(44, 302);
             this.dkStackBarChart1.Name = "dkStackBarChart1";
-            this.dkStackBarChart1.Radius = 5;
+            this.dkStackBarChart1.Radius = 12;
             this.dkStackBarChart1.Size = new System.Drawing.Size(722, 25);
             this.dkStackBarChart1.TabIndex = 77;
             this.dkStackBarChart1.Text = "dkStackBarChart1";

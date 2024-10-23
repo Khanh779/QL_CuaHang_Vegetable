@@ -109,7 +109,7 @@ namespace DinhKhanh_Controls_UI.Progresses
                 return;
             }
 
-            using (Bitmap bitmap = new Bitmap(Width, Height))
+            using (Bitmap bitmap = new Bitmap(Width - 2, Height))
             using (Graphics g = Graphics.FromImage(bitmap))
             using (GraphicsPath gp = GraphicsHelper.GetRoundPath(new Rectangle(0, 0, Width, Height), radius))
             {
@@ -125,10 +125,10 @@ namespace DinhKhanh_Controls_UI.Progresses
                 for (int i = 0; i < Items.Count; i++)
                 {
                     var item = Items[i]; // Lấy item tại vị trí i
-                    float itemWidth = (float)(item.Value / total) * (Width + radius * 2); // Tính toán chiều rộng của mỗi item
+                    float itemWidth = (float)(item.Value / total) * (Width - 2 + radius * 2); // Tính toán chiều rộng của mỗi item
                     itemWidth *= (float)animationManager.GetProgress(); // Tính toán chiều rộng của mỗi item dựa vào animation
 
-                    RectangleF rect = new RectangleF(startX, 0, itemWidth, Height);
+                    RectangleF rect = new RectangleF(startX, 0, itemWidth - 2, Height);
 
                     // Vẽ từng item
                     using (SolidBrush brush = new SolidBrush(item.Color))
@@ -142,7 +142,7 @@ namespace DinhKhanh_Controls_UI.Progresses
 
                 if (borderThickness > 0)
                 {
-                    using (GraphicsPath bgp = GraphicsHelper.GetRoundPath(new Rectangle(0, 0, Width, Height), radius, borderThickness))
+                    using (GraphicsPath bgp = GraphicsHelper.GetRoundPath(new Rectangle(0, 0, Width - 2, Height), radius, borderThickness))
                     using (Pen pen = new Pen(borderColor, borderThickness))
                         g.DrawPath(pen, bgp);
                 }

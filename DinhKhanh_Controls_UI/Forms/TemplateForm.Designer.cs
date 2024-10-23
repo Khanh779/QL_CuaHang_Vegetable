@@ -50,9 +50,9 @@
             this.PN_Title.Controls.Add(this.LB_TitleForm);
             this.PN_Title.Controls.Add(this.flowLayoutPanel1);
             this.PN_Title.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PN_Title.Location = new System.Drawing.Point(3, 3);
+            this.PN_Title.Location = new System.Drawing.Point(0, 0);
             this.PN_Title.Name = "PN_Title";
-            this.PN_Title.Size = new System.Drawing.Size(304, 36);
+            this.PN_Title.Size = new System.Drawing.Size(310, 36);
             this.PN_Title.TabIndex = 2;
             // 
             // PB_Icon
@@ -72,7 +72,7 @@
             this.LB_TitleForm.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.LB_TitleForm.Location = new System.Drawing.Point(32, 6);
             this.LB_TitleForm.Name = "LB_TitleForm";
-            this.LB_TitleForm.Size = new System.Drawing.Size(151, 22);
+            this.LB_TitleForm.Size = new System.Drawing.Size(157, 22);
             this.LB_TitleForm.TabIndex = 3;
             this.LB_TitleForm.Text = "LB_TitleForm";
             this.LB_TitleForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -84,7 +84,7 @@
             this.flowLayoutPanel1.Controls.Add(this.dkControlBoxForm3);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(198, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(204, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 4, 5, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(106, 36);
@@ -93,6 +93,7 @@
             // dkControlBoxForm1
             // 
             this.dkControlBoxForm1.ControlBoxStyle = DinhKhanh_Controls_UI.Enums.ControlBoxStyle.Close;
+            this.dkControlBoxForm1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dkControlBoxForm1.Form = this;
             this.dkControlBoxForm1.IconHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.dkControlBoxForm1.IconNormalColor = System.Drawing.Color.Black;
@@ -106,6 +107,7 @@
             // dkControlBoxForm2
             // 
             this.dkControlBoxForm2.ControlBoxStyle = DinhKhanh_Controls_UI.Enums.ControlBoxStyle.Maximize_Restore;
+            this.dkControlBoxForm2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dkControlBoxForm2.Form = this;
             this.dkControlBoxForm2.IconHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.dkControlBoxForm2.IconNormalColor = System.Drawing.Color.Black;
@@ -119,6 +121,7 @@
             // dkControlBoxForm3
             // 
             this.dkControlBoxForm3.ControlBoxStyle = DinhKhanh_Controls_UI.Enums.ControlBoxStyle.Minimize;
+            this.dkControlBoxForm3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dkControlBoxForm3.Form = this;
             this.dkControlBoxForm3.IconHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(169)))), ((int)(((byte)(128)))));
             this.dkControlBoxForm3.IconNormalColor = System.Drawing.Color.Black;
@@ -152,7 +155,6 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TemplateForm";
-            this.Padding = new System.Windows.Forms.Padding(3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.PN_Title.ResumeLayout(false);
