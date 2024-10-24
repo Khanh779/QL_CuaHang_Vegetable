@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("DinhKhanh_Controls_UI")]
-[assembly: AssemblyCopyright("Copyright ©  2024")]
+[assembly: AssemblyCopyright("Copyright ©  2024 - Nhóm 5- Đỉnh và Khánh")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
